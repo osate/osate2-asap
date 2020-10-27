@@ -32,7 +32,7 @@
       xsi:type="git:GitCloneTask"
       id="git.clone.asap"
       filter=""
-      remoteURI="osate/osate2"
+      remoteURI="osate/osate2-asap"
       pushURI="">
     <annotation
         source="http://www.eclipse.org/oomph/setup/InducedChoices">
@@ -42,7 +42,7 @@
       </detail>
       <detail
           key="label">
-        <value>FACE 2 AADL Github repository</value>
+        <value>OSATE2 ASAP Github repository</value>
       </detail>
       <detail
           key="target">
@@ -52,6 +52,30 @@
     <description>Clone ASAP Repository</description>
   </setupTask>
   <setupTask
+      xsi:type="git:GitCloneTask"
+      id="git.clone.awas"
+      filter=""
+      remoteURI="sireum/osate-plugin"
+      pushURI=""
+      checkoutBranch="master">
+    <annotation
+        source="http://www.eclipse.org/oomph/setup/InducedChoices">
+      <detail
+          key="inherit">
+        <value>github.remoteURIs</value>
+      </detail>
+      <detail
+          key="label">
+        <value>Sireum OSATE-Plugin Github repository</value>
+      </detail>
+      <detail
+          key="target">
+        <value>remoteURI</value>
+      </detail>
+    </annotation>
+    <description>Clone Awas Repository</description>
+  </setupTask>
+  <setupTask
       xsi:type="setup.targlets:TargletTask">
     <targlet
         name="${scope.project.label}"
@@ -59,7 +83,7 @@
       <requirement
           name="*"/>
       <sourceLocator
-          rootFolder="${git.clone.face2aadl.location}"/>
+          rootFolder="${git.clone.asap.location}"/>
       <repositoryList
           name="2020-06">
         <repository
@@ -70,55 +94,23 @@
         <repository
             url="http://download.eclipse.org/releases/2020-03"/>
       </repositoryList>
+    </targlet>
+    <targlet
+        name="Awas"
+        activeRepositoryList="${eclipse.target.platform}">
+      <requirement
+          name="*"/>
+      <sourceLocator
+          rootFolder="${git.clone.awas.location}"/>
       <repositoryList
-          name="2019-12">
+          name="2020-06">
         <repository
-            url="http://download.eclipse.org/releases/2019-12"/>
+            url="http://download.eclipse.org/releases/2020-06"/>
       </repositoryList>
       <repositoryList
-          name="2019-09">
+          name="2020-03">
         <repository
-            url="http://download.eclipse.org/releases/2019-09"/>
-      </repositoryList>
-      <repositoryList
-          name="2019-03">
-        <repository
-            url="http://download.eclipse.org/releases/2019-03"/>
-      </repositoryList>
-      <repositoryList
-          name="2018-12">
-        <repository
-            url="http://download.eclipse.org/releases/2018-12"/>
-      </repositoryList>
-      <repositoryList
-          name="Oxygen">
-        <repository
-            url="http://download.eclipse.org/releases/oxygen"/>
-      </repositoryList>
-      <repositoryList
-          name="Neon">
-        <repository
-            url="http://download.eclipse.org/releases/neon"/>
-      </repositoryList>
-      <repositoryList
-          name="Mars">
-        <repository
-            url="http://download.eclipse.org/releases/mars"/>
-      </repositoryList>
-      <repositoryList
-          name="Luna">
-        <repository
-            url="http://download.eclipse.org/releases/luna"/>
-      </repositoryList>
-      <repositoryList
-          name="Kepler">
-        <repository
-            url="http://download.eclipse.org/releases/kepler"/>
-      </repositoryList>
-      <repositoryList
-          name="Juno">
-        <repository
-            url="http://download.eclipse.org/releases/juno"/>
+            url="http://download.eclipse.org/releases/2020-03"/>
       </repositoryList>
     </targlet>
   </setupTask>
@@ -132,17 +124,26 @@
           xsi:type="predicates:AndPredicate">
         <operand
             xsi:type="predicates:RepositoryPredicate"
-            project="face2aadl.releng"/>
+            project="org.osate.asap.releng"/>
+      </predicate>
+    </workingSet>
+    <workingSet
+        name="awas">
+      <predicate
+          xsi:type="predicates:AndPredicate">
+        <operand
+            xsi:type="predicates:RepositoryPredicate"
+            project="org.sireum.aadl.osate.awas"/>
       </predicate>
     </workingSet>
     <description>The dynamic working sets for ${scope.project.label}</description>
   </setupTask>
-  <stream name="master"
-      label="Master">
+  <stream name="main"
+      label="Main">
     <setupTask
         xsi:type="setup:EclipseIniTask"
-        option="-Doomph.redirection.face2aadl"
-        value="=https://raw.githubusercontent.com/osate/face2aadl/master/face2aadl.releng/face2aadl.setup->${git.clone.face2aadl.location|uri}/face2aadl.releng/face2aadl.setup"
+        option="-Doomph.redirection.asap"
+        value="=https://raw.githubusercontent.com/osate/osate2-asap/main/org.osate.asap.releng/asap.setup->${git.clone.asap.location|uri}/org.osate.asap.releng/asap.setup"
         vm="true">
       <description>
         Set an Oomph redirection system property to redirect the logical location of this setup to its physical location in the Git clone.
