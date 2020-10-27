@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:description_2="http://www.eclipse.org/sirius/tree/description/1.0.0" xmlns:description_3="http://www.eclipse.org/sirius/table/description/1.1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:tool="http://www.eclipse.org/sirius/description/tool/1.1.0" xmlns:tool_1="http://www.eclipse.org/sirius/diagram/description/tool/1.1.0" name="SystemOverview" version="12.0.0.2017041100">
+  <ownedViewpoints name="Hazard Analyst" modelFileExtension="safe2">
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" endUserDocumentation="Graph view of the specified component as well as its &quot;neighbors&quot; (ie, produce its input and consume its output), their neighbors, and connections between all displayed elements." name="ConnectedNeighbors" titleExpression="aql:'Neighbors of '+self.name" domainClass="instance.ComponentInstance" enablePopupBars="true">
+      <metamodel href="../../org.osate.aadl2/model/instance.ecore#/"/>
+      <layout xsi:type="description_1:CustomLayoutConfiguration" id="org.eclipse.elk.graphviz.circo" label="Circo" description="Circular layout, after Six and Tollis '99, Kaufmann and Wiese '02. The algorithm finds biconnected components and arranges each component in a circle, trying to minimize the number of crossings inside the circle. This is suitable for certain diagrams of multiple cyclic structures such as certain telecommunications networks."/>
+      <defaultLayer name="Default">
+        <nodeMappings name="RootNode" detailDescriptions="//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='TopLevelErrors']/@ownedRepresentationCreationDescriptions[name='Table%20Creation%20NewTopLevelErrors']" navigationDescriptions="//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='Fundamentals']/@ownedRepresentationNavigationDescriptions[name='ToFundamentals']" semanticCandidatesExpression="aql:self" domainClass="instance.ComponentInstance">
+          <style xsi:type="style:BundledImageDescription" sizeComputationExpression="20" labelPosition="node" resizeKind="NSEW">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+          </style>
+          <conditionnalStyles predicateExpression="service:isDoublyFocused()">
+            <style xsi:type="style:BundledImageDescription" sizeComputationExpression="20" labelPosition="node" resizeKind="NSEW">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='purple']"/>
+              <labelFormat>bold</labelFormat>
+              <labelFormat>italic</labelFormat>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='purple']"/>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+            </style>
+          </conditionnalStyles>
+          <conditionnalStyles predicateExpression="service:isOnlyForwardFocused()">
+            <style xsi:type="style:BundledImageDescription" sizeComputationExpression="20" labelPosition="node" resizeKind="NSEW">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='blue']"/>
+              <labelFormat>bold</labelFormat>
+              <labelFormat>italic</labelFormat>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='blue']"/>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+            </style>
+          </conditionnalStyles>
+          <conditionnalStyles predicateExpression="service:isOnlyBackwardFocused()">
+            <style xsi:type="style:BundledImageDescription" sizeComputationExpression="20" labelPosition="node" resizeKind="NSEW">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='red']"/>
+              <labelFormat>bold</labelFormat>
+              <labelFormat>italic</labelFormat>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='red']"/>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+            </style>
+          </conditionnalStyles>
+        </nodeMappings>
+        <nodeMappings name="ImmediateNeighbors" detailDescriptions="//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='TopLevelErrors']/@ownedRepresentationCreationDescriptions[name='Table%20Creation%20NewTopLevelErrors']" navigationDescriptions="//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='Fundamentals']/@ownedRepresentationNavigationDescriptions[name='ToFundamentals']" semanticCandidatesExpression="service:getAllNeighbors" domainClass="instance.ComponentInstance">
+          <style xsi:type="style:BundledImageDescription" sizeComputationExpression="20" labelPosition="node" resizeKind="NSEW">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_blue']"/>
+          </style>
+          <conditionnalStyles predicateExpression="service:isDoublyFocused()">
+            <style xsi:type="style:BundledImageDescription" sizeComputationExpression="20" labelPosition="node" resizeKind="NSEW">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='purple']"/>
+              <labelFormat>bold</labelFormat>
+              <labelFormat>italic</labelFormat>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='purple']"/>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_blue']"/>
+            </style>
+          </conditionnalStyles>
+          <conditionnalStyles predicateExpression="service:isOnlyForwardFocused()">
+            <style xsi:type="style:BundledImageDescription" sizeComputationExpression="20" labelPosition="node" resizeKind="NSEW">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='blue']"/>
+              <labelFormat>bold</labelFormat>
+              <labelFormat>italic</labelFormat>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='blue']"/>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_blue']"/>
+            </style>
+          </conditionnalStyles>
+          <conditionnalStyles predicateExpression="service:isOnlyBackwardFocused()">
+            <style xsi:type="style:BundledImageDescription" sizeComputationExpression="20" labelPosition="node" resizeKind="NSEW">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='red']"/>
+              <labelFormat>bold</labelFormat>
+              <labelFormat>italic</labelFormat>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='red']"/>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_blue']"/>
+            </style>
+          </conditionnalStyles>
+        </nodeMappings>
+        <nodeMappings name="OneHopNeighbors" detailDescriptions="//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='TopLevelErrors']/@ownedRepresentationCreationDescriptions[name='Table%20Creation%20NewTopLevelErrors']" navigationDescriptions="//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='Fundamentals']/@ownedRepresentationNavigationDescriptions[name='ToFundamentals']" semanticCandidatesExpression="service:getOneHopNeighbors" domainClass="instance.ComponentInstance">
+          <style xsi:type="style:BundledImageDescription" sizeComputationExpression="20" labelPosition="node" resizeKind="NSEW">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_red']"/>
+          </style>
+          <conditionnalStyles predicateExpression="service:isDoublyFocused()">
+            <style xsi:type="style:BundledImageDescription" sizeComputationExpression="20" labelPosition="node" resizeKind="NSEW">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='purple']"/>
+              <labelFormat>bold</labelFormat>
+              <labelFormat>italic</labelFormat>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='purple']"/>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_blue']"/>
+            </style>
+          </conditionnalStyles>
+          <conditionnalStyles predicateExpression="service:isOnlyForwardFocused()">
+            <style xsi:type="style:BundledImageDescription" sizeComputationExpression="20" labelPosition="node" resizeKind="NSEW">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='blue']"/>
+              <labelFormat>bold</labelFormat>
+              <labelFormat>italic</labelFormat>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='blue']"/>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_blue']"/>
+            </style>
+          </conditionnalStyles>
+          <conditionnalStyles predicateExpression="service:isOnlyBackwardFocused()">
+            <style xsi:type="style:BundledImageDescription" sizeComputationExpression="20" labelPosition="node" resizeKind="NSEW">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='red']"/>
+              <labelFormat>bold</labelFormat>
+              <labelFormat>italic</labelFormat>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='red']"/>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_blue']"/>
+            </style>
+          </conditionnalStyles>
+        </nodeMappings>
+        <edgeMappings name="ConnectedEdges" navigationDescriptions="//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='Fundamentals']/@ownedRepresentationNavigationDescriptions[name='ToFundamentals']" documentation="Note that we call only successor neighbors, but since all nodes are possible sources and targets, this should discover all necessary node relationships. " sourceMapping="//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='ConnectedNeighbors']/@defaultLayer/@nodeMappings[name='RootNode'] //@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='ConnectedNeighbors']/@defaultLayer/@nodeMappings[name='ImmediateNeighbors'] //@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='ConnectedNeighbors']/@defaultLayer/@nodeMappings[name='OneHopNeighbors']" targetMapping="//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='ConnectedNeighbors']/@defaultLayer/@nodeMappings[name='RootNode'] //@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='ConnectedNeighbors']/@defaultLayer/@nodeMappings[name='ImmediateNeighbors'] //@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='ConnectedNeighbors']/@defaultLayer/@nodeMappings[name='OneHopNeighbors']" targetFinderExpression="service:getSuccessorNeighbors()">
+          <style sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+          <conditionnalStyles predicateExpression="service:isDoublyFocused()">
+            <style sizeComputationExpression="2">
+              <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='purple']"/>
+              <centerLabelStyleDescription>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              </centerLabelStyleDescription>
+            </style>
+          </conditionnalStyles>
+          <conditionnalStyles predicateExpression="service:isOnlyForwardFocused()">
+            <style sizeComputationExpression="2">
+              <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='blue']"/>
+              <centerLabelStyleDescription>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              </centerLabelStyleDescription>
+            </style>
+          </conditionnalStyles>
+          <conditionnalStyles predicateExpression="service:isOnlyBackwardFocused()">
+            <style sizeComputationExpression="2">
+              <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='red']"/>
+              <centerLabelStyleDescription>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              </centerLabelStyleDescription>
+            </style>
+          </conditionnalStyles>
+        </edgeMappings>
+        <toolSections name="tool-section-id">
+          <ownedTools xsi:type="tool:OperationAction" name="Set Focus">
+            <view name="views"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:ExternalJavaAction" name="DoFocusAction" id="org.osate.asap.view.DoFocusActionID"/>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:OperationAction" name="Clear Focus">
+            <view name="views"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:ExternalJavaAction" name="DoClearAction" id="org.osate.asap.view.ClearFocusActionID"/>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
+      </defaultLayer>
+    </ownedRepresentations>
+    <ownedRepresentations xsi:type="description_2:TreeDescription" documentation="Placeholder initial view until we iron out the SAFE2.0 process." endUserDocumentation="Shows the subcomponents contained in this component, as well as what they contain." name="Containment" initialisation="true" showOnStartup="true" domainClass="instance.ComponentInstance">
+      <metamodel href="../../org.osate.aadl2/model/instance.ecore#/"/>
+      <subItemMappings name="component" detailDescriptions="//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='Containment']/@ownedRepresentationCreationDescriptions[name='NewConnectedNeighbors'] //@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='TopLevelErrors']/@ownedRepresentationCreationDescriptions[name='Table%20Creation%20NewTopLevelErrors']" navigationDescriptions="//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='Fundamentals']/@ownedRepresentationNavigationDescriptions[name='ToFundamentals']" domainClass="instance.ComponentInstance" semanticCandidatesExpression="feature:eContents">
+        <defaultStyle>
+          <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+        </defaultStyle>
+        <conditionalStyles predicateExpression="service:isFocused()">
+          <style>
+            <labelFormat>bold</labelFormat>
+            <labelFormat>italic</labelFormat>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_red']"/>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+          </style>
+        </conditionalStyles>
+        <subItemMappings name="subcomponent" navigationDescriptions="//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='Fundamentals']/@ownedRepresentationNavigationDescriptions[name='ToFundamentals']" domainClass="instance.ComponentInstance" semanticCandidatesExpression="feature:eContents">
+          <defaultStyle>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+          </defaultStyle>
+          <conditionalStyles predicateExpression="service:isFocused()">
+            <style>
+              <labelFormat>bold</labelFormat>
+              <labelFormat>italic</labelFormat>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_red']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+            </style>
+          </conditionalStyles>
+          <subItemMappings name="subsubcomponent" navigationDescriptions="//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='Fundamentals']/@ownedRepresentationNavigationDescriptions[name='ToFundamentals']" domainClass="instance.ComponentInstance" semanticCandidatesExpression="feature:eContents">
+            <defaultStyle>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+            </defaultStyle>
+            <conditionalStyles predicateExpression="service:isFocused()">
+              <style>
+                <labelFormat>bold</labelFormat>
+                <labelFormat>italic</labelFormat>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_red']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              </style>
+            </conditionalStyles>
+            <popupMenus name="Focus Operations">
+              <menuItemDescriptions xsi:type="tool:OperationAction" name="Set Focus">
+                <view name="views"/>
+                <initialOperation>
+                  <firstModelOperations xsi:type="tool:ExternalJavaAction" name="DoFocusAction" id="org.osate.asap.view.DoFocusActionID"/>
+                </initialOperation>
+              </menuItemDescriptions>
+              <menuItemDescriptions xsi:type="tool:OperationAction" name="Clear Focus">
+                <view name="views"/>
+                <initialOperation>
+                  <firstModelOperations xsi:type="tool:ExternalJavaAction" name="DoClearAction" id="org.osate.asap.view.ClearFocusActionID"/>
+                </initialOperation>
+              </menuItemDescriptions>
+            </popupMenus>
+          </subItemMappings>
+          <popupMenus name="Focus Operations">
+            <menuItemDescriptions xsi:type="tool:OperationAction" name="Set Focus">
+              <view name="views"/>
+              <initialOperation>
+                <firstModelOperations xsi:type="tool:ExternalJavaAction" name="DoFocusAction" id="org.osate.asap.view.DoFocusActionID"/>
+              </initialOperation>
+            </menuItemDescriptions>
+            <menuItemDescriptions xsi:type="tool:OperationAction" name="Clear Focus">
+              <view name="views"/>
+              <initialOperation>
+                <firstModelOperations xsi:type="tool:ExternalJavaAction" name="DoClearAction" id="org.osate.asap.view.ClearFocusActionID"/>
+              </initialOperation>
+            </menuItemDescriptions>
+          </popupMenus>
+        </subItemMappings>
+        <popupMenus name="Focus Operations">
+          <menuItemDescriptions xsi:type="tool:OperationAction" name="Set Focus">
+            <view name="views"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:ExternalJavaAction" name="DoFocusAction" id="org.osate.asap.view.DoFocusActionID"/>
+            </initialOperation>
+          </menuItemDescriptions>
+          <menuItemDescriptions xsi:type="tool:OperationAction" name="Clear Focus">
+            <view name="views"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:ExternalJavaAction" name="DoClearAction" id="org.osate.asap.view.ClearFocusActionID"/>
+            </initialOperation>
+          </menuItemDescriptions>
+        </popupMenus>
+      </subItemMappings>
+      <ownedRepresentationCreationDescriptions xsi:type="tool_1:DiagramCreationDescription" name="NewConnectedNeighbors" diagramDescription="//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='ConnectedNeighbors']">
+        <initialOperation/>
+        <containerViewVariable name="containerView"/>
+        <representationNameVariable name="diagramName"/>
+      </ownedRepresentationCreationDescriptions>
+    </ownedRepresentations>
+    <ownedRepresentations xsi:type="description_2:TreeDescription" endUserDocumentation="The fundamentals (accident levels, accidents, hazards, and constraints) associated with the component." name="Fundamentals" initialisation="true" domainClass="safe2.SystemOverview">
+      <metamodel href="../../org.osate.asap.model/model/safe2.ecore#/"/>
+      <subItemMappings name="Accident Level" navigationDescriptions="//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='Fundamentals']/@ownedRepresentationNavigationDescriptions[name='ToFundamentals']" domainClass="safe2.AccidentLevel" semanticCandidatesExpression="feature:eAllContents">
+        <defaultStyle>
+          <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+        </defaultStyle>
+        <conditionalStyles predicateExpression="service:isFundamentalFocused()">
+          <style>
+            <labelFormat>bold</labelFormat>
+            <labelFormat>italic</labelFormat>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_red']"/>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+          </style>
+        </conditionalStyles>
+        <subItemMappings name="Accident" navigationDescriptions="//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='Fundamentals']/@ownedRepresentationNavigationDescriptions[name='ToFundamentals']" domainClass="safe2.Accident" semanticCandidatesExpression="feature:eAllContents">
+          <defaultStyle>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+          </defaultStyle>
+          <conditionalStyles predicateExpression="service:isFundamentalFocused()">
+            <style>
+              <labelFormat>bold</labelFormat>
+              <labelFormat>italic</labelFormat>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_red']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+            </style>
+          </conditionalStyles>
+          <subItemMappings name="Hazard" navigationDescriptions="//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='Fundamentals']/@ownedRepresentationNavigationDescriptions[name='ToFundamentals']" domainClass="safe2.Hazard" semanticCandidatesExpression="feature:eAllContents">
+            <defaultStyle>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+            </defaultStyle>
+            <conditionalStyles predicateExpression="service:isFundamentalFocused()">
+              <style>
+                <labelFormat>bold</labelFormat>
+                <labelFormat>italic</labelFormat>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_red']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              </style>
+            </conditionalStyles>
+            <subItemMappings name="Constraint" navigationDescriptions="//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='Fundamentals']/@ownedRepresentationNavigationDescriptions[name='ToFundamentals']" domainClass="safe2.Constraint" semanticCandidatesExpression="feature:eAllContents">
+              <defaultStyle>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              </defaultStyle>
+              <conditionalStyles predicateExpression="service:isFundamentalFocused()">
+                <style>
+                  <labelFormat>bold</labelFormat>
+                  <labelFormat>italic</labelFormat>
+                  <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_red']"/>
+                  <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+                </style>
+              </conditionalStyles>
+              <popupMenus name="Focus Operations">
+                <menuItemDescriptions xsi:type="tool:OperationAction" name="Set Focus">
+                  <view name="views"/>
+                  <initialOperation>
+                    <firstModelOperations xsi:type="tool:ExternalJavaAction" name="DoFocusAction" id="org.osate.asap.view.DoFocusActionID"/>
+                  </initialOperation>
+                </menuItemDescriptions>
+                <menuItemDescriptions xsi:type="tool:OperationAction" name="Clear Focus">
+                  <view name="views"/>
+                  <initialOperation>
+                    <firstModelOperations xsi:type="tool:ExternalJavaAction" name="DoClearAction" id="org.osate.asap.view.ClearFocusActionID"/>
+                  </initialOperation>
+                </menuItemDescriptions>
+              </popupMenus>
+            </subItemMappings>
+            <popupMenus name="Focus Operations">
+              <menuItemDescriptions xsi:type="tool:OperationAction" name="Set Focus">
+                <view name="views"/>
+                <initialOperation>
+                  <firstModelOperations xsi:type="tool:ExternalJavaAction" name="DoFocusAction" id="org.osate.asap.view.DoFocusActionID"/>
+                </initialOperation>
+              </menuItemDescriptions>
+              <menuItemDescriptions xsi:type="tool:OperationAction" name="Clear Focus">
+                <view name="views"/>
+                <initialOperation>
+                  <firstModelOperations xsi:type="tool:ExternalJavaAction" name="DoClearAction" id="org.osate.asap.view.ClearFocusActionID"/>
+                </initialOperation>
+              </menuItemDescriptions>
+            </popupMenus>
+          </subItemMappings>
+          <popupMenus name="Focus Operations">
+            <menuItemDescriptions xsi:type="tool:OperationAction" name="Set Focus">
+              <view name="views"/>
+              <initialOperation>
+                <firstModelOperations xsi:type="tool:ExternalJavaActionCall" action="//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='ConnectedNeighbors']/@defaultLayer/@toolSections.0/@ownedTools[name='Set%20Focus']/@initialOperation/@firstModelOperations"/>
+              </initialOperation>
+            </menuItemDescriptions>
+            <menuItemDescriptions xsi:type="tool:OperationAction" name="Clear Focus">
+              <view name="views"/>
+              <initialOperation>
+                <firstModelOperations xsi:type="tool:ExternalJavaAction" name="DoClearAction" id="org.osate.asap.view.ClearFocusActionID"/>
+              </initialOperation>
+            </menuItemDescriptions>
+          </popupMenus>
+        </subItemMappings>
+        <popupMenus name="Focus Operations">
+          <menuItemDescriptions xsi:type="tool:OperationAction" name="Set Focus">
+            <view name="views"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:ExternalJavaAction" name="DoFocusAction" id="org.osate.asap.view.DoFocusActionID"/>
+            </initialOperation>
+          </menuItemDescriptions>
+          <menuItemDescriptions xsi:type="tool:OperationAction" name="Clear Focus">
+            <view name="views"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool:ExternalJavaAction" name="DoClearAction" id="org.osate.asap.view.ClearFocusActionID"/>
+            </initialOperation>
+          </menuItemDescriptions>
+        </popupMenus>
+      </subItemMappings>
+      <ownedRepresentationNavigationDescriptions xsi:type="description_2:TreeNavigationDescription" name="ToFundamentals" elementsToSelect="service:debug" treeDescription="//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='Fundamentals']">
+        <containerViewVariable name="containerView"/>
+        <containerVariable name="container"/>
+        <representationNameVariable name="treeName"/>
+      </ownedRepresentationNavigationDescriptions>
+    </ownedRepresentations>
+    <ownedRepresentations xsi:type="description_3:CrossTableDescription" endUserDocumentation="A table, similar to the unsafe control action table of STPA, showing the selected component's connections and the families of error types propagated on those convnections." name="TopLevelErrors" domainClass="instance.ComponentInstance">
+      <metamodel href="../../org.osate.aadl2/model/instance.ecore#/"/>
+      <metamodel href="../../org.osate.xtext.aadl2.errormodel/model/generated/ErrorModel.ecore#/"/>
+      <ownedRepresentationCreationDescriptions xsi:type="description_3:TableCreationDescription" name="Table Creation NewTopLevelErrors" tableDescription="//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='TopLevelErrors']">
+        <containerViewVariable name="containerView"/>
+        <representationNameVariable name="tableName"/>
+      </ownedRepresentationCreationDescriptions>
+      <ownedLineMappings name="ControlActionsTopLevelErrors" navigationDescriptions="//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='Fundamentals']/@ownedRepresentationNavigationDescriptions[name='ToFundamentals']" domainClass="instance.ConnectionInstance" semanticCandidatesExpression="service:getAllConnectionInstances(root)" headerLabelExpression="service:getControlActionRowHeader()">
+        <defaultForeground>
+          <foreGroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+        </defaultForeground>
+        <defaultBackground>
+          <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+        </defaultBackground>
+      </ownedLineMappings>
+      <ownedColumnMappings name="ErrorTypesTopLevelErrors" navigationDescriptions="//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='Fundamentals']/@ownedRepresentationNavigationDescriptions[name='ToFundamentals']" headerLabelExpression="service:getErrorTypeColumnHeader()" domainClass="errorModel.ErrorType" semanticCandidatesExpression="service:getRootErrorTypes()">
+        <defaultForeground>
+          <foreGroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+        </defaultForeground>
+        <defaultBackground>
+          <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+        </defaultBackground>
+      </ownedColumnMappings>
+      <intersection name="HasErrorTopLevelErrors" detailDescriptions="//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='UCA-Refinement']/@ownedRepresentationCreationDescriptions[name='CreateUCA-Refinement']" navigationDescriptions="//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='Fundamentals']/@ownedRepresentationNavigationDescriptions[name='ToFundamentals']" lineMapping="//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='TopLevelErrors']/@ownedLineMappings[name='ControlActionsTopLevelErrors']" columnMapping="//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='TopLevelErrors']/@ownedColumnMappings.0" labelExpression="X" columnFinderExpression="service:getRootErrorTypesByConnection()">
+        <foregroundConditionalStyle predicateExpression="service:isFocused()">
+          <style labelSize="8">
+            <labelFormat>bold</labelFormat>
+            <labelFormat>italic</labelFormat>
+            <foreGroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_red']"/>
+          </style>
+        </foregroundConditionalStyle>
+      </intersection>
+    </ownedRepresentations>
+    <ownedRepresentations xsi:type="description_3:CrossTableDescription" endUserDocumentation="A table, similar to the unsafe control action table of STPA, showing the selected component's connections and the specific error types in one family propagated on those convnections." name="UCA-Refinement" titleExpression="service:getUCARefinementTitle()" domainClass="instance.ComponentInstance">
+      <metamodel href="../../org.osate.aadl2/model/instance.ecore#/"/>
+      <metamodel href="../../org.osate.xtext.aadl2.errormodel/model/generated/ErrorModel.ecore#/"/>
+      <metamodel href="../../org.osate.asap.model/model/safe2.ecore#/"/>
+      <ownedRepresentationCreationDescriptions xsi:type="description_3:TableCreationDescription" name="CreateUCA-Refinement" browseExpression="service:getContainer()" tableDescription="//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='UCA-Refinement']">
+        <initialOperation>
+          <firstModelOperations xsi:type="tool:ExternalJavaAction" name="ForceVariableInitialization" id="org.osate.asap.view.ForceVariableInitializationActionID"/>
+        </initialOperation>
+        <containerViewVariable name="TLECellContainerView"/>
+        <representationNameVariable name="tableName"/>
+      </ownedRepresentationCreationDescriptions>
+      <ownedLineMappings name="ControlActionsUCA-Refinement" navigationDescriptions="//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='Fundamentals']/@ownedRepresentationNavigationDescriptions[name='ToFundamentals']" domainClass="instance.ConnectionInstance" headerLabelExpression="service:getControlActionRowHeader()">
+        <defaultForeground>
+          <foreGroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+        </defaultForeground>
+        <defaultBackground>
+          <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+        </defaultBackground>
+        <ownedSubLines name="secondLine" navigationDescriptions="//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='Fundamentals']/@ownedRepresentationNavigationDescriptions[name='ToFundamentals']" domainClass="instance.ConnectionInstance" semanticCandidatesExpression="service:duplicate()" headerLabelExpression="service:getControlActionRowHeader()"/>
+      </ownedLineMappings>
+      <ownedColumnMappings name="ErrorTypesUCA-Refinement" navigationDescriptions="//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='Fundamentals']/@ownedRepresentationNavigationDescriptions[name='ToFundamentals']" headerLabelExpression="service:getErrorTypeColumnHeader()" domainClass="errorModel.ErrorType" semanticCandidatesExpression="service:getFamilyErrorTypes(TLECellContainerView)">
+        <defaultForeground>
+          <foreGroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+        </defaultForeground>
+        <defaultBackground>
+          <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+        </defaultBackground>
+      </ownedColumnMappings>
+      <intersection name="HasErrorUCA-Refinement" navigationDescriptions="//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='Fundamentals']/@ownedRepresentationNavigationDescriptions[name='ToFundamentals']" lineMapping="//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='UCA-Refinement']/@ownedLineMappings[name='ControlActionsUCA-Refinement'] //@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='UCA-Refinement']/@ownedLineMappings[name='ControlActionsUCA-Refinement']/@ownedSubLines[name='secondLine']" columnMapping="//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='UCA-Refinement']/@ownedColumnMappings.0" labelExpression="service:getCauseAndCompensation(columnSemantic, line)" columnFinderExpression="service:getErrorTypesByConnection()">
+        <foregroundConditionalStyle predicateExpression="service:isFocused()">
+          <style labelSize="8">
+            <labelFormat>bold</labelFormat>
+            <labelFormat>italic</labelFormat>
+            <foreGroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_red']"/>
+          </style>
+        </foregroundConditionalStyle>
+      </intersection>
+    </ownedRepresentations>
+    <ownedJavaExtensions qualifiedClassName="org.osate.asap.view.Services"/>
+  </ownedViewpoints>
+</description:Group>

@@ -1,0 +1,17 @@
+package PulseOx_Forwarding_Clinician
+public
+	with ErrorLibrary, MAP_Errors, PulseOx_Forwarding_Errors;
+	with MAP_Properties;
+	abstract PulseOx_Forwarding_Clinician
+		features
+			ClinGetAdvice : in feature;
+			ClinViewSpO2 : in feature;
+			ClinTreatment : out feature;
+		properties
+			MAP_Properties::Component_Type => controller;
+	end PulseOx_Forwarding_Clinician;
+
+	abstract implementation PulseOx_Forwarding_Clinician.imp
+	end PulseOx_Forwarding_Clinician.imp;
+
+end PulseOx_Forwarding_Clinician;

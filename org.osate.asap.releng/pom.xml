@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+    xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.osate</groupId>
+    <artifactId>org.osate.asap.releng</artifactId>
+    <version>0.1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <parent>
+        <groupId>org.osate</groupId>
+        <artifactId>osate2.main-pom</artifactId>
+        <version>2.9.0-SNAPSHOT</version>
+    </parent>
+    <modules>
+        <module>../org.osate.asap.model</module>
+        <module>../org.osate.asap.model.edit</module>
+        <module>../org.osate.asap.model.editor</module>
+        <module>../org.osate.asap.view</module>
+        <module>../org.osate.asap.feature</module>
+        <module>../org.osate.asap.updatesite</module>
+    </modules>
+    <repositories>
+        <repository>
+            <id>osate</id>
+            <url>http://osate-build.sei.cmu.edu/download/osate/testing/updates/</url>
+            <layout>p2</layout>
+        </repository>
+        <repository>
+            <id>Sireum OSATE Plugin</id>
+            <url>https://raw.githubusercontent.com/sireum/osate-plugin-update-site/master/</url>
+            <layout>p2</layout>
+        </repository>
+    </repositories>
+</project>
