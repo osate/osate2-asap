@@ -78,6 +78,20 @@
   <setupTask
       xsi:type="setup.targlets:TargletTask">
     <targlet
+        name="Awas"
+        activeRepositoryList="${eclipse.target.platform}"
+        includeAllRequirements="false">
+      <requirement
+          name="*"/>
+      <sourceLocator
+          rootFolder="${git.clone.awas.location}"/>
+      <repositoryList
+          name="2020-06">
+        <repository
+            url="http://download.eclipse.org/releases/2020-06"/>
+      </repositoryList>
+    </targlet>
+    <targlet
         name="${scope.project.label}"
         activeRepositoryList="${eclipse.target.platform}">
       <requirement
@@ -88,29 +102,6 @@
           name="2020-06">
         <repository
             url="http://download.eclipse.org/releases/2020-06"/>
-      </repositoryList>
-      <repositoryList
-          name="2020-03">
-        <repository
-            url="http://download.eclipse.org/releases/2020-03"/>
-      </repositoryList>
-    </targlet>
-    <targlet
-        name="Awas"
-        activeRepositoryList="${eclipse.target.platform}">
-      <requirement
-          name="*"/>
-      <sourceLocator
-          rootFolder="${git.clone.awas.location}"/>
-      <repositoryList
-          name="2020-06">
-        <repository
-            url="http://download.eclipse.org/releases/2020-06"/>
-      </repositoryList>
-      <repositoryList
-          name="2020-03">
-        <repository
-            url="http://download.eclipse.org/releases/2020-03"/>
       </repositoryList>
     </targlet>
   </setupTask>
