@@ -3,7 +3,7 @@ Bundle-ManifestVersion: 2
 Bundle-Name: Tests
 Bundle-SymbolicName: org.osate.asap.view.tests
 Bundle-Version: 1.0.0.qualifier
-Fragment-Host: org.osate.asap.view;bundle-version="1.0.0"
+Fragment-Host: org.osate.asap.view;bundle-version="0.1.0"
 Automatic-Module-Name: org.osate.asap.view.tests
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Require-Bundle: org.junit,
