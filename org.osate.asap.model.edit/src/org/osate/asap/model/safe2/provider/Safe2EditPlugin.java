@@ -3,13 +3,9 @@
 package org.osate.asap.model.safe2.provider;
 
 import org.eclipse.emf.common.EMFPlugin;
-
 import org.eclipse.emf.common.util.ResourceLocator;
-
 import org.eclipse.emf.ecore.provider.EcoreEditPlugin;
-
 import org.osate.aadl2.provider.Aadl2EditPlugin;
-
 import org.osate.xtext.aadl2.errormodel.errorModel.provider.ErrorModelEditPlugin;
 
 /**
