@@ -4,5 +4,6 @@
       <category name="org.osate.asap.category"/>
    </feature>
    <category-def name="org.osate.asap.category" label="Architecture Supported Audit Processor"/>
-   <repository-reference location="http://raw.githubusercontent.com/sireum/osate-plugin-update-site/master/" enabled="true" />
+   <repository-reference location="http://raw.githubusercontent.com/sireum/osate-plugin-update-site/master/org.sireum.aadl.osate.update.site/site.xml" enabled="true" />
+   <repository-reference location="http://raw.githubusercontent.com/sireum/osate-plugin-update-site/master/org.sireum.aadl.osate.awas.update.site/site.xml" enabled="true" />
 </site>

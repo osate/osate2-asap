@@ -21,7 +21,6 @@
 				<version>${tycho.version}</version>
 				<configuration>
 					<finalName>osate2-asap-${unqualifiedVersion}.${buildQualifier}</finalName>
-					<includeAllDependencies>true</includeAllDependencies>
 				</configuration>
 			</plugin>
 		</plugins>
