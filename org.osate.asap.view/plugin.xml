@@ -38,6 +38,11 @@
            id="org.osate.asap.view.fundamentals"
            name="%fundamentals.label">
      </command>
+     <command
+           categoryId="org.osate.asap.view.category"
+           id="org.osate.asap.view.uca"
+           name="%uca.label">
+     </command>
   </extension>
   <extension
         point="org.eclipse.ui.handlers">
@@ -109,6 +114,40 @@
            </or>
         </enabledWhen>
      </handler>
+     <handler
+           class="org.osate.asap.view.handlers.UCAHandler"
+           commandId="org.osate.asap.view.uca">
+        <enabledWhen>
+           <or>
+              <reference
+                    definitionId="org.osate.core.isInstanceFileSelected">
+              </reference>
+              <with
+                    variable="selection">
+                 <and>
+                    <count
+                          value="1">
+                    </count>
+                    <iterate>
+                       <or>
+                          <instanceof
+                                value="org.osate.aadl2.instance.ComponentInstance">
+                          </instanceof>
+                          <adapt
+                                type="org.osate.aadl2.modelsupport.EObjectURIWrapper">
+                             <test
+                                   forcePluginActivation="true"
+                                   property="org.osate.aadl2.modelsupport.wrapperSuperType"
+                                   value="ComponentInstance">
+                             </test>
+                          </adapt>
+                       </or>
+                    </iterate>
+                 </and>
+              </with>
+           </or>
+        </enabledWhen>
+     </handler>
   </extension>
   <extension
         point="org.eclipse.ui.menus">
@@ -121,6 +160,10 @@
         </command>
         <command
               commandId="org.osate.asap.view.fundamentals"
+              style="push">
+        </command>
+        <command
+              commandId="org.osate.asap.view.uca"
               style="push">
         </command>
      </menuContribution>
