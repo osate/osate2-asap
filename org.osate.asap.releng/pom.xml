@@ -13,6 +13,8 @@
         <version>2.9.0-SNAPSHOT</version>
     </parent>
     <modules>
+        <module>../org.osate.asap.examples/examples/po-forwarding</module>
+        <module>../org.osate.asap.examples</module>
         <module>../org.osate.asap.model</module>
         <module>../org.osate.asap.model.edit</module>
         <module>../org.osate.asap.model.editor</module>

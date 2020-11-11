@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.osate.ui.examples">
+      <example
+            category="ASAP Examples"
+            exampleURI="/examples/po-forwarding"
+            name="Pulse Ox Forwarding"
+            readmeURI="doc/html/README.html">
+         <project path=""/>
+      </example>
+   </extension>
+
+</plugin>
