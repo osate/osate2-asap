@@ -6,7 +6,7 @@ The Architecture-Supported Audit Processor (ASAP) is a plugin to [OSATE](https:/
 
 ## Installing ASAP
 
-ASAP can be installed into OSATE (2.9.1+) by clicking `Help > Install New Software...` in the top menu bar. Then click `Add...` and add `https://osate-build.sei.cmu.edu/download/osate/experimental/osate2-asap/` Follow the standard installation process, and re-launch OSATE when prompted.
+ASAP can be installed into OSATE (2.9.1+) by clicking `Help > Install Additional OSATE Components` in the top menu bar. Then select `ASAP (Safety Views)` and click `Finish`. Follow the standard installation process, and re-launch OSATE when prompted.
 
 ## Using ASAP
 
