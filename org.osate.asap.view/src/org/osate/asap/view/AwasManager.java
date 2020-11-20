@@ -233,7 +233,10 @@ public class AwasManager {
 	public Collection<EObject> backwardReach(ComponentInstance component) {
 		ComponentInstance parent = component.getContainingComponentInstance();
 		initTableAndGraph(parent);
-		return urisToInstEObjs(parent, graphTableCache.get(parent).agi.backwardReachUsingNames(component.getName()));
+		Set<EObject> features = urisToInstEObjs(parent,
+				graphTableCache.get(parent).agi.backwardReachUsingNames(component.getName()));
+		// Hari's reach methods return features, rather than their containing components.
+		return features.stream().map(EObject::eContainer).collect(Collectors.toSet());
 	}
 
 
@@ -246,7 +249,10 @@ public class AwasManager {
 	public Collection<EObject> forwardReach(ComponentInstance component) {
 		ComponentInstance parent = component.getContainingComponentInstance();
 		initTableAndGraph(parent);
-		return urisToInstEObjs(parent, graphTableCache.get(parent).agi.forwardReachUsingNames(component.getName()));
+		Set<EObject> features = urisToInstEObjs(parent,
+				graphTableCache.get(parent).agi.forwardReachUsingNames(component.getName()));
+		// Hari's reach methods return features, rather than their containing components.
+		return features.stream().map(EObject::eContainer).collect(Collectors.toSet());
 	}
 
 	public Collection<EObject> getRootErrorTypesByConnection(ConnectionInstance self) {
