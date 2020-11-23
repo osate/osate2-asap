@@ -206,6 +206,7 @@ public class AwasManager {
 	 * @return Reachable components from the given parameters
 	 */
 	private Collection<EObject> reach(ErrorType et, FeatureInstance feature, boolean isForward) {
+		Set<EObject> ret;
 		// Get the parent since the supplied parameters are elements of the graph we want to analyze
 		// TODO: Add null check since features without parents can be passed in if, eg, the aaxl model is updated but the safe2 model isn't
 		ComponentInstance parent = feature.getContainingComponentInstance().getContainingComponentInstance();
@@ -216,12 +217,14 @@ public class AwasManager {
 		String error = EcoreUtil2.getContainerOfType(et, AadlPackageImpl.class).getName() + "." + et.getName();
 
 		if (isForward) {
-			return urisToInstEObjs(parent, gtc.agi.forwardErrorReachUsingNames(port, error)
-					.get(SymbolTableHelper.getUriFromString(gtc.table, feature.getComponentInstancePath()).get()));
+			ret = urisToInstEObjs(parent, gtc.agi.forwardErrorReachUsingNames(port, error).keySet());
 		} else {
-			return urisToInstEObjs(parent, gtc.agi.backwardErrorReachUsingNames(port, error)
-					.get(SymbolTableHelper.getUriFromString(gtc.table, feature.getComponentInstancePath()).get()));
+			ret = urisToInstEObjs(parent, gtc.agi.backwardErrorReachUsingNames(port, error).keySet());
 		}
+
+		// Hari's reach methods return features, rather than their containing components.
+		ret = ret.stream().map(EObject::eContainer).collect(Collectors.toSet());
+		return ret;
 	}
 
 	/**

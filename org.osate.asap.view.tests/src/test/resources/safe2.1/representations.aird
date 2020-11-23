@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/tree/description/1.0.0" xmlns:instance="http://aadl.info/AADL/2.0/instance" xmlns:safe2="http://www.example.org/safe2" xmlns:tree="http://www.eclipse.org/sirius/tree/1.0.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/tree/description/1.0.0 http://www.eclipse.org/sirius/tree/1.0.0#//description">
-  <viewpoint:DAnalysis uid="_gXW9IJuZEeqTg54o42Y3cA" selectedViews="_BcLo8JuaEeqTg54o42Y3cA" version="14.3.1.202003261200">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/tree/description/1.0.0" xmlns:description_2="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:instance="http://aadl.info/AADL/2.0/instance" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:safe2="http://www.example.org/safe2" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:tree="http://www.eclipse.org/sirius/tree/1.0.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/tree/description/1.0.0 http://www.eclipse.org/sirius/tree/1.0.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
+  <viewpoint:DAnalysis uid="_oq_NYC2rEeuap7VsJL811w" selectedViews="_ov0DAC2rEeuap7VsJL811w" version="14.3.1.202003261200">
+    <semanticResources>diagrams/PulseOx_Forwarding_System_imp_Instance.aadl_diagram</semanticResources>
+    <semanticResources>pca-interlock.safe2</semanticResources>
+    <semanticResources>pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2</semanticResources>
     <semanticResources>pulseox-forwarding/aadl/PulseOx_Forwarding_System.aadl</semanticResources>
-    <semanticResources>pulseox-forwarding/aadl/ErrorLibrary.aadl</semanticResources>
+    <semanticResources>platform:/plugin/org.osate.aadl2.errormodel.contrib/resources/packages/ErrorLibrary.aadl</semanticResources>
     <semanticResources>platform:/plugin/org.osate.aadl2.errormodel.contrib/resources/properties/EMV2.aadl</semanticResources>
-    <semanticResources>platform:/plugin/org.osate.workspace/resources/properties/Predeclared_Property_Sets/AADL_Project.aadl</semanticResources>
+    <semanticResources>platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/AADL_Project.aadl</semanticResources>
     <semanticResources>pulseox-forwarding/aadl/MAP_Errors.aadl</semanticResources>
     <semanticResources>pulseox-forwarding/aadl/PulseOx_Forwarding_Errors.aadl</semanticResources>
     <semanticResources>pulseox-forwarding/aadl/PulseOx_Interface.aadl</semanticResources>
@@ -14,132 +17,602 @@
     <semanticResources>pulseox-forwarding/aadl/MAP_Properties.aadl</semanticResources>
     <semanticResources>pulseox-forwarding/aadl/PulseOx_Forwarding_Logic.aadl</semanticResources>
     <semanticResources>pulseox-forwarding/aadl/MAP_Error_Properties.aadl</semanticResources>
-    <semanticResources>platform:/plugin/org.osate.workspace/resources/properties/Predeclared_Property_Sets/Thread_Properties.aadl</semanticResources>
+    <semanticResources>platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/Thread_Properties.aadl</semanticResources>
     <semanticResources>pulseox-forwarding/aadl/PulseOx_Forwarding_Display.aadl</semanticResources>
-    <semanticResources>platform:/plugin/org.osate.workspace/resources/properties/Predeclared_Property_Sets/Timing_Properties.aadl</semanticResources>
+    <semanticResources>platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/Timing_Properties.aadl</semanticResources>
     <semanticResources>pulseox-forwarding/aadl/PulseOx_Forwarding_Patient.aadl</semanticResources>
     <semanticResources>pulseox-forwarding/aadl/PulseOx_Forwarding_Clinician.aadl</semanticResources>
-    <semanticResources>platform:/plugin/org.osate.aadl2.errormodel.contrib/resources/packages/ErrorLibrary.aadl</semanticResources>
-    <semanticResources>pulseox-forwarding/aadl/PulseOx_Forwarding_Doctor.aadl</semanticResources>
     <semanticResources>pulseox-forwarding/aadl/PulseOx_Forwarding_EHR.aadl</semanticResources>
-    <semanticResources>platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/AADL_Project.aadl</semanticResources>
-    <semanticResources>platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/Thread_Properties.aadl</semanticResources>
-    <semanticResources>platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/Timing_Properties.aadl</semanticResources>
-    <semanticResources>pca-interlock.safe2</semanticResources>
-    <semanticResources>diagrams/PulseOx_Forwarding_System_imp_Instance.aadl_diagram</semanticResources>
-    <semanticResources>pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2</semanticResources>
+    <semanticResources>pulseox-forwarding/aadl/PulseOx_Forwarding_Doctor.aadl</semanticResources>
     <semanticResources>pulseox-forwarding/aadl/instances/reports/fta/applogic-out-logicderivedalarm-bogusalarm_trace.faulttree</semanticResources>
     <semanticResources>pulseox-forwarding/aadl/instances/reports/fta/applogic-out-logicderivedalarm-missedalarm_trace.faulttree</semanticResources>
     <semanticResources>pulseox-forwarding/aadl/instances/reports/fta/pulseox-out-pooutspo2-spo2valuehigh_trace.faulttree</semanticResources>
     <semanticResources>pulseox-forwarding/pulseox-forwarding.safe2</semanticResources>
-    <ownedViews xmi:type="viewpoint:DView" uid="_BcLo8JuaEeqTg54o42Y3cA">
+    <ownedViews xmi:type="viewpoint:DView" uid="_ov0DAC2rEeuap7VsJL811w">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']"/>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_1grroBMLEeuzId1e-1FxYQ" name="platform:/resource/safe2.1/pulseox-forwarding/pulseox-forwarding Fundamentals" repPath="#_1goBQBMLEeuzId1e-1FxYQ" changeId="9ce51af7-d648-4aa6-97f2-53c6bf545fd8">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_owBeYS2rEeuap7VsJL811w" name="Fundamentals" repPath="#_ov47gC2rEeuap7VsJL811w">
         <description xmi:type="description_1:TreeDescription" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='Fundamentals']"/>
-        <target xmi:type="safe2:SystemOverview" href="pulseox-forwarding/pulseox-forwarding.safe2#/"/>
+        <target xmi:type="safe2:SystemOverview" href="pca-interlock.safe2#/"/>
       </ownedRepresentationDescriptors>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_4mj3dRMLEeuzId1e-1FxYQ" name="PulseOx_Forwarding_System_imp_Instance Containment" repPath="#_4mipUBMLEeuzId1e-1FxYQ">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_owFIwS2rEeuap7VsJL811w" name="Containment" repPath="#_owDTkC2rEeuap7VsJL811w">
         <description xmi:type="description_1:TreeDescription" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='Containment']"/>
         <target xmi:type="instance:SystemInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#/"/>
       </ownedRepresentationDescriptors>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_owGW4S2rEeuap7VsJL811w" name="Containment" repPath="#_owFv0C2rEeuap7VsJL811w">
+        <description xmi:type="description_1:TreeDescription" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='Containment']"/>
+        <target xmi:type="instance:ComponentInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@componentInstance.0"/>
+      </ownedRepresentationDescriptors>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_owHlAS2rEeuap7VsJL811w" name="Containment" repPath="#_owG98C2rEeuap7VsJL811w">
+        <description xmi:type="description_1:TreeDescription" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='Containment']"/>
+        <target xmi:type="instance:ComponentInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@componentInstance.1"/>
+      </ownedRepresentationDescriptors>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_owIMEi2rEeuap7VsJL811w" name="Containment" repPath="#_owIMEC2rEeuap7VsJL811w">
+        <description xmi:type="description_1:TreeDescription" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='Containment']"/>
+        <target xmi:type="instance:ComponentInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@componentInstance.2"/>
+      </ownedRepresentationDescriptors>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_owIzIi2rEeuap7VsJL811w" name="Containment" repPath="#_owIzIC2rEeuap7VsJL811w">
+        <description xmi:type="description_1:TreeDescription" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='Containment']"/>
+        <target xmi:type="instance:ComponentInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@componentInstance.3"/>
+      </ownedRepresentationDescriptors>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_owJaMi2rEeuap7VsJL811w" name="Containment" repPath="#_owJaMC2rEeuap7VsJL811w">
+        <description xmi:type="description_1:TreeDescription" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='Containment']"/>
+        <target xmi:type="instance:ComponentInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@componentInstance.4"/>
+      </ownedRepresentationDescriptors>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_owKoUS2rEeuap7VsJL811w" name="Containment" repPath="#_owKBQC2rEeuap7VsJL811w">
+        <description xmi:type="description_1:TreeDescription" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='Containment']"/>
+        <target xmi:type="instance:ComponentInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@componentInstance.5"/>
+      </ownedRepresentationDescriptors>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_owLPYi2rEeuap7VsJL811w" name="Containment" repPath="#_owLPYC2rEeuap7VsJL811w">
+        <description xmi:type="description_1:TreeDescription" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='Containment']"/>
+        <target xmi:type="instance:ComponentInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@componentInstance.5/@componentInstance.0"/>
+      </ownedRepresentationDescriptors>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_owL2ci2rEeuap7VsJL811w" name="Containment" repPath="#_owL2cC2rEeuap7VsJL811w">
+        <description xmi:type="description_1:TreeDescription" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='Containment']"/>
+        <target xmi:type="instance:ComponentInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@componentInstance.5/@componentInstance.1"/>
+      </ownedRepresentationDescriptors>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_owMdhy2rEeuap7VsJL811w" name="Containment" repPath="#_owL2cy2rEeuap7VsJL811w">
+        <description xmi:type="description_1:TreeDescription" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='Containment']"/>
+        <target xmi:type="instance:ComponentInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@componentInstance.6"/>
+      </ownedRepresentationDescriptors>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_owNEki2rEeuap7VsJL811w" name="Containment" repPath="#_owNEkC2rEeuap7VsJL811w">
+        <description xmi:type="description_1:TreeDescription" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='Containment']"/>
+        <target xmi:type="instance:ComponentInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@componentInstance.6/@componentInstance.0"/>
+      </ownedRepresentationDescriptors>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_owOSsS2rEeuap7VsJL811w" name="Containment" repPath="#_owNroC2rEeuap7VsJL811w">
+        <description xmi:type="description_1:TreeDescription" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='Containment']"/>
+        <target xmi:type="instance:ComponentInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@componentInstance.6/@componentInstance.1"/>
+      </ownedRepresentationDescriptors>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_owTyRi2rEeuap7VsJL811w" name="Fundamentals" repPath="#_owTLMC2rEeuap7VsJL811w">
+        <description xmi:type="description_1:TreeDescription" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='Fundamentals']"/>
+        <target xmi:type="safe2:SystemOverview" href="pulseox-forwarding/pulseox-forwarding.safe2#/"/>
+      </ownedRepresentationDescriptors>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_oxBj8y2rEeuap7VsJL811w" name="PulseOx Forwarding System Fundamentals" repPath="#_oxA84C2rEeuap7VsJL811w" changeId="03f35973-0e92-4b80-8c1a-b5342b9eec8c">
+        <description xmi:type="description_1:TreeDescription" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='Fundamentals']"/>
+        <target xmi:type="safe2:SystemOverview" href="pca-interlock.safe2#/"/>
+      </ownedRepresentationDescriptors>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_xu4PxS2rEeuap7VsJL811w" name="PulseOx_Forwarding_System_imp_Instance Containment" repPath="#_xu3BoC2rEeuap7VsJL811w" changeId="3b527634-03f7-4368-8b8d-9f657ad67bdc">
+        <description xmi:type="description_1:TreeDescription" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='Containment']"/>
+        <target xmi:type="instance:SystemInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#/"/>
+      </ownedRepresentationDescriptors>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_zEf-4C2rEeuap7VsJL811w" name="Neighbors of appLogic" repPath="#_zEYDEC2rEeuap7VsJL811w" changeId="809f7c4c-5d4a-4abb-ab39-58a376e2f339">
+        <description xmi:type="description_2:DiagramDescription" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='ConnectedNeighbors']"/>
+        <target xmi:type="instance:ComponentInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@componentInstance.5"/>
+      </ownedRepresentationDescriptors>
     </ownedViews>
   </viewpoint:DAnalysis>
-  <tree:DTree uid="_1goBQBMLEeuzId1e-1FxYQ">
-    <target xmi:type="safe2:SystemOverview" href="pulseox-forwarding/pulseox-forwarding.safe2#/"/>
-    <ownedTreeItems xmi:type="tree:DTreeItem" uid="_1goBQRMLEeuzId1e-1FxYQ" name="DeathOrInjury" expanded="true">
-      <target xmi:type="safe2:AccidentLevel" href="pulseox-forwarding/pulseox-forwarding.safe2#//@fundamentals.0"/>
-      <ownedTreeItems xmi:type="tree:DTreeItem" uid="_1gooUBMLEeuzId1e-1FxYQ" name="PatientHarmed" expanded="true">
-        <target xmi:type="safe2:Accident" href="pulseox-forwarding/pulseox-forwarding.safe2#//@fundamentals.0/@accident.0"/>
-        <ownedTreeItems xmi:type="tree:DTreeItem" uid="_15XRYBMLEeuzId1e-1FxYQ" name="BadInfoDisplayed" expanded="true">
-          <target xmi:type="safe2:Hazard" href="pulseox-forwarding/pulseox-forwarding.safe2#//@fundamentals.0/@accident.0/@hazard.0"/>
-          <ownedTreeItems xmi:type="tree:DTreeItem" uid="_2Oo90BMLEeuzId1e-1FxYQ" name="ShowGoodInfo">
-            <target xmi:type="safe2:Constraint" href="pulseox-forwarding/pulseox-forwarding.safe2#//@fundamentals.0/@accident.0/@hazard.0/@constraint.0"/>
-            <semanticElements xmi:type="safe2:Constraint" href="pulseox-forwarding/pulseox-forwarding.safe2#//@fundamentals.0/@accident.0/@hazard.0/@constraint.0"/>
-            <ownedStyle xmi:type="tree:TreeItemStyle" uid="_2Oo90RMLEeuzId1e-1FxYQ"/>
-            <actualMapping xmi:type="description_1:TreeItemMapping" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='Fundamentals']/@subItemMappings[name='Accident%20Level']/@subItemMappings[name='Accident']/@subItemMappings[name='Hazard']/@subItemMappings[name='Constraint']"/>
-          </ownedTreeItems>
-          <semanticElements xmi:type="safe2:Hazard" href="pulseox-forwarding/pulseox-forwarding.safe2#//@fundamentals.0/@accident.0/@hazard.0"/>
-          <ownedStyle xmi:type="tree:TreeItemStyle" uid="_15XRYRMLEeuzId1e-1FxYQ"/>
-          <actualMapping xmi:type="description_1:TreeItemMapping" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='Fundamentals']/@subItemMappings[name='Accident%20Level']/@subItemMappings[name='Accident']/@subItemMappings[name='Hazard']"/>
-        </ownedTreeItems>
-        <ownedTreeItems xmi:type="tree:DTreeItem" uid="_2OoWwBMLEeuzId1e-1FxYQ" name="InfoLate">
-          <target xmi:type="safe2:Hazard" href="pulseox-forwarding/pulseox-forwarding.safe2#//@fundamentals.0/@accident.0/@hazard.1"/>
-          <ownedTreeItems xmi:type="tree:DTreeItem" uid="_2Oo90hMLEeuzId1e-1FxYQ">
-            <target xmi:type="safe2:Constraint" href="pulseox-forwarding/pulseox-forwarding.safe2#//@fundamentals.0/@accident.0/@hazard.1/@constraint.0"/>
-            <semanticElements xmi:type="safe2:Constraint" href="pulseox-forwarding/pulseox-forwarding.safe2#//@fundamentals.0/@accident.0/@hazard.1/@constraint.0"/>
-            <ownedStyle xmi:type="tree:TreeItemStyle" uid="_2Oo90xMLEeuzId1e-1FxYQ" labelColor="209,209,209" backgroundColor="209,209,209"/>
-            <actualMapping xmi:type="description_1:TreeItemMapping" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='Fundamentals']/@subItemMappings[name='Accident%20Level']/@subItemMappings[name='Accident']/@subItemMappings[name='Hazard']/@subItemMappings[name='Constraint']"/>
-          </ownedTreeItems>
-          <semanticElements xmi:type="safe2:Hazard" href="pulseox-forwarding/pulseox-forwarding.safe2#//@fundamentals.0/@accident.0/@hazard.1"/>
-          <ownedStyle xmi:type="tree:TreeItemStyle" uid="_2OoWwRMLEeuzId1e-1FxYQ"/>
-          <actualMapping xmi:type="description_1:TreeItemMapping" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='Fundamentals']/@subItemMappings[name='Accident%20Level']/@subItemMappings[name='Accident']/@subItemMappings[name='Hazard']"/>
-        </ownedTreeItems>
-        <semanticElements xmi:type="safe2:Accident" href="pulseox-forwarding/pulseox-forwarding.safe2#//@fundamentals.0/@accident.0"/>
-        <ownedStyle xmi:type="tree:TreeItemStyle" uid="_1gooURMLEeuzId1e-1FxYQ"/>
+  <tree:DTree uid="_ov47gC2rEeuap7VsJL811w">
+    <target xmi:type="safe2:SystemOverview" href="pca-interlock.safe2#/"/>
+    <ownedTreeItems xmi:type="tree:DTreeItem" uid="_ov5ikC2rEeuap7VsJL811w" name="DeathOrInjury">
+      <target xmi:type="safe2:AccidentLevel" href="pca-interlock.safe2#//@fundamentals.0"/>
+      <ownedTreeItems xmi:type="tree:DTreeItem" uid="_ov_CIC2rEeuap7VsJL811w">
+        <target xmi:type="safe2:Accident" href="pca-interlock.safe2#//@fundamentals.0/@accident.0"/>
+        <semanticElements xmi:type="safe2:Accident" href="pca-interlock.safe2#//@fundamentals.0/@accident.0"/>
+        <ownedStyle xmi:type="tree:TreeItemStyle" uid="_ov_CIS2rEeuap7VsJL811w" labelColor="209,209,209" backgroundColor="209,209,209"/>
         <actualMapping xmi:type="description_1:TreeItemMapping" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='Fundamentals']/@subItemMappings[name='Accident%20Level']/@subItemMappings[name='Accident']"/>
       </ownedTreeItems>
-      <semanticElements xmi:type="safe2:AccidentLevel" href="pulseox-forwarding/pulseox-forwarding.safe2#//@fundamentals.0"/>
-      <ownedStyle xmi:type="tree:TreeItemStyle" uid="_1goBQhMLEeuzId1e-1FxYQ"/>
+      <semanticElements xmi:type="safe2:AccidentLevel" href="pca-interlock.safe2#//@fundamentals.0"/>
+      <ownedStyle xmi:type="tree:TreeItemStyle" uid="_ov5ikS2rEeuap7VsJL811w"/>
       <actualMapping xmi:type="description_1:TreeItemMapping" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='Fundamentals']/@subItemMappings[name='Accident%20Level']"/>
     </ownedTreeItems>
     <description xmi:type="description_1:TreeDescription" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='Fundamentals']"/>
   </tree:DTree>
-  <tree:DTree uid="_4mipUBMLEeuzId1e-1FxYQ">
+  <tree:DTree uid="_owDTkC2rEeuap7VsJL811w">
     <target xmi:type="instance:SystemInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#/"/>
-    <ownedTreeItems xmi:type="tree:DTreeItem" uid="_4mjQYBMLEeuzId1e-1FxYQ" name="patient">
+    <ownedTreeItems xmi:type="tree:DTreeItem" uid="_owD6oC2rEeuap7VsJL811w" name="patient">
       <target xmi:type="instance:ComponentInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@componentInstance.0"/>
       <semanticElements xmi:type="instance:ComponentInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@componentInstance.0"/>
-      <ownedStyle xmi:type="tree:TreeItemStyle" uid="_4mjQYRMLEeuzId1e-1FxYQ"/>
+      <ownedStyle xmi:type="tree:TreeItemStyle" uid="_owD6oS2rEeuap7VsJL811w"/>
       <actualMapping xmi:type="description_1:TreeItemMapping" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='Containment']/@subItemMappings[name='component']"/>
     </ownedTreeItems>
-    <ownedTreeItems xmi:type="tree:DTreeItem" uid="_4mjQYxMLEeuzId1e-1FxYQ" name="clinician">
+    <ownedTreeItems xmi:type="tree:DTreeItem" uid="_owD6oy2rEeuap7VsJL811w" name="clinician">
       <target xmi:type="instance:ComponentInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@componentInstance.1"/>
       <semanticElements xmi:type="instance:ComponentInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@componentInstance.1"/>
-      <ownedStyle xmi:type="tree:TreeItemStyle" uid="_4mjQZBMLEeuzId1e-1FxYQ"/>
+      <ownedStyle xmi:type="tree:TreeItemStyle" uid="_owD6pC2rEeuap7VsJL811w"/>
       <actualMapping xmi:type="description_1:TreeItemMapping" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='Containment']/@subItemMappings[name='component']"/>
     </ownedTreeItems>
-    <ownedTreeItems xmi:type="tree:DTreeItem" uid="_4mjQZhMLEeuzId1e-1FxYQ" name="doctor">
+    <ownedTreeItems xmi:type="tree:DTreeItem" uid="_owEhsC2rEeuap7VsJL811w" name="doctor">
       <target xmi:type="instance:ComponentInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@componentInstance.2"/>
       <semanticElements xmi:type="instance:ComponentInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@componentInstance.2"/>
-      <ownedStyle xmi:type="tree:TreeItemStyle" uid="_4mjQZxMLEeuzId1e-1FxYQ"/>
+      <ownedStyle xmi:type="tree:TreeItemStyle" uid="_owEhsS2rEeuap7VsJL811w"/>
       <actualMapping xmi:type="description_1:TreeItemMapping" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='Containment']/@subItemMappings[name='component']"/>
     </ownedTreeItems>
-    <ownedTreeItems xmi:type="tree:DTreeItem" uid="_4mjQaRMLEeuzId1e-1FxYQ" name="pulseOx">
+    <ownedTreeItems xmi:type="tree:DTreeItem" uid="_owEhsy2rEeuap7VsJL811w" name="pulseOx">
       <target xmi:type="instance:ComponentInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@componentInstance.3"/>
       <semanticElements xmi:type="instance:ComponentInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@componentInstance.3"/>
-      <ownedStyle xmi:type="tree:TreeItemStyle" uid="_4mjQahMLEeuzId1e-1FxYQ"/>
+      <ownedStyle xmi:type="tree:TreeItemStyle" uid="_owEhtC2rEeuap7VsJL811w"/>
       <actualMapping xmi:type="description_1:TreeItemMapping" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='Containment']/@subItemMappings[name='component']"/>
     </ownedTreeItems>
-    <ownedTreeItems xmi:type="tree:DTreeItem" uid="_4mjQbBMLEeuzId1e-1FxYQ" name="electronicHealthRecord">
+    <ownedTreeItems xmi:type="tree:DTreeItem" uid="_owEhti2rEeuap7VsJL811w" name="electronicHealthRecord">
       <target xmi:type="instance:ComponentInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@componentInstance.4"/>
       <semanticElements xmi:type="instance:ComponentInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@componentInstance.4"/>
-      <ownedStyle xmi:type="tree:TreeItemStyle" uid="_4mjQbRMLEeuzId1e-1FxYQ"/>
+      <ownedStyle xmi:type="tree:TreeItemStyle" uid="_owEhty2rEeuap7VsJL811w"/>
       <actualMapping xmi:type="description_1:TreeItemMapping" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='Containment']/@subItemMappings[name='component']"/>
     </ownedTreeItems>
-    <ownedTreeItems xmi:type="tree:DTreeItem" uid="_4mjQbxMLEeuzId1e-1FxYQ" name="appLogic">
+    <ownedTreeItems xmi:type="tree:DTreeItem" uid="_owEhuS2rEeuap7VsJL811w" name="appLogic">
       <target xmi:type="instance:ComponentInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@componentInstance.5"/>
-      <ownedTreeItems xmi:type="tree:DTreeItem" uid="_4mj3cBMLEeuzId1e-1FxYQ">
+      <ownedTreeItems xmi:type="tree:DTreeItem" uid="_owEhvy2rEeuap7VsJL811w">
         <target xmi:type="instance:ComponentInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@componentInstance.5/@componentInstance.0"/>
         <semanticElements xmi:type="instance:ComponentInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@componentInstance.5/@componentInstance.0"/>
-        <ownedStyle xmi:type="tree:TreeItemStyle" uid="_4mj3cRMLEeuzId1e-1FxYQ" labelColor="209,209,209" backgroundColor="209,209,209"/>
+        <ownedStyle xmi:type="tree:TreeItemStyle" uid="_owEhwC2rEeuap7VsJL811w" labelColor="209,209,209" backgroundColor="209,209,209"/>
         <actualMapping xmi:type="description_1:TreeItemMapping" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='Containment']/@subItemMappings[name='component']/@subItemMappings[name='subcomponent']"/>
       </ownedTreeItems>
       <semanticElements xmi:type="instance:ComponentInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@componentInstance.5"/>
-      <ownedStyle xmi:type="tree:TreeItemStyle" uid="_4mjQcBMLEeuzId1e-1FxYQ"/>
+      <ownedStyle xmi:type="tree:TreeItemStyle" uid="_owEhui2rEeuap7VsJL811w"/>
       <actualMapping xmi:type="description_1:TreeItemMapping" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='Containment']/@subItemMappings[name='component']"/>
     </ownedTreeItems>
-    <ownedTreeItems xmi:type="tree:DTreeItem" uid="_4mjQchMLEeuzId1e-1FxYQ" name="appDisplay">
+    <ownedTreeItems xmi:type="tree:DTreeItem" uid="_owEhvC2rEeuap7VsJL811w" name="appDisplay">
       <target xmi:type="instance:ComponentInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@componentInstance.6"/>
-      <ownedTreeItems xmi:type="tree:DTreeItem" uid="_4mj3chMLEeuzId1e-1FxYQ">
+      <ownedTreeItems xmi:type="tree:DTreeItem" uid="_owEhwS2rEeuap7VsJL811w">
         <target xmi:type="instance:ComponentInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@componentInstance.6/@componentInstance.0"/>
         <semanticElements xmi:type="instance:ComponentInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@componentInstance.6/@componentInstance.0"/>
-        <ownedStyle xmi:type="tree:TreeItemStyle" uid="_4mj3cxMLEeuzId1e-1FxYQ" labelColor="209,209,209" backgroundColor="209,209,209"/>
+        <ownedStyle xmi:type="tree:TreeItemStyle" uid="_owEhwi2rEeuap7VsJL811w" labelColor="209,209,209" backgroundColor="209,209,209"/>
         <actualMapping xmi:type="description_1:TreeItemMapping" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='Containment']/@subItemMappings[name='component']/@subItemMappings[name='subcomponent']"/>
       </ownedTreeItems>
       <semanticElements xmi:type="instance:ComponentInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@componentInstance.6"/>
-      <ownedStyle xmi:type="tree:TreeItemStyle" uid="_4mjQcxMLEeuzId1e-1FxYQ"/>
+      <ownedStyle xmi:type="tree:TreeItemStyle" uid="_owEhvS2rEeuap7VsJL811w"/>
       <actualMapping xmi:type="description_1:TreeItemMapping" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='Containment']/@subItemMappings[name='component']"/>
     </ownedTreeItems>
     <description xmi:type="description_1:TreeDescription" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='Containment']"/>
   </tree:DTree>
+  <tree:DTree uid="_owFv0C2rEeuap7VsJL811w">
+    <target xmi:type="instance:ComponentInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@componentInstance.0"/>
+    <description xmi:type="description_1:TreeDescription" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='Containment']"/>
+  </tree:DTree>
+  <tree:DTree uid="_owG98C2rEeuap7VsJL811w">
+    <target xmi:type="instance:ComponentInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@componentInstance.1"/>
+    <description xmi:type="description_1:TreeDescription" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='Containment']"/>
+  </tree:DTree>
+  <tree:DTree uid="_owIMEC2rEeuap7VsJL811w">
+    <target xmi:type="instance:ComponentInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@componentInstance.2"/>
+    <description xmi:type="description_1:TreeDescription" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='Containment']"/>
+  </tree:DTree>
+  <tree:DTree uid="_owIzIC2rEeuap7VsJL811w">
+    <target xmi:type="instance:ComponentInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@componentInstance.3"/>
+    <description xmi:type="description_1:TreeDescription" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='Containment']"/>
+  </tree:DTree>
+  <tree:DTree uid="_owJaMC2rEeuap7VsJL811w">
+    <target xmi:type="instance:ComponentInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@componentInstance.4"/>
+    <description xmi:type="description_1:TreeDescription" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='Containment']"/>
+  </tree:DTree>
+  <tree:DTree uid="_owKBQC2rEeuap7VsJL811w">
+    <target xmi:type="instance:ComponentInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@componentInstance.5"/>
+    <ownedTreeItems xmi:type="tree:DTreeItem" uid="_owKBQS2rEeuap7VsJL811w" name="SpO2Val">
+      <target xmi:type="instance:ComponentInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@componentInstance.5/@componentInstance.0"/>
+      <semanticElements xmi:type="instance:ComponentInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@componentInstance.5/@componentInstance.0"/>
+      <ownedStyle xmi:type="tree:TreeItemStyle" uid="_owKBQi2rEeuap7VsJL811w"/>
+      <actualMapping xmi:type="description_1:TreeItemMapping" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='Containment']/@subItemMappings[name='component']"/>
+    </ownedTreeItems>
+    <ownedTreeItems xmi:type="tree:DTreeItem" uid="_owKBRC2rEeuap7VsJL811w" name="CheckSpO2Thread">
+      <target xmi:type="instance:ComponentInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@componentInstance.5/@componentInstance.1"/>
+      <semanticElements xmi:type="instance:ComponentInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@componentInstance.5/@componentInstance.1"/>
+      <ownedStyle xmi:type="tree:TreeItemStyle" uid="_owKBRS2rEeuap7VsJL811w"/>
+      <actualMapping xmi:type="description_1:TreeItemMapping" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='Containment']/@subItemMappings[name='component']"/>
+    </ownedTreeItems>
+    <description xmi:type="description_1:TreeDescription" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='Containment']"/>
+  </tree:DTree>
+  <tree:DTree uid="_owLPYC2rEeuap7VsJL811w">
+    <target xmi:type="instance:ComponentInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@componentInstance.5/@componentInstance.0"/>
+    <description xmi:type="description_1:TreeDescription" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='Containment']"/>
+  </tree:DTree>
+  <tree:DTree uid="_owL2cC2rEeuap7VsJL811w">
+    <target xmi:type="instance:ComponentInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@componentInstance.5/@componentInstance.1"/>
+    <description xmi:type="description_1:TreeDescription" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='Containment']"/>
+  </tree:DTree>
+  <tree:DTree uid="_owL2cy2rEeuap7VsJL811w">
+    <target xmi:type="instance:ComponentInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@componentInstance.6"/>
+    <ownedTreeItems xmi:type="tree:DTreeItem" uid="_owMdgC2rEeuap7VsJL811w" name="UpdateSpO2Thread">
+      <target xmi:type="instance:ComponentInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@componentInstance.6/@componentInstance.0"/>
+      <semanticElements xmi:type="instance:ComponentInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@componentInstance.6/@componentInstance.0"/>
+      <ownedStyle xmi:type="tree:TreeItemStyle" uid="_owMdgS2rEeuap7VsJL811w"/>
+      <actualMapping xmi:type="description_1:TreeItemMapping" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='Containment']/@subItemMappings[name='component']"/>
+    </ownedTreeItems>
+    <ownedTreeItems xmi:type="tree:DTreeItem" uid="_owMdgy2rEeuap7VsJL811w" name="HandleAlarmThread">
+      <target xmi:type="instance:ComponentInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@componentInstance.6/@componentInstance.1"/>
+      <semanticElements xmi:type="instance:ComponentInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@componentInstance.6/@componentInstance.1"/>
+      <ownedStyle xmi:type="tree:TreeItemStyle" uid="_owMdhC2rEeuap7VsJL811w"/>
+      <actualMapping xmi:type="description_1:TreeItemMapping" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='Containment']/@subItemMappings[name='component']"/>
+    </ownedTreeItems>
+    <description xmi:type="description_1:TreeDescription" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='Containment']"/>
+  </tree:DTree>
+  <tree:DTree uid="_owNEkC2rEeuap7VsJL811w">
+    <target xmi:type="instance:ComponentInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@componentInstance.6/@componentInstance.0"/>
+    <description xmi:type="description_1:TreeDescription" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='Containment']"/>
+  </tree:DTree>
+  <tree:DTree uid="_owNroC2rEeuap7VsJL811w">
+    <target xmi:type="instance:ComponentInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@componentInstance.6/@componentInstance.1"/>
+    <description xmi:type="description_1:TreeDescription" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='Containment']"/>
+  </tree:DTree>
+  <tree:DTree uid="_owTLMC2rEeuap7VsJL811w">
+    <target xmi:type="safe2:SystemOverview" href="pulseox-forwarding/pulseox-forwarding.safe2#/"/>
+    <ownedTreeItems xmi:type="tree:DTreeItem" uid="_owTyQC2rEeuap7VsJL811w" name="DeathOrInjury">
+      <target xmi:type="safe2:AccidentLevel" href="pulseox-forwarding/pulseox-forwarding.safe2#//@fundamentals.0"/>
+      <ownedTreeItems xmi:type="tree:DTreeItem" uid="_owTyQy2rEeuap7VsJL811w">
+        <target xmi:type="safe2:Accident" href="pulseox-forwarding/pulseox-forwarding.safe2#//@fundamentals.0/@accident.0"/>
+        <semanticElements xmi:type="safe2:Accident" href="pulseox-forwarding/pulseox-forwarding.safe2#//@fundamentals.0/@accident.0"/>
+        <ownedStyle xmi:type="tree:TreeItemStyle" uid="_owTyRC2rEeuap7VsJL811w" labelColor="209,209,209" backgroundColor="209,209,209"/>
+        <actualMapping xmi:type="description_1:TreeItemMapping" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='Fundamentals']/@subItemMappings[name='Accident%20Level']/@subItemMappings[name='Accident']"/>
+      </ownedTreeItems>
+      <semanticElements xmi:type="safe2:AccidentLevel" href="pulseox-forwarding/pulseox-forwarding.safe2#//@fundamentals.0"/>
+      <ownedStyle xmi:type="tree:TreeItemStyle" uid="_owTyQS2rEeuap7VsJL811w"/>
+      <actualMapping xmi:type="description_1:TreeItemMapping" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='Fundamentals']/@subItemMappings[name='Accident%20Level']"/>
+    </ownedTreeItems>
+    <description xmi:type="description_1:TreeDescription" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='Fundamentals']"/>
+  </tree:DTree>
+  <tree:DTree uid="_oxA84C2rEeuap7VsJL811w">
+    <target xmi:type="safe2:SystemOverview" href="pca-interlock.safe2#/"/>
+    <ownedTreeItems xmi:type="tree:DTreeItem" uid="_oxA84S2rEeuap7VsJL811w" name="DeathOrInjury" expanded="true">
+      <target xmi:type="safe2:AccidentLevel" href="pca-interlock.safe2#//@fundamentals.0"/>
+      <ownedTreeItems xmi:type="tree:DTreeItem" uid="_oxBj8C2rEeuap7VsJL811w" name="PatientHarmed" expanded="true">
+        <target xmi:type="safe2:Accident" href="pca-interlock.safe2#//@fundamentals.0/@accident.0"/>
+        <ownedTreeItems xmi:type="tree:DTreeItem" uid="_pHAbAC2rEeuap7VsJL811w" name="BadInfoDisplayed" expanded="true">
+          <target xmi:type="safe2:Hazard" href="pca-interlock.safe2#//@fundamentals.0/@accident.0/@hazard.0"/>
+          <ownedTreeItems xmi:type="tree:DTreeItem" uid="_pO7n8y2rEeuap7VsJL811w" name="ShowGoodInfo">
+            <target xmi:type="safe2:Constraint" href="pca-interlock.safe2#//@fundamentals.0/@accident.0/@hazard.0/@constraint.0"/>
+            <semanticElements xmi:type="safe2:Constraint" href="pca-interlock.safe2#//@fundamentals.0/@accident.0/@hazard.0/@constraint.0"/>
+            <ownedStyle xmi:type="tree:TreeItemStyle" uid="_pO7n9C2rEeuap7VsJL811w"/>
+            <actualMapping xmi:type="description_1:TreeItemMapping" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='Fundamentals']/@subItemMappings[name='Accident%20Level']/@subItemMappings[name='Accident']/@subItemMappings[name='Hazard']/@subItemMappings[name='Constraint']"/>
+          </ownedTreeItems>
+          <semanticElements xmi:type="safe2:Hazard" href="pca-interlock.safe2#//@fundamentals.0/@accident.0/@hazard.0"/>
+          <ownedStyle xmi:type="tree:TreeItemStyle" uid="_pHAbAS2rEeuap7VsJL811w"/>
+          <actualMapping xmi:type="description_1:TreeItemMapping" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='Fundamentals']/@subItemMappings[name='Accident%20Level']/@subItemMappings[name='Accident']/@subItemMappings[name='Hazard']"/>
+        </ownedTreeItems>
+        <ownedTreeItems xmi:type="tree:DTreeItem" uid="_pO7n8C2rEeuap7VsJL811w" name="InfoLate">
+          <target xmi:type="safe2:Hazard" href="pca-interlock.safe2#//@fundamentals.0/@accident.0/@hazard.1"/>
+          <ownedTreeItems xmi:type="tree:DTreeItem" uid="_pO7n9S2rEeuap7VsJL811w">
+            <target xmi:type="safe2:Constraint" href="pca-interlock.safe2#//@fundamentals.0/@accident.0/@hazard.1/@constraint.0"/>
+            <semanticElements xmi:type="safe2:Constraint" href="pca-interlock.safe2#//@fundamentals.0/@accident.0/@hazard.1/@constraint.0"/>
+            <ownedStyle xmi:type="tree:TreeItemStyle" uid="_pO7n9i2rEeuap7VsJL811w" labelColor="209,209,209" backgroundColor="209,209,209"/>
+            <actualMapping xmi:type="description_1:TreeItemMapping" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='Fundamentals']/@subItemMappings[name='Accident%20Level']/@subItemMappings[name='Accident']/@subItemMappings[name='Hazard']/@subItemMappings[name='Constraint']"/>
+          </ownedTreeItems>
+          <semanticElements xmi:type="safe2:Hazard" href="pca-interlock.safe2#//@fundamentals.0/@accident.0/@hazard.1"/>
+          <ownedStyle xmi:type="tree:TreeItemStyle" uid="_pO7n8S2rEeuap7VsJL811w"/>
+          <actualMapping xmi:type="description_1:TreeItemMapping" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='Fundamentals']/@subItemMappings[name='Accident%20Level']/@subItemMappings[name='Accident']/@subItemMappings[name='Hazard']"/>
+        </ownedTreeItems>
+        <semanticElements xmi:type="safe2:Accident" href="pca-interlock.safe2#//@fundamentals.0/@accident.0"/>
+        <ownedStyle xmi:type="tree:TreeItemStyle" uid="_oxBj8S2rEeuap7VsJL811w"/>
+        <actualMapping xmi:type="description_1:TreeItemMapping" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='Fundamentals']/@subItemMappings[name='Accident%20Level']/@subItemMappings[name='Accident']"/>
+      </ownedTreeItems>
+      <semanticElements xmi:type="safe2:AccidentLevel" href="pca-interlock.safe2#//@fundamentals.0"/>
+      <ownedStyle xmi:type="tree:TreeItemStyle" uid="_oxA84i2rEeuap7VsJL811w"/>
+      <actualMapping xmi:type="description_1:TreeItemMapping" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='Fundamentals']/@subItemMappings[name='Accident%20Level']"/>
+    </ownedTreeItems>
+    <description xmi:type="description_1:TreeDescription" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='Fundamentals']"/>
+  </tree:DTree>
+  <tree:DTree uid="_xu3BoC2rEeuap7VsJL811w">
+    <target xmi:type="instance:SystemInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#/"/>
+    <ownedTreeItems xmi:type="tree:DTreeItem" uid="_xu3BoS2rEeuap7VsJL811w" name="patient">
+      <target xmi:type="instance:ComponentInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@componentInstance.0"/>
+      <semanticElements xmi:type="instance:ComponentInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@componentInstance.0"/>
+      <ownedStyle xmi:type="tree:TreeItemStyle" uid="_xu3Boi2rEeuap7VsJL811w"/>
+      <actualMapping xmi:type="description_1:TreeItemMapping" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='Containment']/@subItemMappings[name='component']"/>
+    </ownedTreeItems>
+    <ownedTreeItems xmi:type="tree:DTreeItem" uid="_xu3osS2rEeuap7VsJL811w" name="clinician">
+      <target xmi:type="instance:ComponentInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@componentInstance.1"/>
+      <semanticElements xmi:type="instance:ComponentInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@componentInstance.1"/>
+      <ownedStyle xmi:type="tree:TreeItemStyle" uid="_xu3osi2rEeuap7VsJL811w"/>
+      <actualMapping xmi:type="description_1:TreeItemMapping" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='Containment']/@subItemMappings[name='component']"/>
+    </ownedTreeItems>
+    <ownedTreeItems xmi:type="tree:DTreeItem" uid="_xu3otC2rEeuap7VsJL811w" name="doctor">
+      <target xmi:type="instance:ComponentInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@componentInstance.2"/>
+      <semanticElements xmi:type="instance:ComponentInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@componentInstance.2"/>
+      <ownedStyle xmi:type="tree:TreeItemStyle" uid="_xu3otS2rEeuap7VsJL811w"/>
+      <actualMapping xmi:type="description_1:TreeItemMapping" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='Containment']/@subItemMappings[name='component']"/>
+    </ownedTreeItems>
+    <ownedTreeItems xmi:type="tree:DTreeItem" uid="_xu3oty2rEeuap7VsJL811w" name="pulseOx">
+      <target xmi:type="instance:ComponentInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@componentInstance.3"/>
+      <semanticElements xmi:type="instance:ComponentInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@componentInstance.3"/>
+      <ownedStyle xmi:type="tree:TreeItemStyle" uid="_xu3ouC2rEeuap7VsJL811w"/>
+      <actualMapping xmi:type="description_1:TreeItemMapping" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='Containment']/@subItemMappings[name='component']"/>
+    </ownedTreeItems>
+    <ownedTreeItems xmi:type="tree:DTreeItem" uid="_xu3oui2rEeuap7VsJL811w" name="electronicHealthRecord">
+      <target xmi:type="instance:ComponentInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@componentInstance.4"/>
+      <semanticElements xmi:type="instance:ComponentInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@componentInstance.4"/>
+      <ownedStyle xmi:type="tree:TreeItemStyle" uid="_xu3ouy2rEeuap7VsJL811w"/>
+      <actualMapping xmi:type="description_1:TreeItemMapping" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='Containment']/@subItemMappings[name='component']"/>
+    </ownedTreeItems>
+    <ownedTreeItems xmi:type="tree:DTreeItem" uid="_xu3ovS2rEeuap7VsJL811w" name="appLogic" expanded="true">
+      <target xmi:type="instance:ComponentInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@componentInstance.5"/>
+      <ownedTreeItems xmi:type="tree:DTreeItem" uid="_xu4PwC2rEeuap7VsJL811w" name="SpO2Val">
+        <target xmi:type="instance:ComponentInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@componentInstance.5/@componentInstance.0"/>
+        <semanticElements xmi:type="instance:ComponentInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@componentInstance.5/@componentInstance.0"/>
+        <ownedStyle xmi:type="tree:TreeItemStyle" uid="_xu4PwS2rEeuap7VsJL811w"/>
+        <actualMapping xmi:type="description_1:TreeItemMapping" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='Containment']/@subItemMappings[name='component']/@subItemMappings[name='subcomponent']"/>
+      </ownedTreeItems>
+      <ownedTreeItems xmi:type="tree:DTreeItem" uid="_yFD7IC2rEeuap7VsJL811w" name="CheckSpO2Thread">
+        <target xmi:type="instance:ComponentInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@componentInstance.5/@componentInstance.1"/>
+        <semanticElements xmi:type="instance:ComponentInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@componentInstance.5/@componentInstance.1"/>
+        <ownedStyle xmi:type="tree:TreeItemStyle" uid="_yFD7IS2rEeuap7VsJL811w"/>
+        <actualMapping xmi:type="description_1:TreeItemMapping" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='Containment']/@subItemMappings[name='component']/@subItemMappings[name='subcomponent']"/>
+      </ownedTreeItems>
+      <semanticElements xmi:type="instance:ComponentInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@componentInstance.5"/>
+      <ownedStyle xmi:type="tree:TreeItemStyle" uid="_xu3ovi2rEeuap7VsJL811w"/>
+      <actualMapping xmi:type="description_1:TreeItemMapping" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='Containment']/@subItemMappings[name='component']"/>
+    </ownedTreeItems>
+    <ownedTreeItems xmi:type="tree:DTreeItem" uid="_xu3owC2rEeuap7VsJL811w" name="appDisplay">
+      <target xmi:type="instance:ComponentInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@componentInstance.6"/>
+      <ownedTreeItems xmi:type="tree:DTreeItem" uid="_xu4Pwi2rEeuap7VsJL811w">
+        <target xmi:type="instance:ComponentInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@componentInstance.6/@componentInstance.0"/>
+        <semanticElements xmi:type="instance:ComponentInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@componentInstance.6/@componentInstance.0"/>
+        <ownedStyle xmi:type="tree:TreeItemStyle" uid="_xu4Pwy2rEeuap7VsJL811w" labelColor="209,209,209" backgroundColor="209,209,209"/>
+        <actualMapping xmi:type="description_1:TreeItemMapping" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='Containment']/@subItemMappings[name='component']/@subItemMappings[name='subcomponent']"/>
+      </ownedTreeItems>
+      <semanticElements xmi:type="instance:ComponentInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@componentInstance.6"/>
+      <ownedStyle xmi:type="tree:TreeItemStyle" uid="_xu3owS2rEeuap7VsJL811w"/>
+      <actualMapping xmi:type="description_1:TreeItemMapping" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='Containment']/@subItemMappings[name='component']"/>
+    </ownedTreeItems>
+    <description xmi:type="description_1:TreeDescription" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='Containment']"/>
+  </tree:DTree>
+  <diagram:DSemanticDiagram uid="_zEYDEC2rEeuap7VsJL811w">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_zEew1C2rEeuap7VsJL811w" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_zEfX0C2rEeuap7VsJL811w"/>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_zEk3YC2rEeuap7VsJL811w" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_zEk3YS2rEeuap7VsJL811w" type="Sirius" element="_zEYDEC2rEeuap7VsJL811w" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_zEmFgC2rEeuap7VsJL811w" type="2001" element="_zEafUC2rEeuap7VsJL811w">
+          <children xmi:type="notation:Node" xmi:id="_zEnToC2rEeuap7VsJL811w" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_zEnToS2rEeuap7VsJL811w" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_zEpv4C2rEeuap7VsJL811w" type="3004" element="_zEbGYC2rEeuap7VsJL811w">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_zEpv4S2rEeuap7VsJL811w" fontName=".AppleSystemUIFont"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zEpv4i2rEeuap7VsJL811w"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_zEmFgS2rEeuap7VsJL811w" fontName=".AppleSystemUIFont" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zEmFgi2rEeuap7VsJL811w" y="261" width="200" height="200"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_zEn6sC2rEeuap7VsJL811w" type="2001" element="_zEbtcC2rEeuap7VsJL811w">
+          <children xmi:type="notation:Node" xmi:id="_zEohwC2rEeuap7VsJL811w" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_zEohwS2rEeuap7VsJL811w" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_zEpv4y2rEeuap7VsJL811w" type="3004" element="_zEbtcS2rEeuap7VsJL811w">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_zEpv5C2rEeuap7VsJL811w" fontName=".AppleSystemUIFont"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zEpv5S2rEeuap7VsJL811w"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_zEn6sS2rEeuap7VsJL811w" fontName=".AppleSystemUIFont" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zEn6si2rEeuap7VsJL811w" x="27" y="522" width="200" height="200"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_zEohwi2rEeuap7VsJL811w" type="2001" element="_zEbtcy2rEeuap7VsJL811w">
+          <children xmi:type="notation:Node" xmi:id="_zEohxS2rEeuap7VsJL811w" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_zEohxi2rEeuap7VsJL811w" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_zEpv5i2rEeuap7VsJL811w" type="3004" element="_zEbtdC2rEeuap7VsJL811w">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_zEpv5y2rEeuap7VsJL811w" fontName=".AppleSystemUIFont"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zEpv6C2rEeuap7VsJL811w"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_zEohwy2rEeuap7VsJL811w" fontName=".AppleSystemUIFont" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zEohxC2rEeuap7VsJL811w" x="144" width="200" height="200"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_zEohxy2rEeuap7VsJL811w" type="2001" element="_zEc7kC2rEeuap7VsJL811w">
+          <children xmi:type="notation:Node" xmi:id="_zEpI0C2rEeuap7VsJL811w" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_zEpI0S2rEeuap7VsJL811w" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_zEqW8C2rEeuap7VsJL811w" type="3004" element="_zEc7kS2rEeuap7VsJL811w">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_zEqW8S2rEeuap7VsJL811w" fontName=".AppleSystemUIFont"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zEqW8i2rEeuap7VsJL811w"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_zEohyC2rEeuap7VsJL811w" fontName=".AppleSystemUIFont" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zEohyS2rEeuap7VsJL811w" x="180" y="1044" width="200" height="200"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_zEpI0i2rEeuap7VsJL811w" type="2001" element="_zEc7ky2rEeuap7VsJL811w">
+          <children xmi:type="notation:Node" xmi:id="_zEpI1S2rEeuap7VsJL811w" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_zEpI1i2rEeuap7VsJL811w" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_zEqW8y2rEeuap7VsJL811w" type="3004" element="_zEc7lC2rEeuap7VsJL811w">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_zEqW9C2rEeuap7VsJL811w" fontName=".AppleSystemUIFont"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zEqW9S2rEeuap7VsJL811w"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_zEpI0y2rEeuap7VsJL811w" fontName=".AppleSystemUIFont" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zEpI1C2rEeuap7VsJL811w" x="27" y="783" width="200" height="200"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_zEk3Yi2rEeuap7VsJL811w"/>
+        <edges xmi:type="notation:Edge" xmi:id="_zErlEC2rEeuap7VsJL811w" type="4001" element="_zEeJsC2rEeuap7VsJL811w" source="_zEmFgC2rEeuap7VsJL811w" target="_zEohwi2rEeuap7VsJL811w">
+          <children xmi:type="notation:Node" xmi:id="_zEsMIC2rEeuap7VsJL811w" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zEsMIS2rEeuap7VsJL811w" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_zEszMC2rEeuap7VsJL811w" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zEszMS2rEeuap7VsJL811w" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_zEtaQC2rEeuap7VsJL811w" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zEtaQS2rEeuap7VsJL811w" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_zErlES2rEeuap7VsJL811w"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_zErlEi2rEeuap7VsJL811w" fontName=".AppleSystemUIFont" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_zErlEy2rEeuap7VsJL811w" points="[0, 0, -145, 60]$[145, -60, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zExrsC2rEeuap7VsJL811w" id="(0.5,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zExrsS2rEeuap7VsJL811w" id="(0.5,1.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_zEySwC2rEeuap7VsJL811w" type="4001" element="_zEeJtS2rEeuap7VsJL811w" source="_zEn6sC2rEeuap7VsJL811w" target="_zEmFgC2rEeuap7VsJL811w">
+          <children xmi:type="notation:Node" xmi:id="_zEySxC2rEeuap7VsJL811w" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zEySxS2rEeuap7VsJL811w" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_zEySxi2rEeuap7VsJL811w" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zEySxy2rEeuap7VsJL811w" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_zEySyC2rEeuap7VsJL811w" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zEySyS2rEeuap7VsJL811w" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_zEySwS2rEeuap7VsJL811w"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_zEySwi2rEeuap7VsJL811w" fontName=".AppleSystemUIFont" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_zEySwy2rEeuap7VsJL811w" points="[0, 0, 31, 60]$[-31, -60, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zEySyi2rEeuap7VsJL811w" id="(0.5,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zEy50C2rEeuap7VsJL811w" id="(0.5,1.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_zEy50S2rEeuap7VsJL811w" type="4001" element="_zEewwC2rEeuap7VsJL811w" source="_zEn6sC2rEeuap7VsJL811w" target="_zEohwi2rEeuap7VsJL811w">
+          <children xmi:type="notation:Node" xmi:id="_zEy51S2rEeuap7VsJL811w" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zEy51i2rEeuap7VsJL811w" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_zEy51y2rEeuap7VsJL811w" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zEy52C2rEeuap7VsJL811w" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_zEy52S2rEeuap7VsJL811w" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zEy52i2rEeuap7VsJL811w" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_zEy50i2rEeuap7VsJL811w"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_zEy50y2rEeuap7VsJL811w" fontName=".AppleSystemUIFont" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_zEy51C2rEeuap7VsJL811w" points="[0, 0, -114, 320]$[113, -61, -1, 259]$[114, -320, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zEy52y2rEeuap7VsJL811w" id="(0.5,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zEy53C2rEeuap7VsJL811w" id="(0.5,1.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_zEy53S2rEeuap7VsJL811w" type="4001" element="_zEewxS2rEeuap7VsJL811w" source="_zEohwi2rEeuap7VsJL811w" target="_zEohxy2rEeuap7VsJL811w">
+          <children xmi:type="notation:Node" xmi:id="_zEy54S2rEeuap7VsJL811w" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zEy54i2rEeuap7VsJL811w" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_zEzg4C2rEeuap7VsJL811w" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zEzg4S2rEeuap7VsJL811w" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_zEzg4i2rEeuap7VsJL811w" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zEzg4y2rEeuap7VsJL811w" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_zEy53i2rEeuap7VsJL811w"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_zEy53y2rEeuap7VsJL811w" fontName=".AppleSystemUIFont" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_zEy54C2rEeuap7VsJL811w" points="[0, 0, -31, -840]$[30, 60, -1, -780]$[31, 840, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zEzg5C2rEeuap7VsJL811w" id="(0.5,1.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zEzg5S2rEeuap7VsJL811w" id="(0.5,0.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_zEzg5i2rEeuap7VsJL811w" type="4001" element="_zEewyi2rEeuap7VsJL811w" source="_zEohxy2rEeuap7VsJL811w" target="_zEpI0i2rEeuap7VsJL811w">
+          <children xmi:type="notation:Node" xmi:id="_zEzg6i2rEeuap7VsJL811w" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zEzg6y2rEeuap7VsJL811w" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_zEzg7C2rEeuap7VsJL811w" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zEzg7S2rEeuap7VsJL811w" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_zEzg7i2rEeuap7VsJL811w" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zEzg7y2rEeuap7VsJL811w" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_zEzg5y2rEeuap7VsJL811w"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_zEzg6C2rEeuap7VsJL811w" fontName=".AppleSystemUIFont" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_zEzg6S2rEeuap7VsJL811w" points="[0, 0, 145, 60]$[-145, -60, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zE0H8C2rEeuap7VsJL811w" id="(0.5,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zE0H8S2rEeuap7VsJL811w" id="(0.5,1.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_zE0H8i2rEeuap7VsJL811w" type="4001" element="_zEewzy2rEeuap7VsJL811w" source="_zEpI0i2rEeuap7VsJL811w" target="_zEn6sC2rEeuap7VsJL811w">
+          <children xmi:type="notation:Node" xmi:id="_zE0H9i2rEeuap7VsJL811w" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zE0H9y2rEeuap7VsJL811w" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_zE0H-C2rEeuap7VsJL811w" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zE0H-S2rEeuap7VsJL811w" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_zE0H-i2rEeuap7VsJL811w" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zE0H-y2rEeuap7VsJL811w" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_zE0H8y2rEeuap7VsJL811w"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_zE0H9C2rEeuap7VsJL811w" fontName=".AppleSystemUIFont" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_zE0H9S2rEeuap7VsJL811w" points="[0, 0, 0, 60]$[0, -60, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zE0H_C2rEeuap7VsJL811w" id="(0.5,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zE0H_S2rEeuap7VsJL811w" id="(0.5,1.0)"/>
+        </edges>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_zEafUC2rEeuap7VsJL811w" name="appLogic" outgoingEdges="_zEeJsC2rEeuap7VsJL811w" incomingEdges="_zEeJtS2rEeuap7VsJL811w" width="20" height="20" resizeKind="NSEW">
+      <target xmi:type="instance:ComponentInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@componentInstance.5"/>
+      <semanticElements xmi:type="instance:ComponentInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@componentInstance.5"/>
+      <ownedStyle xmi:type="diagram:BundledImage" uid="_zEbGYC2rEeuap7VsJL811w" labelPosition="node" color="209,209,209">
+        <description xmi:type="style:BundledImageDescription" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='ConnectedNeighbors']/@defaultLayer/@nodeMappings[name='RootNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_2:NodeMapping" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='ConnectedNeighbors']/@defaultLayer/@nodeMappings[name='RootNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_zEbtcC2rEeuap7VsJL811w" name="pulseOx" outgoingEdges="_zEeJtS2rEeuap7VsJL811w _zEewwC2rEeuap7VsJL811w" incomingEdges="_zEewzy2rEeuap7VsJL811w" width="20" height="20" resizeKind="NSEW">
+      <target xmi:type="instance:ComponentInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@componentInstance.3"/>
+      <semanticElements xmi:type="instance:ComponentInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@componentInstance.3"/>
+      <ownedStyle xmi:type="diagram:BundledImage" uid="_zEbtcS2rEeuap7VsJL811w" labelPosition="node" color="194,239,255">
+        <description xmi:type="style:BundledImageDescription" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='ConnectedNeighbors']/@defaultLayer/@nodeMappings[name='ImmediateNeighbors']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_2:NodeMapping" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='ConnectedNeighbors']/@defaultLayer/@nodeMappings[name='ImmediateNeighbors']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_zEbtcy2rEeuap7VsJL811w" name="appDisplay" outgoingEdges="_zEewxS2rEeuap7VsJL811w" incomingEdges="_zEeJsC2rEeuap7VsJL811w _zEewwC2rEeuap7VsJL811w" width="20" height="20" resizeKind="NSEW">
+      <target xmi:type="instance:ComponentInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@componentInstance.6"/>
+      <semanticElements xmi:type="instance:ComponentInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@componentInstance.6"/>
+      <ownedStyle xmi:type="diagram:BundledImage" uid="_zEbtdC2rEeuap7VsJL811w" labelPosition="node" color="194,239,255">
+        <description xmi:type="style:BundledImageDescription" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='ConnectedNeighbors']/@defaultLayer/@nodeMappings[name='ImmediateNeighbors']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_2:NodeMapping" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='ConnectedNeighbors']/@defaultLayer/@nodeMappings[name='ImmediateNeighbors']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_zEc7kC2rEeuap7VsJL811w" name="clinician" outgoingEdges="_zEewyi2rEeuap7VsJL811w" incomingEdges="_zEewxS2rEeuap7VsJL811w" width="20" height="20" resizeKind="NSEW">
+      <target xmi:type="instance:ComponentInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@componentInstance.1"/>
+      <semanticElements xmi:type="instance:ComponentInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@componentInstance.1"/>
+      <ownedStyle xmi:type="diagram:BundledImage" uid="_zEc7kS2rEeuap7VsJL811w" labelPosition="node" color="246,139,139">
+        <description xmi:type="style:BundledImageDescription" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='ConnectedNeighbors']/@defaultLayer/@nodeMappings[name='OneHopNeighbors']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_2:NodeMapping" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='ConnectedNeighbors']/@defaultLayer/@nodeMappings[name='OneHopNeighbors']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_zEc7ky2rEeuap7VsJL811w" name="patient" outgoingEdges="_zEewzy2rEeuap7VsJL811w" incomingEdges="_zEewyi2rEeuap7VsJL811w" width="20" height="20" resizeKind="NSEW">
+      <target xmi:type="instance:ComponentInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@componentInstance.0"/>
+      <semanticElements xmi:type="instance:ComponentInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@componentInstance.0"/>
+      <ownedStyle xmi:type="diagram:BundledImage" uid="_zEc7lC2rEeuap7VsJL811w" labelPosition="node" color="246,139,139">
+        <description xmi:type="style:BundledImageDescription" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='ConnectedNeighbors']/@defaultLayer/@nodeMappings[name='OneHopNeighbors']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_2:NodeMapping" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='ConnectedNeighbors']/@defaultLayer/@nodeMappings[name='OneHopNeighbors']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_zEeJsC2rEeuap7VsJL811w" sourceNode="_zEafUC2rEeuap7VsJL811w" targetNode="_zEbtcy2rEeuap7VsJL811w">
+      <target xmi:type="instance:ComponentInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@componentInstance.5"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_zEeJsS2rEeuap7VsJL811w" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='ConnectedNeighbors']/@defaultLayer/@edgeMappings[name='ConnectedEdges']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_zEeJsi2rEeuap7VsJL811w"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_2:EdgeMapping" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='ConnectedNeighbors']/@defaultLayer/@edgeMappings[name='ConnectedEdges']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_zEeJtS2rEeuap7VsJL811w" sourceNode="_zEbtcC2rEeuap7VsJL811w" targetNode="_zEafUC2rEeuap7VsJL811w">
+      <target xmi:type="instance:ComponentInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@componentInstance.3"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_zEeJti2rEeuap7VsJL811w" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='ConnectedNeighbors']/@defaultLayer/@edgeMappings[name='ConnectedEdges']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_zEeJty2rEeuap7VsJL811w"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_2:EdgeMapping" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='ConnectedNeighbors']/@defaultLayer/@edgeMappings[name='ConnectedEdges']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_zEewwC2rEeuap7VsJL811w" sourceNode="_zEbtcC2rEeuap7VsJL811w" targetNode="_zEbtcy2rEeuap7VsJL811w">
+      <target xmi:type="instance:ComponentInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@componentInstance.3"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_zEewwS2rEeuap7VsJL811w" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='ConnectedNeighbors']/@defaultLayer/@edgeMappings[name='ConnectedEdges']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_zEewwi2rEeuap7VsJL811w"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_2:EdgeMapping" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='ConnectedNeighbors']/@defaultLayer/@edgeMappings[name='ConnectedEdges']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_zEewxS2rEeuap7VsJL811w" sourceNode="_zEbtcy2rEeuap7VsJL811w" targetNode="_zEc7kC2rEeuap7VsJL811w">
+      <target xmi:type="instance:ComponentInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@componentInstance.6"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_zEewxi2rEeuap7VsJL811w" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='ConnectedNeighbors']/@defaultLayer/@edgeMappings[name='ConnectedEdges']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_zEewxy2rEeuap7VsJL811w"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_2:EdgeMapping" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='ConnectedNeighbors']/@defaultLayer/@edgeMappings[name='ConnectedEdges']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_zEewyi2rEeuap7VsJL811w" sourceNode="_zEc7kC2rEeuap7VsJL811w" targetNode="_zEc7ky2rEeuap7VsJL811w">
+      <target xmi:type="instance:ComponentInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@componentInstance.1"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_zEewyy2rEeuap7VsJL811w" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='ConnectedNeighbors']/@defaultLayer/@edgeMappings[name='ConnectedEdges']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_zEewzC2rEeuap7VsJL811w"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_2:EdgeMapping" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='ConnectedNeighbors']/@defaultLayer/@edgeMappings[name='ConnectedEdges']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_zEewzy2rEeuap7VsJL811w" sourceNode="_zEc7ky2rEeuap7VsJL811w" targetNode="_zEbtcC2rEeuap7VsJL811w">
+      <target xmi:type="instance:ComponentInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@componentInstance.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_zEew0C2rEeuap7VsJL811w" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='ConnectedNeighbors']/@defaultLayer/@edgeMappings[name='ConnectedEdges']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_zEew0S2rEeuap7VsJL811w"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_2:EdgeMapping" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='ConnectedNeighbors']/@defaultLayer/@edgeMappings[name='ConnectedEdges']"/>
+    </ownedDiagramElements>
+    <description xmi:type="description_2:DiagramDescription" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='ConnectedNeighbors']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_zEYqIC2rEeuap7VsJL811w"/>
+    <activatedLayers xmi:type="description_2:Layer" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='ConnectedNeighbors']/@defaultLayer"/>
+    <target xmi:type="instance:ComponentInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@componentInstance.5"/>
+  </diagram:DSemanticDiagram>
 </xmi:XMI>

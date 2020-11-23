@@ -16,9 +16,12 @@ public
 			
 			error propagations
 				DispDerivedAlarm: in propagation {MissedAlarm, BogusAlarm};
+				DispSpO2: in propagation {SpO2ValueHigh, LateSpO2};
 				flows
-					MissedAlarmsEndHere: error sink DispDerivedAlarm {MissedAlarm};
-					BogusAlarmsEndHere: error sink DispDerivedAlarm {BogusAlarm};
+					MissedAlarmsEndsHere: error sink DispDerivedAlarm {MissedAlarm};
+					BogusAlarmsEndsHere: error sink DispDerivedAlarm {BogusAlarm};
+					HighSpO2EndsHere: error sink DispSpO2 {SpO2ValueHigh};
+					LateSpO2EndsHere: error sink DispSpO2 {LateSpO2};
 			end propagations;
 		**};
 	end PulseOx_Display_Process;

@@ -167,6 +167,7 @@ public class FocusManager {
 	}
 
 	private void handleFocusedErrorType(ErrorType et, FeatureInstance feature) {
+		// XXX TODO FIXME These are just returning the error type instead of the actual reachable set...
 		backwardFocusSet.addAll(AwasManager.getInstance().backwardReach(et, feature));
 		forwardFocusSet.addAll(AwasManager.getInstance().forwardReach(et, feature));
 	}
