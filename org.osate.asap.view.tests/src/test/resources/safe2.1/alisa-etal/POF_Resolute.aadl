@@ -1,0 +1,34 @@
+package POF_Resolute
+public
+	annex Resolute {**
+
+	-- elements have a response time: 
+	has_Response_Time(cp: aadl)<=
+	** cp " must have a response time specified" **
+		has_property(cp, Communication_Properties::Latency)
+	-- used for sensor, process, actuator -- delegate to ALISA
+	
+	-- end-to-end latency is w/in specified bound
+	
+		
+--	-- Add notes (somewhere) describing why this approach wasn't taken / ALISA was
+--	-- e2e flow spec that goes from the sensor to the actuator via the logic exists 
+--	has_E2E_Flow(sys: system, sensor : device, logic : process, actuator : device) <=
+--	** sys " must have an end-to-end flow from the sensor to the actuator via the logic specified" **
+--		size(end_to_end_flows(sys)) > 0 and 
+--		-- sys has e2e flow spec
+--		-- get sys's e2e flow spec's elements. elements contain: 
+--			-- sensor as flow source
+--			-- conn from sensor to logic
+--			-- logic has a flow spec (?)
+--			-- conn from logic to actuator
+--			-- actuator as flow dest
+--		-- this e2e flow has latency < MaximumLatency
+
+		
+		
+	
+	-- calculated latency less than max
+	
+	**};
+end POF_Resolute;

@@ -1,0 +1,13 @@
+stakeholder goals POFGoals for PulseOx_Forwarding_System::PulseOx_Forwarding_System [
+	goal g1 : "Safety" [
+		description "The system shall be safe"
+		rationale "This system is used for sick patients, their health depends on it"
+		stakeholder sacred_heart.patient
+	]
+	
+	goal g2 : "Cost" [
+		description "The system shall be affordable"
+		rationale "Economic realities must be considered"
+		stakeholder sacred_heart.chief
+	]
+]

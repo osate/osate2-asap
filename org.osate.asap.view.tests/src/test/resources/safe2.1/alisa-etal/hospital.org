@@ -1,0 +1,17 @@
+organization sacred_heart
+
+stakeholder patient [
+	full name "Ben Sullivan"
+]
+
+stakeholder nurse [
+	full name "Carla Espinoza"
+]
+
+stakeholder doctor [
+	full name "John Dorian"
+]
+
+stakeholder chief [
+	full name "Bob Kelso"
+]

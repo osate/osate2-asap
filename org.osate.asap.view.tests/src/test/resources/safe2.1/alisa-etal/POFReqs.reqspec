@@ -1,0 +1,7 @@
+system requirements POFReqs for PulseOx_Forwarding_System::PulseOx_Forwarding_System [
+	val MaximumLatency = 20 ms
+	requirement R1 : "Timely SpO2" [
+		description this " shall have a sensor to actuator response time within " MaximumLatency
+		see goal POFGoals.g1
+	]
+]
