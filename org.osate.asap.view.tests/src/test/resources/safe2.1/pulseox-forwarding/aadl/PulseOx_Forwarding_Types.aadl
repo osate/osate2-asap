@@ -1,7 +1,6 @@
 package PulseOx_Forwarding_Types
 public
-	with ErrorLibrary, MAP_Errors, PulseOx_Forwarding_Errors;
-with Data_Model;
+	with Data_Model;
 
 	data SpO2
 	properties

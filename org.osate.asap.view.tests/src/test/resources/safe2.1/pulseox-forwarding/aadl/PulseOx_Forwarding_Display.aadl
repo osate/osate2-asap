@@ -1,13 +1,14 @@
 package PulseOx_Forwarding_Display
 public
-	with ErrorLibrary, MAP_Errors, PulseOx_Forwarding_Errors;
-	with PulseOx_Forwarding_Types, MAP_Properties, PulseOx_Forwarding_Properties;
+	with PulseOx_Forwarding_Types, MAP_Properties, PulseOx_Forwarding_Errors;
 
 	process PulseOx_Display_Process
 		features
 			DispDerivedAlarm: in event port;
 			DispShowSpO2: out feature;
 			DispSpO2: in event data port PulseOx_Forwarding_Types::SpO2;
+		flows
+			flowSink : flow sink DispDerivedAlarm;
 		properties
 			MAP_Properties::Process_Type => display;
 			MAP_Properties::Component_Type => actuator;
@@ -33,6 +34,8 @@ public
 		connections
 			incoming_spo2: port DispSpO2 -> UpdateSpO2Thread.SpO2;
 			incoming_alarm: port DispDerivedAlarm -> HandleAlarmThread.Alarm;
+		flows
+			flowSink : flow sink DispDerivedAlarm -> incoming_alarm -> HandleAlarmThread.thdFlow;
 		annex EMV2 {**
 			use types PulseOx_Forwarding_Errors;
 			
@@ -54,6 +57,8 @@ public
 	thread HandleAlarmThread
 		features
 			Alarm: in event port;
+		flows
+			thdFlow : flow sink Alarm;
 		properties
 			Timing_Properties::Deadline => 75ms;
 			Timing_Properties::Period => 95ms;
@@ -61,6 +66,8 @@ public
 	end HandleAlarmThread;
 
 	thread implementation HandleAlarmThread.imp
+		properties
+			latency => 3ms..5ms applies to thdFlow;
 	end HandleAlarmThread.imp;
 
 end PulseOx_Forwarding_Display;

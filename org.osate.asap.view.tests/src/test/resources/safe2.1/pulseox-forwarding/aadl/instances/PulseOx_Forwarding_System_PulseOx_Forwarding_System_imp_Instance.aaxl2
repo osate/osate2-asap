@@ -138,6 +138,23 @@
       </ownedPropertyAssociation>
       <feature xsi:type="aadl2:EventDataPort" href="../PulseOx_Interface.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedEventDataPort.1"/>
     </featureInstance>
+    <flowSpecification name="flowSrc" destination="//@componentInstance.3/@featureInstance.2">
+      <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+        <property href="platform:/plugin/org.osate.workspace/resources/properties/Predeclared_Property_Sets/Communication_Properties.aadl#Communication_Properties.Latency"/>
+        <ownedValue>
+          <ownedValue xsi:type="aadl2:RangeValue">
+            <minimum xsi:type="aadl2:IntegerLiteral" value="3">
+              <unit href="platform:/plugin/org.osate.workspace/resources/properties/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.16/@ownedLiteral.3"/>
+            </minimum>
+            <maximum xsi:type="aadl2:IntegerLiteral" value="5">
+              <unit href="platform:/plugin/org.osate.workspace/resources/properties/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.16/@ownedLiteral.3"/>
+            </maximum>
+          </ownedValue>
+        </ownedValue>
+        <propertyAssociation href="../PulseOx_Interface.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedPropertyAssociation.0"/>
+      </ownedPropertyAssociation>
+      <flowSpecification href="../PulseOx_Interface.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedFlowSpecification.0"/>
+    </flowSpecification>
     <subcomponent xsi:type="aadl2:DeviceSubcomponent" href="../PulseOx_Forwarding_System.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedDeviceSubcomponent.0"/>
     <index>0</index>
     <classifier xsi:type="aadl2:DeviceImplementation" href="../PulseOx_Interface.aadl#PulseOx_Interface.ICEpoInterface.imp"/>
@@ -230,10 +247,10 @@
         <ownedValue>
           <ownedValue xsi:type="aadl2:RangeValue">
             <minimum xsi:type="aadl2:IntegerLiteral" value="200">
-              <unit href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.16/@ownedLiteral.3"/>
+              <unit href="platform:/plugin/org.osate.workspace/resources/properties/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.16/@ownedLiteral.3"/>
             </minimum>
             <maximum xsi:type="aadl2:IntegerLiteral" value="400">
-              <unit href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.16/@ownedLiteral.3"/>
+              <unit href="platform:/plugin/org.osate.workspace/resources/properties/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.16/@ownedLiteral.3"/>
             </maximum>
           </ownedValue>
         </ownedValue>
@@ -281,10 +298,10 @@
     </componentInstance>
     <componentInstance name="CheckSpO2Thread" category="thread">
       <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
-        <property href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/Thread_Properties.aadl#Thread_Properties.Dispatch_Protocol"/>
+        <property href="platform:/plugin/org.osate.workspace/resources/properties/Predeclared_Property_Sets/Thread_Properties.aadl#Thread_Properties.Dispatch_Protocol"/>
         <ownedValue>
           <ownedValue xsi:type="aadl2:NamedValue">
-            <namedValue xsi:type="aadl2:EnumerationLiteral" href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.3/@ownedLiteral.0"/>
+            <namedValue xsi:type="aadl2:EnumerationLiteral" href="platform:/plugin/org.osate.workspace/resources/properties/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.3/@ownedLiteral.0"/>
           </ownedValue>
         </ownedValue>
         <propertyAssociation href="../PulseOx_Forwarding_Logic.aadl#/0/@ownedPublicSection/@ownedClassifier.2/@ownedPropertyAssociation.0"/>
@@ -292,10 +309,116 @@
       <featureInstance name="Alarm" category="eventPort" direction="out">
         <feature xsi:type="aadl2:EventPort" href="../PulseOx_Forwarding_Logic.aadl#/0/@ownedPublicSection/@ownedClassifier.2/@ownedEventPort.0"/>
       </featureInstance>
+      <featureInstance name="SpO2" category="dataAccess">
+        <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+          <property href="platform:/plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Data_Representation"/>
+          <ownedValue>
+            <ownedValue xsi:type="aadl2:NamedValue">
+              <namedValue xsi:type="aadl2:EnumerationLiteral" href="platform:/plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#/0/@ownedProperty.4/@ownedPropertyType/@ownedLiteral.4"/>
+            </ownedValue>
+          </ownedValue>
+          <propertyAssociation href="../PulseOx_Forwarding_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedPropertyAssociation.0"/>
+        </ownedPropertyAssociation>
+        <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+          <property href="platform:/plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Real_Range"/>
+          <ownedValue>
+            <ownedValue xsi:type="aadl2:RangeValue">
+              <minimum xsi:type="aadl2:RealLiteral"/>
+              <maximum xsi:type="aadl2:RealLiteral" value="100.0"/>
+            </ownedValue>
+          </ownedValue>
+          <propertyAssociation href="../PulseOx_Forwarding_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedPropertyAssociation.1"/>
+        </ownedPropertyAssociation>
+        <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+          <property href="platform:/plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Measurement_Unit"/>
+          <ownedValue>
+            <ownedValue xsi:type="aadl2:StringLiteral" value="Percent"/>
+          </ownedValue>
+          <propertyAssociation href="../PulseOx_Forwarding_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedPropertyAssociation.2"/>
+        </ownedPropertyAssociation>
+        <feature xsi:type="aadl2:DataAccess" href="../PulseOx_Forwarding_Logic.aadl#/0/@ownedPublicSection/@ownedClassifier.2/@ownedDataAccess.0"/>
+      </featureInstance>
+      <flowSpecification name="thdFlow" source="//@componentInstance.5/@componentInstance.1/@featureInstance.1" destination="//@componentInstance.5/@componentInstance.1/@featureInstance.0">
+        <flowSpecification href="../PulseOx_Forwarding_Logic.aadl#/0/@ownedPublicSection/@ownedClassifier.2/@ownedFlowSpecification.0"/>
+      </flowSpecification>
       <subcomponent xsi:type="aadl2:ThreadSubcomponent" href="../PulseOx_Forwarding_Logic.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedThreadSubcomponent.0"/>
       <index>0</index>
       <classifier xsi:type="aadl2:ThreadImplementation" href="../PulseOx_Forwarding_Logic.aadl#PulseOx_Forwarding_Logic.CheckSpO2Thread.imp"/>
     </componentInstance>
+    <componentInstance name="StoreSpO2Thread" category="thread">
+      <featureInstance name="incoming_spo2">
+        <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+          <property href="platform:/plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Data_Representation"/>
+          <ownedValue>
+            <ownedValue xsi:type="aadl2:NamedValue">
+              <namedValue xsi:type="aadl2:EnumerationLiteral" href="platform:/plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#/0/@ownedProperty.4/@ownedPropertyType/@ownedLiteral.4"/>
+            </ownedValue>
+          </ownedValue>
+          <propertyAssociation href="../PulseOx_Forwarding_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedPropertyAssociation.0"/>
+        </ownedPropertyAssociation>
+        <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+          <property href="platform:/plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Real_Range"/>
+          <ownedValue>
+            <ownedValue xsi:type="aadl2:RangeValue">
+              <minimum xsi:type="aadl2:RealLiteral"/>
+              <maximum xsi:type="aadl2:RealLiteral" value="100.0"/>
+            </ownedValue>
+          </ownedValue>
+          <propertyAssociation href="../PulseOx_Forwarding_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedPropertyAssociation.1"/>
+        </ownedPropertyAssociation>
+        <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+          <property href="platform:/plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Measurement_Unit"/>
+          <ownedValue>
+            <ownedValue xsi:type="aadl2:StringLiteral" value="Percent"/>
+          </ownedValue>
+          <propertyAssociation href="../PulseOx_Forwarding_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedPropertyAssociation.2"/>
+        </ownedPropertyAssociation>
+        <feature xsi:type="aadl2:DataPort" href="../PulseOx_Forwarding_Logic.aadl#/0/@ownedPublicSection/@ownedClassifier.4/@ownedDataPort.0"/>
+      </featureInstance>
+      <featureInstance name="provides_spo2" category="dataAccess" direction="out">
+        <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+          <property href="platform:/plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Data_Representation"/>
+          <ownedValue>
+            <ownedValue xsi:type="aadl2:NamedValue">
+              <namedValue xsi:type="aadl2:EnumerationLiteral" href="platform:/plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#/0/@ownedProperty.4/@ownedPropertyType/@ownedLiteral.4"/>
+            </ownedValue>
+          </ownedValue>
+          <propertyAssociation href="../PulseOx_Forwarding_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedPropertyAssociation.0"/>
+        </ownedPropertyAssociation>
+        <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+          <property href="platform:/plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Real_Range"/>
+          <ownedValue>
+            <ownedValue xsi:type="aadl2:RangeValue">
+              <minimum xsi:type="aadl2:RealLiteral"/>
+              <maximum xsi:type="aadl2:RealLiteral" value="100.0"/>
+            </ownedValue>
+          </ownedValue>
+          <propertyAssociation href="../PulseOx_Forwarding_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedPropertyAssociation.1"/>
+        </ownedPropertyAssociation>
+        <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+          <property href="platform:/plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Measurement_Unit"/>
+          <ownedValue>
+            <ownedValue xsi:type="aadl2:StringLiteral" value="Percent"/>
+          </ownedValue>
+          <propertyAssociation href="../PulseOx_Forwarding_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedPropertyAssociation.2"/>
+        </ownedPropertyAssociation>
+        <feature xsi:type="aadl2:DataAccess" href="../PulseOx_Forwarding_Logic.aadl#/0/@ownedPublicSection/@ownedClassifier.4/@ownedDataAccess.0"/>
+      </featureInstance>
+      <flowSpecification name="thdFlow" source="//@componentInstance.5/@componentInstance.2/@featureInstance.0" destination="//@componentInstance.5/@componentInstance.2/@featureInstance.1">
+        <flowSpecification href="../PulseOx_Forwarding_Logic.aadl#/0/@ownedPublicSection/@ownedClassifier.4/@ownedFlowSpecification.0"/>
+      </flowSpecification>
+      <subcomponent xsi:type="aadl2:ThreadSubcomponent" href="../PulseOx_Forwarding_Logic.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedThreadSubcomponent.1"/>
+      <index>0</index>
+      <classifier xsi:type="aadl2:ThreadImplementation" href="../PulseOx_Forwarding_Logic.aadl#PulseOx_Forwarding_Logic.StoreSpO2Thread.imp"/>
+    </componentInstance>
+    <flowSpecification name="flowPath" source="//@componentInstance.5/@featureInstance.0" destination="//@componentInstance.5/@featureInstance.1">
+      <flowSpecification href="../PulseOx_Forwarding_Logic.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedFlowSpecification.0"/>
+    </flowSpecification>
+    <connectionInstance name="StoreSpO2Thread.provides_spo2 -> CheckSpO2Thread.SpO2" complete="true" kind="accessConnection" destination="//@componentInstance.5/@componentInstance.1/@featureInstance.1" source="//@componentInstance.5/@componentInstance.2/@featureInstance.1">
+      <connectionReference context="//@componentInstance.5" source="//@componentInstance.5/@componentInstance.2/@featureInstance.1" destination="//@componentInstance.5/@componentInstance.1/@featureInstance.1">
+        <connection xsi:type="aadl2:AccessConnection" href="../PulseOx_Forwarding_Logic.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedAccessConnection.0"/>
+      </connectionReference>
+    </connectionInstance>
     <subcomponent xsi:type="aadl2:ProcessSubcomponent" href="../PulseOx_Forwarding_System.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedProcessSubcomponent.0"/>
     <index>0</index>
     <classifier xsi:type="aadl2:ProcessImplementation" href="../PulseOx_Forwarding_Logic.aadl#PulseOx_Forwarding_Logic.PulseOx_Logic_Process.imp"/>
@@ -390,19 +513,19 @@
     </componentInstance>
     <componentInstance name="HandleAlarmThread" category="thread">
       <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
-        <property href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/Timing_Properties.aadl#Timing_Properties.Deadline"/>
+        <property href="platform:/plugin/org.osate.workspace/resources/properties/Predeclared_Property_Sets/Timing_Properties.aadl#Timing_Properties.Deadline"/>
         <ownedValue>
           <ownedValue xsi:type="aadl2:IntegerLiteral" value="75">
-            <unit href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.16/@ownedLiteral.3"/>
+            <unit href="platform:/plugin/org.osate.workspace/resources/properties/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.16/@ownedLiteral.3"/>
           </ownedValue>
         </ownedValue>
         <propertyAssociation href="../PulseOx_Forwarding_Display.aadl#/0/@ownedPublicSection/@ownedClassifier.4/@ownedPropertyAssociation.0"/>
       </ownedPropertyAssociation>
       <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
-        <property href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/Timing_Properties.aadl#Timing_Properties.Period"/>
+        <property href="platform:/plugin/org.osate.workspace/resources/properties/Predeclared_Property_Sets/Timing_Properties.aadl#Timing_Properties.Period"/>
         <ownedValue>
           <ownedValue xsi:type="aadl2:IntegerLiteral" value="95">
-            <unit href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.16/@ownedLiteral.3"/>
+            <unit href="platform:/plugin/org.osate.workspace/resources/properties/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.16/@ownedLiteral.3"/>
           </ownedValue>
         </ownedValue>
         <propertyAssociation href="../PulseOx_Forwarding_Display.aadl#/0/@ownedPublicSection/@ownedClassifier.4/@ownedPropertyAssociation.1"/>
@@ -411,7 +534,7 @@
         <property href="../MAP_Properties.aadl#MAP_Properties.Worst_Case_Execution_Time"/>
         <ownedValue>
           <ownedValue xsi:type="aadl2:IntegerLiteral" value="7">
-            <unit href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.16/@ownedLiteral.3"/>
+            <unit href="platform:/plugin/org.osate.workspace/resources/properties/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.16/@ownedLiteral.3"/>
           </ownedValue>
         </ownedValue>
         <propertyAssociation href="../PulseOx_Forwarding_Display.aadl#/0/@ownedPublicSection/@ownedClassifier.4/@ownedPropertyAssociation.2"/>
@@ -419,14 +542,37 @@
       <featureInstance name="Alarm" category="eventPort">
         <feature xsi:type="aadl2:EventPort" href="../PulseOx_Forwarding_Display.aadl#/0/@ownedPublicSection/@ownedClassifier.4/@ownedEventPort.0"/>
       </featureInstance>
+      <flowSpecification name="thdFlow" source="//@componentInstance.6/@componentInstance.1/@featureInstance.0">
+        <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+          <property href="platform:/plugin/org.osate.workspace/resources/properties/Predeclared_Property_Sets/Communication_Properties.aadl#Communication_Properties.Latency"/>
+          <ownedValue>
+            <ownedValue xsi:type="aadl2:RangeValue">
+              <minimum xsi:type="aadl2:IntegerLiteral" value="3">
+                <unit href="platform:/plugin/org.osate.workspace/resources/properties/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.16/@ownedLiteral.3"/>
+              </minimum>
+              <maximum xsi:type="aadl2:IntegerLiteral" value="5">
+                <unit href="platform:/plugin/org.osate.workspace/resources/properties/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.16/@ownedLiteral.3"/>
+              </maximum>
+            </ownedValue>
+          </ownedValue>
+          <propertyAssociation href="../PulseOx_Forwarding_Display.aadl#/0/@ownedPublicSection/@ownedClassifier.5/@ownedPropertyAssociation.0"/>
+        </ownedPropertyAssociation>
+        <flowSpecification href="../PulseOx_Forwarding_Display.aadl#/0/@ownedPublicSection/@ownedClassifier.4/@ownedFlowSpecification.0"/>
+      </flowSpecification>
       <subcomponent xsi:type="aadl2:ThreadSubcomponent" href="../PulseOx_Forwarding_Display.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedThreadSubcomponent.1"/>
       <index>0</index>
       <classifier xsi:type="aadl2:ThreadImplementation" href="../PulseOx_Forwarding_Display.aadl#PulseOx_Forwarding_Display.HandleAlarmThread.imp"/>
     </componentInstance>
+    <flowSpecification name="flowSink" source="//@componentInstance.6/@featureInstance.2">
+      <flowSpecification href="../PulseOx_Forwarding_Display.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedFlowSpecification.0"/>
+    </flowSpecification>
     <subcomponent xsi:type="aadl2:ProcessSubcomponent" href="../PulseOx_Forwarding_System.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedProcessSubcomponent.1"/>
     <index>0</index>
     <classifier xsi:type="aadl2:ProcessImplementation" href="../PulseOx_Forwarding_Display.aadl#PulseOx_Forwarding_Display.PulseOx_Display_Process.imp"/>
   </componentInstance>
+  <endToEndFlow name="spo2_to_alarm" flowElement="//@componentInstance.3/@flowSpecification.0 //@connectionInstance.3 //@componentInstance.5/@componentInstance.2/@flowSpecification.0 //@componentInstance.5/@connectionInstance.0 //@componentInstance.5/@componentInstance.1/@flowSpecification.0 //@connectionInstance.6 //@componentInstance.6/@componentInstance.1/@flowSpecification.0">
+    <endToEndFlow href="../PulseOx_Forwarding_System.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedEndToEndFlow.0"/>
+  </endToEndFlow>
   <connectionInstance name="patient.PatientFingerclip -> pulseOx.SensorInput" complete="true" destination="//@componentInstance.3/@featureInstance.0" source="//@componentInstance.0/@featureInstance.0">
     <connectionReference context="/" source="//@componentInstance.0/@featureInstance.0" destination="//@componentInstance.3/@featureInstance.0">
       <connection xsi:type="aadl2:FeatureConnection" href="../PulseOx_Forwarding_System.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedFeatureConnection.3"/>
@@ -442,9 +588,12 @@
       <connection xsi:type="aadl2:FeatureConnection" href="../PulseOx_Forwarding_System.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedFeatureConnection.1"/>
     </connectionReference>
   </connectionInstance>
-  <connectionInstance name="pulseOx.POOutSpO2 -> appLogic.LogicSpO2" complete="true" kind="portConnection" destination="//@componentInstance.5/@featureInstance.0" source="//@componentInstance.3/@featureInstance.2">
+  <connectionInstance name="pulseOx.POOutSpO2 -> appLogic.StoreSpO2Thread.incoming_spo2" complete="true" kind="portConnection" destination="//@componentInstance.5/@componentInstance.2/@featureInstance.0" source="//@componentInstance.3/@featureInstance.2">
     <connectionReference context="/" source="//@componentInstance.3/@featureInstance.2" destination="//@componentInstance.5/@featureInstance.0">
       <connection xsi:type="aadl2:PortConnection" href="../PulseOx_Forwarding_System.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedPortConnection.0"/>
+    </connectionReference>
+    <connectionReference context="//@componentInstance.5" source="//@componentInstance.5/@featureInstance.0" destination="//@componentInstance.5/@componentInstance.2/@featureInstance.0">
+      <connection xsi:type="aadl2:PortConnection" href="../PulseOx_Forwarding_Logic.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedPortConnection.0"/>
     </connectionReference>
   </connectionInstance>
   <connectionInstance name="pulseOx.POOutSpO2 -> appDisplay.UpdateSpO2Thread.SpO2" complete="true" kind="portConnection" destination="//@componentInstance.6/@componentInstance.0/@featureInstance.0" source="//@componentInstance.3/@featureInstance.2">
@@ -452,7 +601,7 @@
       <property href="../MAP_Properties.aadl#MAP_Properties.Channel_Delay"/>
       <ownedValue>
         <ownedValue xsi:type="aadl2:IntegerLiteral" value="150">
-          <unit href="platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.16/@ownedLiteral.3"/>
+          <unit href="platform:/plugin/org.osate.workspace/resources/properties/Predeclared_Property_Sets/AADL_Project.aadl#/0/@ownedPropertyType.16/@ownedLiteral.3"/>
         </ownedValue>
       </ownedValue>
       <propertyAssociation href="../PulseOx_Forwarding_System.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedPortConnection.1/@ownedPropertyAssociation.0"/>
@@ -471,7 +620,7 @@
   </connectionInstance>
   <connectionInstance name="appLogic.CheckSpO2Thread.Alarm -> appDisplay.HandleAlarmThread.Alarm" complete="true" kind="portConnection" destination="//@componentInstance.6/@componentInstance.1/@featureInstance.0" source="//@componentInstance.5/@componentInstance.1/@featureInstance.0">
     <connectionReference context="//@componentInstance.5" source="//@componentInstance.5/@componentInstance.1/@featureInstance.0" destination="//@componentInstance.5/@featureInstance.1">
-      <connection xsi:type="aadl2:PortConnection" href="../PulseOx_Forwarding_Logic.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedPortConnection.0"/>
+      <connection xsi:type="aadl2:PortConnection" href="../PulseOx_Forwarding_Logic.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedPortConnection.1"/>
     </connectionReference>
     <connectionReference context="/" source="//@componentInstance.5/@featureInstance.1" destination="//@componentInstance.6/@featureInstance.2">
       <connection xsi:type="aadl2:PortConnection" href="../PulseOx_Forwarding_System.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedPortConnection.3"/>

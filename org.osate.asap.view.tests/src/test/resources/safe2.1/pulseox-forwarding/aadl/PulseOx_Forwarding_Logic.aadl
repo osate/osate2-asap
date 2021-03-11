@@ -1,13 +1,15 @@
 package PulseOx_Forwarding_Logic
 public
 	with PulseOx_Forwarding_Errors;
-with PulseOx_Forwarding_Types, MAP_Properties, MAP_Error_Properties, PulseOx_Forwarding_Properties;
+with PulseOx_Forwarding_Types, MAP_Properties, MAP_Error_Properties;
 
 	process PulseOx_Logic_Process
 	features
 		LogicSpO2 : in data port PulseOx_Forwarding_Types::SpO2; -- How do I model a error flow with a data port?
 		LogicDerivedAlarm : out event port
 		{MAP_Properties::Output_Rate => 200 ms .. 400 ms;};
+	flows
+		flowPath : flow path LogicSpO2 -> LogicDerivedAlarm;		
 	properties
 		MAP_Properties::Process_Type => logic;
 		MAP_Properties::Component_Type => controller;
@@ -24,10 +26,15 @@ with PulseOx_Forwarding_Types, MAP_Properties, MAP_Error_Properties, PulseOx_For
 	process implementation PulseOx_Logic_Process.imp
 	subcomponents
 		CheckSpO2Thread : thread CheckSpO2Thread.imp;
+		StoreSpO2Thread : thread StoreSpO2Thread.imp;
 		SpO2Val : data PulseOx_Forwarding_Types::SpO2
 		{MAP_Error_Properties::Process_Variable => true;};
 	connections
+		incoming_spo2_con : port LogicSpO2 -> StoreSpO2Thread.incoming_spo2;
+		spo2_to_alarm : data access StoreSpO2Thread.provides_spo2 -> CheckSpO2Thread.SpO2;
 		outgoing_alarm : port CheckSpO2Thread.Alarm -> LogicDerivedAlarm;
+	flows
+		flowPath : flow path LogicSpO2 -> incoming_spo2_con -> StoreSpO2Thread.thdFlow -> spo2_to_alarm -> CheckSpO2Thread.thdFlow -> outgoing_alarm -> LogicDerivedAlarm;
 	annex EMV2 {**
 			use types MAP_Errors, PulseOx_Forwarding_Errors;
 			use behavior PulseOx_Forwarding_Errors::PulseOxStatus;
@@ -124,17 +131,32 @@ with PulseOx_Forwarding_Types, MAP_Properties, MAP_Error_Properties, PulseOx_For
 --									);
 --							Explanation => "The app logic isn't a connection between two components";
 --						] applies to Normal;
---		**};
+		**};
 	end PulseOx_Logic_Process.imp;
 	
 	thread CheckSpO2Thread
 	features
 		Alarm : out event port;
+		SpO2 : requires data access PulseOx_Forwarding_Types::SpO2;
+	flows
+		thdFlow : flow path SpO2 -> Alarm;
 	properties
 		Thread_Properties::Dispatch_Protocol => Periodic;
 	end CheckSpO2Thread;
 	
 	thread implementation CheckSpO2Thread.imp
 	end CheckSpO2Thread.imp;
+	
+	thread StoreSpO2Thread
+		features
+			incoming_spo2 : in data port PulseOx_Forwarding_Types::SpO2;
+			provides_spo2 : provides data access PulseOx_Forwarding_Types::SpO2;
+		flows
+			thdFlow : flow path incoming_spo2 -> provides_spo2;
+	end StoreSpO2Thread;
+	
+	thread implementation StoreSpO2Thread.imp
+		
+	end StoreSpO2Thread.imp;
 	
 end PulseOx_Forwarding_Logic;

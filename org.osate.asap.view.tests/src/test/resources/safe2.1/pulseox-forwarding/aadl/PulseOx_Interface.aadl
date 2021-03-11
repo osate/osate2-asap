@@ -1,7 +1,7 @@
 package PulseOx_Interface
 public
-	with ErrorLibrary, MAP_Errors, PulseOx_Forwarding_Errors;
-	with PulseOx_Forwarding_Types, PulseOx_Forwarding_Properties, MAP_Properties;
+	with MAP_Errors, PulseOx_Forwarding_Errors, PulseOx_Forwarding_Types;
+	with MAP_Properties;
 
 	device ICEpoInterface
 		features
@@ -9,6 +9,8 @@ public
 			SensorInput: in feature;
 			POOutSpO2: out event data port PulseOx_Forwarding_Types::SpO2 {
 				MAP_Properties::Exchange_Name => "spo2_per";};
+		flows
+			flowSrc: flow source POOutSpO2;
 		properties
 			MAP_Properties::Component_Type => sensor;
 		annex EMV2 {**
@@ -24,6 +26,8 @@ public
 	end ICEpoInterface;
 
 	device implementation ICEpoInterface.imp
+		properties
+			latency => 3ms .. 5ms applies to flowSrc;
 	end ICEpoInterface.imp;
 
 end PulseOx_Interface;
