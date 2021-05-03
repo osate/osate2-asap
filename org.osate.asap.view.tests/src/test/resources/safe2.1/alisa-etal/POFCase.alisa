@@ -1,0 +1,5 @@
+assurance case POFCase for PulseOx_Forwarding_System::PulseOx_Forwarding_System [
+	assurance plan POFSensorPlan for PulseOx_Forwarding_System::PulseOx_Forwarding_System.imp [
+		assure POF
+	]
+]

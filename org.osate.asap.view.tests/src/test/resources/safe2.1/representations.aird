@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/tree/description/1.0.0" xmlns:description_2="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:instance="http://aadl.info/AADL/2.0/instance" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:safe2="http://www.example.org/safe2" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:tree="http://www.eclipse.org/sirius/tree/1.0.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/tree/description/1.0.0 http://www.eclipse.org/sirius/tree/1.0.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/tree/description/1.0.0" xmlns:description_2="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:description_3="http://www.eclipse.org/sirius/table/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:errorModel="http://www.aadl.info/EMV2" xmlns:instance="http://aadl.info/AADL/2.0/instance" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:safe2="http://www.example.org/safe2" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:table="http://www.eclipse.org/sirius/table/1.1.0" xmlns:tree="http://www.eclipse.org/sirius/tree/1.0.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/tree/description/1.0.0 http://www.eclipse.org/sirius/tree/1.0.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/table/description/1.1.0 http://www.eclipse.org/sirius/table/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
   <viewpoint:DAnalysis uid="_oq_NYC2rEeuap7VsJL811w" selectedViews="_ov0DAC2rEeuap7VsJL811w" version="14.3.1.202003261200">
     <semanticResources>diagrams/PulseOx_Forwarding_System_imp_Instance.aadl_diagram</semanticResources>
     <semanticResources>pca-interlock.safe2</semanticResources>
@@ -28,6 +28,19 @@
     <semanticResources>pulseox-forwarding/aadl/instances/reports/fta/applogic-out-logicderivedalarm-missedalarm_trace.faulttree</semanticResources>
     <semanticResources>pulseox-forwarding/aadl/instances/reports/fta/pulseox-out-pooutspo2-spo2valuehigh_trace.faulttree</semanticResources>
     <semanticResources>pulseox-forwarding/pulseox-forwarding.safe2</semanticResources>
+    <semanticResources>platform:/plugin/org.osate.aadl2.contrib/resources/properties/Predeclared_Property_Sets/Communication_Properties.aadl</semanticResources>
+    <semanticResources>alisa-etal/POF.verify</semanticResources>
+    <semanticResources>alisa-etal/POFReqs.reqspec</semanticResources>
+    <semanticResources>alisa-etal/POFGoals.goals</semanticResources>
+    <semanticResources>alisa-etal/hospital.org</semanticResources>
+    <semanticResources>alisa-etal/POFVerificationMethods.methodregistry</semanticResources>
+    <semanticResources>platform:/resource/AlisaPredefined/predefined.cat</semanticResources>
+    <semanticResources>alisa-etal/POFCase.alisa</semanticResources>
+    <semanticResources>alisa-etal/POF_Resolute.aadl</semanticResources>
+    <semanticResources>assure/POFCase.xassure</semanticResources>
+    <semanticResources>pulseox-forwarding/aadl/instances/reports/latency/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance__latency_AS-MF-DL-EQ-EQL.result</semanticResources>
+    <semanticResources>platform:/plugin/org.osate.contribution.sei/resources/properties/Physical.aadl</semanticResources>
+    <semanticResources>platform:/plugin/org.osate.contribution.sei/resources/properties/SEI.aadl</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" uid="_ov0DAC2rEeuap7VsJL811w">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']"/>
       <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_owBeYS2rEeuap7VsJL811w" name="Fundamentals" repPath="#_ov47gC2rEeuap7VsJL811w">
@@ -90,12 +103,24 @@
         <description xmi:type="description_1:TreeDescription" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='Fundamentals']"/>
         <target xmi:type="safe2:SystemOverview" href="pca-interlock.safe2#/"/>
       </ownedRepresentationDescriptors>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_xu4PxS2rEeuap7VsJL811w" name="PulseOx_Forwarding_System_imp_Instance Containment" repPath="#_xu3BoC2rEeuap7VsJL811w" changeId="3b527634-03f7-4368-8b8d-9f657ad67bdc">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_xu4PxS2rEeuap7VsJL811w" name="PulseOx_Forwarding_System_imp_Instance Containment" repPath="#_xu3BoC2rEeuap7VsJL811w" changeId="40b54eaa-f847-4c92-a7ca-e6830b91587e">
         <description xmi:type="description_1:TreeDescription" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='Containment']"/>
         <target xmi:type="instance:SystemInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#/"/>
       </ownedRepresentationDescriptors>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_zEf-4C2rEeuap7VsJL811w" name="Neighbors of appLogic" repPath="#_zEYDEC2rEeuap7VsJL811w" changeId="809f7c4c-5d4a-4abb-ab39-58a376e2f339">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_zEf-4C2rEeuap7VsJL811w" name="Neighbors of appLogic" repPath="#_zEYDEC2rEeuap7VsJL811w" changeId="4f1bafa0-f62e-4f31-952a-bc57eed08e6e">
         <description xmi:type="description_2:DiagramDescription" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='ConnectedNeighbors']"/>
+        <target xmi:type="instance:ComponentInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@componentInstance.5"/>
+      </ownedRepresentationDescriptors>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_ACFZsKj9EeuoYcr_EZ_uiQ" name="platform:/resource/safe2.1/pulseox-forwarding/pulseox-forwarding Fundamentals" repPath="#_ABj1QKj9EeuoYcr_EZ_uiQ" changeId="51e63c6d-6ea0-45b5-915e-9d7a97b3991e">
+        <description xmi:type="description_1:TreeDescription" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='Fundamentals']"/>
+        <target xmi:type="safe2:SystemOverview" href="pulseox-forwarding/pulseox-forwarding.safe2#/"/>
+      </ownedRepresentationDescriptors>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_Xb5_0aj9EeuoYcr_EZ_uiQ" name="PulseOx_Forwarding_System_imp_Instance TopLevelErrors" repPath="#_Xbo6EKj9EeuoYcr_EZ_uiQ" changeId="570aa665-ef9f-42f5-8b6f-059a9eb2212c">
+        <description xmi:type="description_3:CrossTableDescription" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='TopLevelErrors']"/>
+        <target xmi:type="instance:SystemInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#/"/>
+      </ownedRepresentationDescriptors>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_cl1r0KwjEeu3oJ7BiAjMEw" name="UCA-AppLogic" repPath="#_cld4YKwjEeu3oJ7BiAjMEw" changeId="f15bed52-0c2d-42ac-b4e9-e876e068ca80">
+        <description xmi:type="description_3:CrossTableDescription" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='TopLevelErrors']"/>
         <target xmi:type="instance:ComponentInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@componentInstance.5"/>
       </ownedRepresentationDescriptors>
     </ownedViews>
@@ -330,7 +355,7 @@
       <ownedStyle xmi:type="tree:TreeItemStyle" uid="_xu3ouy2rEeuap7VsJL811w"/>
       <actualMapping xmi:type="description_1:TreeItemMapping" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='Containment']/@subItemMappings[name='component']"/>
     </ownedTreeItems>
-    <ownedTreeItems xmi:type="tree:DTreeItem" uid="_xu3ovS2rEeuap7VsJL811w" name="appLogic" expanded="true">
+    <ownedTreeItems xmi:type="tree:DTreeItem" uid="_xu3ovS2rEeuap7VsJL811w" name="appLogic">
       <target xmi:type="instance:ComponentInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@componentInstance.5"/>
       <ownedTreeItems xmi:type="tree:DTreeItem" uid="_xu4PwC2rEeuap7VsJL811w" name="SpO2Val">
         <target xmi:type="instance:ComponentInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@componentInstance.5/@componentInstance.0"/>
@@ -342,6 +367,12 @@
         <target xmi:type="instance:ComponentInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@componentInstance.5/@componentInstance.1"/>
         <semanticElements xmi:type="instance:ComponentInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@componentInstance.5/@componentInstance.1"/>
         <ownedStyle xmi:type="tree:TreeItemStyle" uid="_yFD7IS2rEeuap7VsJL811w"/>
+        <actualMapping xmi:type="description_1:TreeItemMapping" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='Containment']/@subItemMappings[name='component']/@subItemMappings[name='subcomponent']"/>
+      </ownedTreeItems>
+      <ownedTreeItems xmi:type="tree:DTreeItem" uid="_I8skQKj9EeuoYcr_EZ_uiQ" name="StoreSpO2Thread">
+        <target xmi:type="instance:ComponentInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@componentInstance.5/@componentInstance.2"/>
+        <semanticElements xmi:type="instance:ComponentInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@componentInstance.5/@componentInstance.2"/>
+        <ownedStyle xmi:type="tree:TreeItemStyle" uid="_I8skQaj9EeuoYcr_EZ_uiQ"/>
         <actualMapping xmi:type="description_1:TreeItemMapping" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='Containment']/@subItemMappings[name='component']/@subItemMappings[name='subcomponent']"/>
       </ownedTreeItems>
       <semanticElements xmi:type="instance:ComponentInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@componentInstance.5"/>
@@ -615,4 +646,298 @@
     <activatedLayers xmi:type="description_2:Layer" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='ConnectedNeighbors']/@defaultLayer"/>
     <target xmi:type="instance:ComponentInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@componentInstance.5"/>
   </diagram:DSemanticDiagram>
+  <tree:DTree uid="_ABj1QKj9EeuoYcr_EZ_uiQ">
+    <target xmi:type="safe2:SystemOverview" href="pulseox-forwarding/pulseox-forwarding.safe2#/"/>
+    <ownedTreeItems xmi:type="tree:DTreeItem" uid="_ABzs4Kj9EeuoYcr_EZ_uiQ" name="DeathOrInjury" expanded="true">
+      <target xmi:type="safe2:AccidentLevel" href="pulseox-forwarding/pulseox-forwarding.safe2#//@fundamentals.0"/>
+      <ownedTreeItems xmi:type="tree:DTreeItem" uid="_ACBvUKj9EeuoYcr_EZ_uiQ" name="PatientHarmed" expanded="true">
+        <target xmi:type="safe2:Accident" href="pulseox-forwarding/pulseox-forwarding.safe2#//@fundamentals.0/@accident.0"/>
+        <ownedTreeItems xmi:type="tree:DTreeItem" uid="_Ak_5gKj9EeuoYcr_EZ_uiQ" name="BadInfoDisplayed" expanded="true">
+          <target xmi:type="safe2:Hazard" href="pulseox-forwarding/pulseox-forwarding.safe2#//@fundamentals.0/@accident.0/@hazard.0"/>
+          <ownedTreeItems xmi:type="tree:DTreeItem" uid="_AzmWMaj9EeuoYcr_EZ_uiQ" name="ShowGoodInfo">
+            <target xmi:type="safe2:Constraint" href="pulseox-forwarding/pulseox-forwarding.safe2#//@fundamentals.0/@accident.0/@hazard.0/@constraint.0"/>
+            <semanticElements xmi:type="safe2:Constraint" href="pulseox-forwarding/pulseox-forwarding.safe2#//@fundamentals.0/@accident.0/@hazard.0/@constraint.0"/>
+            <ownedStyle xmi:type="tree:TreeItemStyle" uid="_AzmWMqj9EeuoYcr_EZ_uiQ"/>
+            <actualMapping xmi:type="description_1:TreeItemMapping" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='Fundamentals']/@subItemMappings[name='Accident%20Level']/@subItemMappings[name='Accident']/@subItemMappings[name='Hazard']/@subItemMappings[name='Constraint']"/>
+          </ownedTreeItems>
+          <semanticElements xmi:type="safe2:Hazard" href="pulseox-forwarding/pulseox-forwarding.safe2#//@fundamentals.0/@accident.0/@hazard.0"/>
+          <ownedStyle xmi:type="tree:TreeItemStyle" uid="_Ak_5gaj9EeuoYcr_EZ_uiQ"/>
+          <actualMapping xmi:type="description_1:TreeItemMapping" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='Fundamentals']/@subItemMappings[name='Accident%20Level']/@subItemMappings[name='Accident']/@subItemMappings[name='Hazard']"/>
+        </ownedTreeItems>
+        <ownedTreeItems xmi:type="tree:DTreeItem" uid="_AzlvIKj9EeuoYcr_EZ_uiQ" name="InfoLate" expanded="true">
+          <target xmi:type="safe2:Hazard" href="pulseox-forwarding/pulseox-forwarding.safe2#//@fundamentals.0/@accident.0/@hazard.1"/>
+          <ownedTreeItems xmi:type="tree:DTreeItem" uid="_AzmWM6j9EeuoYcr_EZ_uiQ" name="ShowInfoOnTime">
+            <target xmi:type="safe2:Constraint" href="pulseox-forwarding/pulseox-forwarding.safe2#//@fundamentals.0/@accident.0/@hazard.1/@constraint.0"/>
+            <semanticElements xmi:type="safe2:Constraint" href="pulseox-forwarding/pulseox-forwarding.safe2#//@fundamentals.0/@accident.0/@hazard.1/@constraint.0"/>
+            <ownedStyle xmi:type="tree:TreeItemStyle" uid="_AzmWNKj9EeuoYcr_EZ_uiQ"/>
+            <actualMapping xmi:type="description_1:TreeItemMapping" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='Fundamentals']/@subItemMappings[name='Accident%20Level']/@subItemMappings[name='Accident']/@subItemMappings[name='Hazard']/@subItemMappings[name='Constraint']"/>
+          </ownedTreeItems>
+          <semanticElements xmi:type="safe2:Hazard" href="pulseox-forwarding/pulseox-forwarding.safe2#//@fundamentals.0/@accident.0/@hazard.1"/>
+          <ownedStyle xmi:type="tree:TreeItemStyle" uid="_AzlvIaj9EeuoYcr_EZ_uiQ"/>
+          <actualMapping xmi:type="description_1:TreeItemMapping" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='Fundamentals']/@subItemMappings[name='Accident%20Level']/@subItemMappings[name='Accident']/@subItemMappings[name='Hazard']"/>
+        </ownedTreeItems>
+        <semanticElements xmi:type="safe2:Accident" href="pulseox-forwarding/pulseox-forwarding.safe2#//@fundamentals.0/@accident.0"/>
+        <ownedStyle xmi:type="tree:TreeItemStyle" uid="_ACBvUaj9EeuoYcr_EZ_uiQ"/>
+        <actualMapping xmi:type="description_1:TreeItemMapping" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='Fundamentals']/@subItemMappings[name='Accident%20Level']/@subItemMappings[name='Accident']"/>
+      </ownedTreeItems>
+      <semanticElements xmi:type="safe2:AccidentLevel" href="pulseox-forwarding/pulseox-forwarding.safe2#//@fundamentals.0"/>
+      <ownedStyle xmi:type="tree:TreeItemStyle" uid="_ABzs4aj9EeuoYcr_EZ_uiQ"/>
+      <actualMapping xmi:type="description_1:TreeItemMapping" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='Fundamentals']/@subItemMappings[name='Accident%20Level']"/>
+    </ownedTreeItems>
+    <description xmi:type="description_1:TreeDescription" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='Fundamentals']"/>
+  </tree:DTree>
+  <table:DTable uid="_Xbo6EKj9EeuoYcr_EZ_uiQ" headerColumnWidth="502">
+    <target xmi:type="instance:SystemInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#/"/>
+    <lines xmi:type="table:DLine" uid="_XbyrEaj9EeuoYcr_EZ_uiQ" label="appLogic.CheckSpO2Thread.Alarm -> appDisplay.HandleAlarmThread.Alarm">
+      <target xmi:type="instance:ConnectionInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@connectionInstance.6"/>
+      <semanticElements xmi:type="instance:ConnectionInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@connectionInstance.6"/>
+      <originMapping xmi:type="description_3:LineMapping" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='TopLevelErrors']/@ownedLineMappings[name='ControlActionsTopLevelErrors']"/>
+      <currentStyle xmi:type="table:DTableElementStyle" uid="_XbyrEqj9EeuoYcr_EZ_uiQ" labelSize="12" defaultForegroundStyle="true" defaultBackgroundStyle="true" backgroundColor="136,136,136"/>
+    </lines>
+    <lines xmi:type="table:DLine" uid="_XbyrF6j9EeuoYcr_EZ_uiQ" label="doctor.DocGiveAdvice -> clinician.ClinGetAdvice">
+      <target xmi:type="instance:ConnectionInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@connectionInstance.2"/>
+      <semanticElements xmi:type="instance:ConnectionInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@connectionInstance.2"/>
+      <originMapping xmi:type="description_3:LineMapping" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='TopLevelErrors']/@ownedLineMappings[name='ControlActionsTopLevelErrors']"/>
+      <currentStyle xmi:type="table:DTableElementStyle" uid="_XbyrGKj9EeuoYcr_EZ_uiQ" labelSize="12" defaultForegroundStyle="true" defaultBackgroundStyle="true" backgroundColor="136,136,136"/>
+    </lines>
+    <lines xmi:type="table:DLine" uid="_XbyrFaj9EeuoYcr_EZ_uiQ" label="appDisplay.DispShowSpO2 -> clinician.ClinViewSpO2">
+      <target xmi:type="instance:ConnectionInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@connectionInstance.7"/>
+      <semanticElements xmi:type="instance:ConnectionInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@connectionInstance.7"/>
+      <originMapping xmi:type="description_3:LineMapping" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='TopLevelErrors']/@ownedLineMappings[name='ControlActionsTopLevelErrors']"/>
+      <currentStyle xmi:type="table:DTableElementStyle" uid="_XbyrFqj9EeuoYcr_EZ_uiQ" labelSize="12" defaultForegroundStyle="true" defaultBackgroundStyle="true" backgroundColor="136,136,136"/>
+    </lines>
+    <lines xmi:type="table:DLine" uid="_XbyrGaj9EeuoYcr_EZ_uiQ" label="pulseOx.POOutSpO2 -> appDisplay.UpdateSpO2Thread.SpO2">
+      <target xmi:type="instance:ConnectionInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@connectionInstance.4"/>
+      <semanticElements xmi:type="instance:ConnectionInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@connectionInstance.4"/>
+      <originMapping xmi:type="description_3:LineMapping" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='TopLevelErrors']/@ownedLineMappings[name='ControlActionsTopLevelErrors']"/>
+      <currentStyle xmi:type="table:DTableElementStyle" uid="_XbyrGqj9EeuoYcr_EZ_uiQ" labelSize="12" defaultForegroundStyle="true" defaultBackgroundStyle="true" backgroundColor="136,136,136"/>
+    </lines>
+    <lines xmi:type="table:DLine" uid="_Xbw14Kj9EeuoYcr_EZ_uiQ" label="pulseOx.POOutSpO2 -> electronicHealthRecord.ehrSpO2">
+      <target xmi:type="instance:ConnectionInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@connectionInstance.5"/>
+      <semanticElements xmi:type="instance:ConnectionInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@connectionInstance.5"/>
+      <originMapping xmi:type="description_3:LineMapping" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='TopLevelErrors']/@ownedLineMappings[name='ControlActionsTopLevelErrors']"/>
+      <currentStyle xmi:type="table:DTableElementStyle" uid="_Xbxc8Kj9EeuoYcr_EZ_uiQ" labelSize="12" defaultForegroundStyle="true" defaultBackgroundStyle="true" backgroundColor="136,136,136"/>
+    </lines>
+    <lines xmi:type="table:DLine" uid="_XbyrE6j9EeuoYcr_EZ_uiQ" label="patient.PatientFingerclip -> pulseOx.SensorInput">
+      <target xmi:type="instance:ConnectionInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@connectionInstance.0"/>
+      <semanticElements xmi:type="instance:ConnectionInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@connectionInstance.0"/>
+      <originMapping xmi:type="description_3:LineMapping" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='TopLevelErrors']/@ownedLineMappings[name='ControlActionsTopLevelErrors']"/>
+      <currentStyle xmi:type="table:DTableElementStyle" uid="_XbyrFKj9EeuoYcr_EZ_uiQ" labelSize="12" defaultForegroundStyle="true" defaultBackgroundStyle="true" backgroundColor="136,136,136"/>
+    </lines>
+    <lines xmi:type="table:DLine" uid="_XbyrG6j9EeuoYcr_EZ_uiQ" label="pulseOx.POOutSpO2 -> appLogic.StoreSpO2Thread.incoming_spo2">
+      <target xmi:type="instance:ConnectionInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@connectionInstance.3"/>
+      <semanticElements xmi:type="instance:ConnectionInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@connectionInstance.3"/>
+      <originMapping xmi:type="description_3:LineMapping" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='TopLevelErrors']/@ownedLineMappings[name='ControlActionsTopLevelErrors']"/>
+      <currentStyle xmi:type="table:DTableElementStyle" uid="_XbyrHKj9EeuoYcr_EZ_uiQ" labelSize="12" defaultForegroundStyle="true" defaultBackgroundStyle="true" backgroundColor="136,136,136"/>
+    </lines>
+    <lines xmi:type="table:DLine" uid="_XbyEAKj9EeuoYcr_EZ_uiQ" label="clinician.ClinTreatment -> patient.PatientTreatment">
+      <target xmi:type="instance:ConnectionInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@connectionInstance.1"/>
+      <semanticElements xmi:type="instance:ConnectionInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@connectionInstance.1"/>
+      <originMapping xmi:type="description_3:LineMapping" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='TopLevelErrors']/@ownedLineMappings[name='ControlActionsTopLevelErrors']"/>
+      <currentStyle xmi:type="table:DTableElementStyle" uid="_XbyrEKj9EeuoYcr_EZ_uiQ" labelSize="12" defaultForegroundStyle="true" defaultBackgroundStyle="true" backgroundColor="136,136,136"/>
+    </lines>
+    <columns xmi:type="table:DTargetColumn" uid="_Xb0gQKj9EeuoYcr_EZ_uiQ" label="ViolatedConstraint" width="120">
+      <target xmi:type="errorModel:ErrorType" href="pulseox-forwarding/aadl/PulseOx_Forwarding_Errors.aadl#emv2$PulseOx_Forwarding_Errors.ViolatedConstraint"/>
+      <semanticElements xmi:type="errorModel:ErrorType" href="pulseox-forwarding/aadl/PulseOx_Forwarding_Errors.aadl#emv2$PulseOx_Forwarding_Errors.ViolatedConstraint"/>
+      <originMapping xmi:type="description_3:ElementColumnMapping" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='TopLevelErrors']/@ownedColumnMappings.0"/>
+      <currentStyle xmi:type="table:DTableElementStyle" uid="_Xb0gQaj9EeuoYcr_EZ_uiQ" labelSize="12" defaultForegroundStyle="true" defaultBackgroundStyle="true" backgroundColor="136,136,136"/>
+    </columns>
+    <columns xmi:type="table:DTargetColumn" uid="_Xb0gRqj9EeuoYcr_EZ_uiQ" label="ItemValueError" width="100">
+      <target xmi:type="errorModel:ErrorType" href="platform:/plugin/org.osate.aadl2.errormodel.contrib/resources/packages/ErrorLibrary.aadl#emv2$ErrorLibrary.ItemValueError"/>
+      <semanticElements xmi:type="errorModel:ErrorType" href="platform:/plugin/org.osate.aadl2.errormodel.contrib/resources/packages/ErrorLibrary.aadl#emv2$ErrorLibrary.ItemValueError"/>
+      <originMapping xmi:type="description_3:ElementColumnMapping" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='TopLevelErrors']/@ownedColumnMappings.0"/>
+      <currentStyle xmi:type="table:DTableElementStyle" uid="_Xb0gR6j9EeuoYcr_EZ_uiQ" labelSize="12" defaultForegroundStyle="true" defaultBackgroundStyle="true" backgroundColor="136,136,136"/>
+    </columns>
+    <columns xmi:type="table:DTargetColumn" uid="_Xb0gQqj9EeuoYcr_EZ_uiQ" label="ServiceError" width="87">
+      <target xmi:type="errorModel:ErrorType" href="platform:/plugin/org.osate.aadl2.errormodel.contrib/resources/packages/ErrorLibrary.aadl#emv2$ErrorLibrary.ServiceError"/>
+      <semanticElements xmi:type="errorModel:ErrorType" href="platform:/plugin/org.osate.aadl2.errormodel.contrib/resources/packages/ErrorLibrary.aadl#emv2$ErrorLibrary.ServiceError"/>
+      <originMapping xmi:type="description_3:ElementColumnMapping" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='TopLevelErrors']/@ownedColumnMappings.0"/>
+      <currentStyle xmi:type="table:DTableElementStyle" uid="_Xb0gQ6j9EeuoYcr_EZ_uiQ" labelSize="12" defaultForegroundStyle="true" defaultBackgroundStyle="true" backgroundColor="136,136,136"/>
+    </columns>
+    <columns xmi:type="table:DTargetColumn" uid="_Xb0gRKj9EeuoYcr_EZ_uiQ" label="ItemTimingError" width="124">
+      <target xmi:type="errorModel:ErrorType" href="platform:/plugin/org.osate.aadl2.errormodel.contrib/resources/packages/ErrorLibrary.aadl#emv2$ErrorLibrary.ItemTimingError"/>
+      <semanticElements xmi:type="errorModel:ErrorType" href="platform:/plugin/org.osate.aadl2.errormodel.contrib/resources/packages/ErrorLibrary.aadl#emv2$ErrorLibrary.ItemTimingError"/>
+      <originMapping xmi:type="description_3:ElementColumnMapping" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='TopLevelErrors']/@ownedColumnMappings.0"/>
+      <currentStyle xmi:type="table:DTableElementStyle" uid="_Xb0gRaj9EeuoYcr_EZ_uiQ" labelSize="12" defaultForegroundStyle="true" defaultBackgroundStyle="true" backgroundColor="136,136,136"/>
+    </columns>
+    <description xmi:type="description_3:CrossTableDescription" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='TopLevelErrors']"/>
+  </table:DTable>
+  <table:DTable uid="_cld4YKwjEeu3oJ7BiAjMEw" headerColumnWidth="20">
+    <target xmi:type="instance:ComponentInstance" href="pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@componentInstance.5"/>
+    <columns xmi:type="table:DTargetColumn" uid="_clwMQKwjEeu3oJ7BiAjMEw" label="Content" width="64">
+      <target xmi:type="errorModel:ErrorType" href="pulseox-forwarding/aadl/MAP_Errors.aadl#emv2$MAP_Errors.Content"/>
+      <semanticElements xmi:type="errorModel:ErrorType" href="pulseox-forwarding/aadl/MAP_Errors.aadl#emv2$MAP_Errors.Content"/>
+      <originMapping xmi:type="description_3:ElementColumnMapping" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='TopLevelErrors']/@ownedColumnMappings.0"/>
+      <currentStyle xmi:type="table:DTableElementStyle" uid="_clwMQawjEeu3oJ7BiAjMEw" labelSize="12" defaultForegroundStyle="true" defaultBackgroundStyle="true" backgroundColor="136,136,136"/>
+    </columns>
+    <columns xmi:type="table:DTargetColumn" uid="_clwMQqwjEeu3oJ7BiAjMEw" label="SemanticMismatch" width="122">
+      <target xmi:type="errorModel:ErrorType" href="pulseox-forwarding/aadl/MAP_Errors.aadl#emv2$MAP_Errors.SemanticMismatch"/>
+      <semanticElements xmi:type="errorModel:ErrorType" href="pulseox-forwarding/aadl/MAP_Errors.aadl#emv2$MAP_Errors.SemanticMismatch"/>
+      <originMapping xmi:type="description_3:ElementColumnMapping" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='TopLevelErrors']/@ownedColumnMappings.0"/>
+      <currentStyle xmi:type="table:DTableElementStyle" uid="_clwMQ6wjEeu3oJ7BiAjMEw" labelSize="12" defaultForegroundStyle="true" defaultBackgroundStyle="true" backgroundColor="136,136,136"/>
+    </columns>
+    <columns xmi:type="table:DTargetColumn" uid="_clwMRKwjEeu3oJ7BiAjMEw" label="OperatorHWMistake" width="129">
+      <target xmi:type="errorModel:ErrorType" href="pulseox-forwarding/aadl/MAP_Errors.aadl#emv2$MAP_Errors.OperatorHWMistake"/>
+      <semanticElements xmi:type="errorModel:ErrorType" href="pulseox-forwarding/aadl/MAP_Errors.aadl#emv2$MAP_Errors.OperatorHWMistake"/>
+      <originMapping xmi:type="description_3:ElementColumnMapping" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='TopLevelErrors']/@ownedColumnMappings.0"/>
+      <currentStyle xmi:type="table:DTableElementStyle" uid="_clwMRawjEeu3oJ7BiAjMEw" labelSize="12" defaultForegroundStyle="true" defaultBackgroundStyle="true" backgroundColor="136,136,136"/>
+    </columns>
+    <columns xmi:type="table:DTargetColumn" uid="_clwMRqwjEeu3oJ7BiAjMEw" label="RateMismatch" width="97">
+      <target xmi:type="errorModel:ErrorType" href="pulseox-forwarding/aadl/MAP_Errors.aadl#emv2$MAP_Errors.RateMismatch"/>
+      <semanticElements xmi:type="errorModel:ErrorType" href="pulseox-forwarding/aadl/MAP_Errors.aadl#emv2$MAP_Errors.RateMismatch"/>
+      <originMapping xmi:type="description_3:ElementColumnMapping" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='TopLevelErrors']/@ownedColumnMappings.0"/>
+      <currentStyle xmi:type="table:DTableElementStyle" uid="_clwMR6wjEeu3oJ7BiAjMEw" labelSize="12" defaultForegroundStyle="true" defaultBackgroundStyle="true" backgroundColor="136,136,136"/>
+    </columns>
+    <columns xmi:type="table:DTargetColumn" uid="_clwzUKwjEeu3oJ7BiAjMEw" label="ItemTimingError" width="106">
+      <target xmi:type="errorModel:ErrorType" href="platform:/plugin/org.osate.aadl2.errormodel.contrib/resources/packages/ErrorLibrary.aadl#emv2$ErrorLibrary.ItemTimingError"/>
+      <semanticElements xmi:type="errorModel:ErrorType" href="platform:/plugin/org.osate.aadl2.errormodel.contrib/resources/packages/ErrorLibrary.aadl#emv2$ErrorLibrary.ItemTimingError"/>
+      <originMapping xmi:type="description_3:ElementColumnMapping" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='TopLevelErrors']/@ownedColumnMappings.0"/>
+      <currentStyle xmi:type="table:DTableElementStyle" uid="_clwzUawjEeu3oJ7BiAjMEw" labelSize="12" defaultForegroundStyle="true" defaultBackgroundStyle="true" backgroundColor="136,136,136"/>
+    </columns>
+    <columns xmi:type="table:DTargetColumn" uid="_clwzUqwjEeu3oJ7BiAjMEw" label="ProductionDefect" width="115">
+      <target xmi:type="errorModel:ErrorType" href="pulseox-forwarding/aadl/MAP_Errors.aadl#emv2$MAP_Errors.ProductionDefect"/>
+      <semanticElements xmi:type="errorModel:ErrorType" href="pulseox-forwarding/aadl/MAP_Errors.aadl#emv2$MAP_Errors.ProductionDefect"/>
+      <originMapping xmi:type="description_3:ElementColumnMapping" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='TopLevelErrors']/@ownedColumnMappings.0"/>
+      <currentStyle xmi:type="table:DTableElementStyle" uid="_clwzU6wjEeu3oJ7BiAjMEw" labelSize="12" defaultForegroundStyle="true" defaultBackgroundStyle="true" backgroundColor="136,136,136"/>
+    </columns>
+    <columns xmi:type="table:DTargetColumn" uid="_clwzVKwjEeu3oJ7BiAjMEw" label="CompromisedSoftware" width="142">
+      <target xmi:type="errorModel:ErrorType" href="pulseox-forwarding/aadl/MAP_Errors.aadl#emv2$MAP_Errors.CompromisedSoftware"/>
+      <semanticElements xmi:type="errorModel:ErrorType" href="pulseox-forwarding/aadl/MAP_Errors.aadl#emv2$MAP_Errors.CompromisedSoftware"/>
+      <originMapping xmi:type="description_3:ElementColumnMapping" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='TopLevelErrors']/@ownedColumnMappings.0"/>
+      <currentStyle xmi:type="table:DTableElementStyle" uid="_clwzVawjEeu3oJ7BiAjMEw" labelSize="12" defaultForegroundStyle="true" defaultBackgroundStyle="true" backgroundColor="136,136,136"/>
+    </columns>
+    <columns xmi:type="table:DTargetColumn" uid="_clwzVqwjEeu3oJ7BiAjMEw" label="CompromisedHardware" width="146">
+      <target xmi:type="errorModel:ErrorType" href="pulseox-forwarding/aadl/MAP_Errors.aadl#emv2$MAP_Errors.CompromisedHardware"/>
+      <semanticElements xmi:type="errorModel:ErrorType" href="pulseox-forwarding/aadl/MAP_Errors.aadl#emv2$MAP_Errors.CompromisedHardware"/>
+      <originMapping xmi:type="description_3:ElementColumnMapping" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='TopLevelErrors']/@ownedColumnMappings.0"/>
+      <currentStyle xmi:type="table:DTableElementStyle" uid="_clwzV6wjEeu3oJ7BiAjMEw" labelSize="12" defaultForegroundStyle="true" defaultBackgroundStyle="true" backgroundColor="136,136,136"/>
+    </columns>
+    <columns xmi:type="table:DTargetColumn" uid="_clwzWKwjEeu3oJ7BiAjMEw" label="Timing" width="58">
+      <target xmi:type="errorModel:ErrorType" href="pulseox-forwarding/aadl/MAP_Errors.aadl#emv2$MAP_Errors.Timing"/>
+      <semanticElements xmi:type="errorModel:ErrorType" href="pulseox-forwarding/aadl/MAP_Errors.aadl#emv2$MAP_Errors.Timing"/>
+      <originMapping xmi:type="description_3:ElementColumnMapping" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='TopLevelErrors']/@ownedColumnMappings.0"/>
+      <currentStyle xmi:type="table:DTableElementStyle" uid="_clwzWawjEeu3oJ7BiAjMEw" labelSize="12" defaultForegroundStyle="true" defaultBackgroundStyle="true" backgroundColor="136,136,136"/>
+    </columns>
+    <columns xmi:type="table:DTargetColumn" uid="_clwzWqwjEeu3oJ7BiAjMEw" label="OperatorSWMistake" width="128">
+      <target xmi:type="errorModel:ErrorType" href="pulseox-forwarding/aadl/MAP_Errors.aadl#emv2$MAP_Errors.OperatorSWMistake"/>
+      <semanticElements xmi:type="errorModel:ErrorType" href="pulseox-forwarding/aadl/MAP_Errors.aadl#emv2$MAP_Errors.OperatorSWMistake"/>
+      <originMapping xmi:type="description_3:ElementColumnMapping" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='TopLevelErrors']/@ownedColumnMappings.0"/>
+      <currentStyle xmi:type="table:DTableElementStyle" uid="_clwzW6wjEeu3oJ7BiAjMEw" labelSize="12" defaultForegroundStyle="true" defaultBackgroundStyle="true" backgroundColor="136,136,136"/>
+    </columns>
+    <columns xmi:type="table:DTargetColumn" uid="_clwzXKwjEeu3oJ7BiAjMEw" label="ViolatedConstraint" width="120">
+      <target xmi:type="errorModel:ErrorType" href="pulseox-forwarding/aadl/PulseOx_Forwarding_Errors.aadl#emv2$PulseOx_Forwarding_Errors.ViolatedConstraint"/>
+      <semanticElements xmi:type="errorModel:ErrorType" href="pulseox-forwarding/aadl/PulseOx_Forwarding_Errors.aadl#emv2$PulseOx_Forwarding_Errors.ViolatedConstraint"/>
+      <originMapping xmi:type="description_3:ElementColumnMapping" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='TopLevelErrors']/@ownedColumnMappings.0"/>
+      <currentStyle xmi:type="table:DTableElementStyle" uid="_clwzXawjEeu3oJ7BiAjMEw" labelSize="12" defaultForegroundStyle="true" defaultBackgroundStyle="true" backgroundColor="136,136,136"/>
+    </columns>
+    <columns xmi:type="table:DTargetColumn" uid="_clwzXqwjEeu3oJ7BiAjMEw" label="Cleartext" width="70">
+      <target xmi:type="errorModel:ErrorType" href="pulseox-forwarding/aadl/MAP_Errors.aadl#emv2$MAP_Errors.Cleartext"/>
+      <semanticElements xmi:type="errorModel:ErrorType" href="pulseox-forwarding/aadl/MAP_Errors.aadl#emv2$MAP_Errors.Cleartext"/>
+      <originMapping xmi:type="description_3:ElementColumnMapping" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='TopLevelErrors']/@ownedColumnMappings.0"/>
+      <currentStyle xmi:type="table:DTableElementStyle" uid="_clwzX6wjEeu3oJ7BiAjMEw" labelSize="12" defaultForegroundStyle="true" defaultBackgroundStyle="true" backgroundColor="136,136,136"/>
+    </columns>
+    <columns xmi:type="table:DTargetColumn" uid="_clwzYKwjEeu3oJ7BiAjMEw" label="AdversaryAccessesHardware" width="174">
+      <target xmi:type="errorModel:ErrorType" href="pulseox-forwarding/aadl/MAP_Errors.aadl#emv2$MAP_Errors.AdversaryAccessesHardware"/>
+      <semanticElements xmi:type="errorModel:ErrorType" href="pulseox-forwarding/aadl/MAP_Errors.aadl#emv2$MAP_Errors.AdversaryAccessesHardware"/>
+      <originMapping xmi:type="description_3:ElementColumnMapping" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='TopLevelErrors']/@ownedColumnMappings.0"/>
+      <currentStyle xmi:type="table:DTableElementStyle" uid="_clwzYawjEeu3oJ7BiAjMEw" labelSize="12" defaultForegroundStyle="true" defaultBackgroundStyle="true" backgroundColor="136,136,136"/>
+    </columns>
+    <columns xmi:type="table:DTargetColumn" uid="_clwzYqwjEeu3oJ7BiAjMEw" label="ViolatedConstraint" width="120">
+      <target xmi:type="errorModel:ErrorType" href="pulseox-forwarding/aadl/MAP_Errors.aadl#emv2$MAP_Errors.ViolatedConstraint"/>
+      <semanticElements xmi:type="errorModel:ErrorType" href="pulseox-forwarding/aadl/MAP_Errors.aadl#emv2$MAP_Errors.ViolatedConstraint"/>
+      <originMapping xmi:type="description_3:ElementColumnMapping" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='TopLevelErrors']/@ownedColumnMappings.0"/>
+      <currentStyle xmi:type="table:DTableElementStyle" uid="_clwzY6wjEeu3oJ7BiAjMEw" labelSize="12" defaultForegroundStyle="true" defaultBackgroundStyle="true" backgroundColor="136,136,136"/>
+    </columns>
+    <columns xmi:type="table:DTargetColumn" uid="_clwzZKwjEeu3oJ7BiAjMEw" label="Halted" width="57">
+      <target xmi:type="errorModel:ErrorType" href="pulseox-forwarding/aadl/MAP_Errors.aadl#emv2$MAP_Errors.Halted"/>
+      <semanticElements xmi:type="errorModel:ErrorType" href="pulseox-forwarding/aadl/MAP_Errors.aadl#emv2$MAP_Errors.Halted"/>
+      <originMapping xmi:type="description_3:ElementColumnMapping" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='TopLevelErrors']/@ownedColumnMappings.0"/>
+      <currentStyle xmi:type="table:DTableElementStyle" uid="_clwzZawjEeu3oJ7BiAjMEw" labelSize="12" defaultForegroundStyle="true" defaultBackgroundStyle="true" backgroundColor="136,136,136"/>
+    </columns>
+    <columns xmi:type="table:DTargetColumn" uid="_clwzZqwjEeu3oJ7BiAjMEw" label="SyntaxMismatch" width="109">
+      <target xmi:type="errorModel:ErrorType" href="pulseox-forwarding/aadl/MAP_Errors.aadl#emv2$MAP_Errors.SyntaxMismatch"/>
+      <semanticElements xmi:type="errorModel:ErrorType" href="pulseox-forwarding/aadl/MAP_Errors.aadl#emv2$MAP_Errors.SyntaxMismatch"/>
+      <originMapping xmi:type="description_3:ElementColumnMapping" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='TopLevelErrors']/@ownedColumnMappings.0"/>
+      <currentStyle xmi:type="table:DTableElementStyle" uid="_clwzZ6wjEeu3oJ7BiAjMEw" labelSize="12" defaultForegroundStyle="true" defaultBackgroundStyle="true" backgroundColor="136,136,136"/>
+    </columns>
+    <columns xmi:type="table:DTargetColumn" uid="_clwzaKwjEeu3oJ7BiAjMEw" label="SoftwareBug" width="90">
+      <target xmi:type="errorModel:ErrorType" href="pulseox-forwarding/aadl/MAP_Errors.aadl#emv2$MAP_Errors.SoftwareBug"/>
+      <semanticElements xmi:type="errorModel:ErrorType" href="pulseox-forwarding/aadl/MAP_Errors.aadl#emv2$MAP_Errors.SoftwareBug"/>
+      <originMapping xmi:type="description_3:ElementColumnMapping" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='TopLevelErrors']/@ownedColumnMappings.0"/>
+      <currentStyle xmi:type="table:DTableElementStyle" uid="_clwzaawjEeu3oJ7BiAjMEw" labelSize="12" defaultForegroundStyle="true" defaultBackgroundStyle="true" backgroundColor="136,136,136"/>
+    </columns>
+    <columns xmi:type="table:DTargetColumn" uid="_clxaYKwjEeu3oJ7BiAjMEw" label="OperatorHWWrongChoice" width="159">
+      <target xmi:type="errorModel:ErrorType" href="pulseox-forwarding/aadl/MAP_Errors.aadl#emv2$MAP_Errors.OperatorHWWrongChoice"/>
+      <semanticElements xmi:type="errorModel:ErrorType" href="pulseox-forwarding/aadl/MAP_Errors.aadl#emv2$MAP_Errors.OperatorHWWrongChoice"/>
+      <originMapping xmi:type="description_3:ElementColumnMapping" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='TopLevelErrors']/@ownedColumnMappings.0"/>
+      <currentStyle xmi:type="table:DTableElementStyle" uid="_clxaYawjEeu3oJ7BiAjMEw" labelSize="12" defaultForegroundStyle="true" defaultBackgroundStyle="true" backgroundColor="136,136,136"/>
+    </columns>
+    <columns xmi:type="table:DTargetColumn" uid="_clxaYqwjEeu3oJ7BiAjMEw" label="ProcessModel" width="97">
+      <target xmi:type="errorModel:ErrorType" href="pulseox-forwarding/aadl/MAP_Errors.aadl#emv2$MAP_Errors.ProcessModel"/>
+      <semanticElements xmi:type="errorModel:ErrorType" href="pulseox-forwarding/aadl/MAP_Errors.aadl#emv2$MAP_Errors.ProcessModel"/>
+      <originMapping xmi:type="description_3:ElementColumnMapping" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='TopLevelErrors']/@ownedColumnMappings.0"/>
+      <currentStyle xmi:type="table:DTableElementStyle" uid="_clxaY6wjEeu3oJ7BiAjMEw" labelSize="12" defaultForegroundStyle="true" defaultBackgroundStyle="true" backgroundColor="136,136,136"/>
+    </columns>
+    <columns xmi:type="table:DTargetColumn" uid="_clxaZKwjEeu3oJ7BiAjMEw" label="AdversaryAccessesSoftware" width="171">
+      <target xmi:type="errorModel:ErrorType" href="pulseox-forwarding/aadl/MAP_Errors.aadl#emv2$MAP_Errors.AdversaryAccessesSoftware"/>
+      <semanticElements xmi:type="errorModel:ErrorType" href="pulseox-forwarding/aadl/MAP_Errors.aadl#emv2$MAP_Errors.AdversaryAccessesSoftware"/>
+      <originMapping xmi:type="description_3:ElementColumnMapping" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='TopLevelErrors']/@ownedColumnMappings.0"/>
+      <currentStyle xmi:type="table:DTableElementStyle" uid="_clxaZawjEeu3oJ7BiAjMEw" labelSize="12" defaultForegroundStyle="true" defaultBackgroundStyle="true" backgroundColor="136,136,136"/>
+    </columns>
+    <columns xmi:type="table:DTargetColumn" uid="_clxaZqwjEeu3oJ7BiAjMEw" label="ItemValueError" width="100">
+      <target xmi:type="errorModel:ErrorType" href="platform:/plugin/org.osate.aadl2.errormodel.contrib/resources/packages/ErrorLibrary.aadl#emv2$ErrorLibrary.ItemValueError"/>
+      <semanticElements xmi:type="errorModel:ErrorType" href="platform:/plugin/org.osate.aadl2.errormodel.contrib/resources/packages/ErrorLibrary.aadl#emv2$ErrorLibrary.ItemValueError"/>
+      <originMapping xmi:type="description_3:ElementColumnMapping" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='TopLevelErrors']/@ownedColumnMappings.0"/>
+      <currentStyle xmi:type="table:DTableElementStyle" uid="_clxaZ6wjEeu3oJ7BiAjMEw" labelSize="12" defaultForegroundStyle="true" defaultBackgroundStyle="true" backgroundColor="136,136,136"/>
+    </columns>
+    <columns xmi:type="table:DTargetColumn" uid="_clxaaKwjEeu3oJ7BiAjMEw" label="Deterioration" width="91">
+      <target xmi:type="errorModel:ErrorType" href="pulseox-forwarding/aadl/MAP_Errors.aadl#emv2$MAP_Errors.Deterioration"/>
+      <semanticElements xmi:type="errorModel:ErrorType" href="pulseox-forwarding/aadl/MAP_Errors.aadl#emv2$MAP_Errors.Deterioration"/>
+      <originMapping xmi:type="description_3:ElementColumnMapping" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='TopLevelErrors']/@ownedColumnMappings.0"/>
+      <currentStyle xmi:type="table:DTableElementStyle" uid="_clxaaawjEeu3oJ7BiAjMEw" labelSize="12" defaultForegroundStyle="true" defaultBackgroundStyle="true" backgroundColor="136,136,136"/>
+    </columns>
+    <columns xmi:type="table:DTargetColumn" uid="_clxaaqwjEeu3oJ7BiAjMEw" label="ServiceError" width="87">
+      <target xmi:type="errorModel:ErrorType" href="platform:/plugin/org.osate.aadl2.errormodel.contrib/resources/packages/ErrorLibrary.aadl#emv2$ErrorLibrary.ServiceError"/>
+      <semanticElements xmi:type="errorModel:ErrorType" href="platform:/plugin/org.osate.aadl2.errormodel.contrib/resources/packages/ErrorLibrary.aadl#emv2$ErrorLibrary.ServiceError"/>
+      <originMapping xmi:type="description_3:ElementColumnMapping" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='TopLevelErrors']/@ownedColumnMappings.0"/>
+      <currentStyle xmi:type="table:DTableElementStyle" uid="_clxaa6wjEeu3oJ7BiAjMEw" labelSize="12" defaultForegroundStyle="true" defaultBackgroundStyle="true" backgroundColor="136,136,136"/>
+    </columns>
+    <columns xmi:type="table:DTargetColumn" uid="_clxabKwjEeu3oJ7BiAjMEw" label="CosmicRay" width="81">
+      <target xmi:type="errorModel:ErrorType" href="pulseox-forwarding/aadl/MAP_Errors.aadl#emv2$MAP_Errors.CosmicRay"/>
+      <semanticElements xmi:type="errorModel:ErrorType" href="pulseox-forwarding/aadl/MAP_Errors.aadl#emv2$MAP_Errors.CosmicRay"/>
+      <originMapping xmi:type="description_3:ElementColumnMapping" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='TopLevelErrors']/@ownedColumnMappings.0"/>
+      <currentStyle xmi:type="table:DTableElementStyle" uid="_clxabawjEeu3oJ7BiAjMEw" labelSize="12" defaultForegroundStyle="true" defaultBackgroundStyle="true" backgroundColor="136,136,136"/>
+    </columns>
+    <columns xmi:type="table:DTargetColumn" uid="_clxabqwjEeu3oJ7BiAjMEw" label="OperatorSWWrongChoice" width="158">
+      <target xmi:type="errorModel:ErrorType" href="pulseox-forwarding/aadl/MAP_Errors.aadl#emv2$MAP_Errors.OperatorSWWrongChoice"/>
+      <semanticElements xmi:type="errorModel:ErrorType" href="pulseox-forwarding/aadl/MAP_Errors.aadl#emv2$MAP_Errors.OperatorSWWrongChoice"/>
+      <originMapping xmi:type="description_3:ElementColumnMapping" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='TopLevelErrors']/@ownedColumnMappings.0"/>
+      <currentStyle xmi:type="table:DTableElementStyle" uid="_clxab6wjEeu3oJ7BiAjMEw" labelSize="12" defaultForegroundStyle="true" defaultBackgroundStyle="true" backgroundColor="136,136,136"/>
+    </columns>
+    <columns xmi:type="table:DTargetColumn" uid="_clxacKwjEeu3oJ7BiAjMEw" label="BadHardwareDesign" width="129">
+      <target xmi:type="errorModel:ErrorType" href="pulseox-forwarding/aadl/MAP_Errors.aadl#emv2$MAP_Errors.BadHardwareDesign"/>
+      <semanticElements xmi:type="errorModel:ErrorType" href="pulseox-forwarding/aadl/MAP_Errors.aadl#emv2$MAP_Errors.BadHardwareDesign"/>
+      <originMapping xmi:type="description_3:ElementColumnMapping" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='TopLevelErrors']/@ownedColumnMappings.0"/>
+      <currentStyle xmi:type="table:DTableElementStyle" uid="_clxacawjEeu3oJ7BiAjMEw" labelSize="12" defaultForegroundStyle="true" defaultBackgroundStyle="true" backgroundColor="136,136,136"/>
+    </columns>
+    <columns xmi:type="table:DTargetColumn" uid="_clxacqwjEeu3oJ7BiAjMEw" label="BadSoftwareDesign" width="126">
+      <target xmi:type="errorModel:ErrorType" href="pulseox-forwarding/aadl/MAP_Errors.aadl#emv2$MAP_Errors.BadSoftwareDesign"/>
+      <semanticElements xmi:type="errorModel:ErrorType" href="pulseox-forwarding/aadl/MAP_Errors.aadl#emv2$MAP_Errors.BadSoftwareDesign"/>
+      <originMapping xmi:type="description_3:ElementColumnMapping" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='TopLevelErrors']/@ownedColumnMappings.0"/>
+      <currentStyle xmi:type="table:DTableElementStyle" uid="_clxac6wjEeu3oJ7BiAjMEw" labelSize="12" defaultForegroundStyle="true" defaultBackgroundStyle="true" backgroundColor="136,136,136"/>
+    </columns>
+    <columns xmi:type="table:DTargetColumn" uid="_clxadKwjEeu3oJ7BiAjMEw" label="HardwareBug" width="93">
+      <target xmi:type="errorModel:ErrorType" href="pulseox-forwarding/aadl/MAP_Errors.aadl#emv2$MAP_Errors.HardwareBug"/>
+      <semanticElements xmi:type="errorModel:ErrorType" href="pulseox-forwarding/aadl/MAP_Errors.aadl#emv2$MAP_Errors.HardwareBug"/>
+      <originMapping xmi:type="description_3:ElementColumnMapping" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='TopLevelErrors']/@ownedColumnMappings.0"/>
+      <currentStyle xmi:type="table:DTableElementStyle" uid="_clxadawjEeu3oJ7BiAjMEw" labelSize="12" defaultForegroundStyle="true" defaultBackgroundStyle="true" backgroundColor="136,136,136"/>
+    </columns>
+    <columns xmi:type="table:DTargetColumn" uid="_clxadqwjEeu3oJ7BiAjMEw" label="Erratic" width="57">
+      <target xmi:type="errorModel:ErrorType" href="pulseox-forwarding/aadl/MAP_Errors.aadl#emv2$MAP_Errors.Erratic"/>
+      <semanticElements xmi:type="errorModel:ErrorType" href="pulseox-forwarding/aadl/MAP_Errors.aadl#emv2$MAP_Errors.Erratic"/>
+      <originMapping xmi:type="description_3:ElementColumnMapping" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='TopLevelErrors']/@ownedColumnMappings.0"/>
+      <currentStyle xmi:type="table:DTableElementStyle" uid="_clxad6wjEeu3oJ7BiAjMEw" labelSize="12" defaultForegroundStyle="true" defaultBackgroundStyle="true" backgroundColor="136,136,136"/>
+    </columns>
+    <description xmi:type="description_3:CrossTableDescription" href="platform:/plugin/org.osate.asap.view/description/view.odesign#//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='TopLevelErrors']"/>
+  </table:DTable>
 </xmi:XMI>

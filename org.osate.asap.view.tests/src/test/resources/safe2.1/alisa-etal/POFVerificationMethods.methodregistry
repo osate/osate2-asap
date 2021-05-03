@@ -1,3 +1,15 @@
 verification methods POFVerificationMethods [
+
+	// Copied from Plugins methodregistry so everything is centrally located~
+	method ComponentFlowLatencyAnalysis: "Verify all flow latencies in system instance" [
+		category Quality.Latency
+		description "Analysis of all end-to-end flows in a system instance or for a specific end-to-end flow."
+		java org.osate.analysis.flows.FlowLatencyAnalysisSwitch.invoke
+	]
 	
+	method ManualAnalysis: "Manually verify something interesting about the model" [
+		category Quality.Safety
+		description "An interesting property that computers can't verify"
+		manual DialogID
+	]
 ]
