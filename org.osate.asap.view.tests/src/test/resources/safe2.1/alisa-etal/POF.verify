@@ -1,8 +1,14 @@
 verification plan POF for POFReqs [
-//	claim R3 [
-//		activities
-//			BuiltInAnalysis : POFVerificationMethods.ComponentFlowLatencyAnalysis()
-//	]
+	
+	claim R3 [
+		activities
+			EnforceSpO2DataType : POFVerificationMethods.EnforceSpO2DataType()
+	]
+	
+	claim R4 [
+		activities
+			BuiltInAnalysis : POFVerificationMethods.ComponentFlowLatencyAnalysis()
+	]
 	
 	claim R7 [
 		activities

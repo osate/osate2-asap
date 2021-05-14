@@ -1,11 +1,17 @@
 system requirements POFReqs for PulseOx_Forwarding_System::PulseOx_Forwarding_System [
 	val MaximumLatency = 20 ms
-	requirement R3 : "Timely SpO2" [ // Builtin Analysis
+	
+	requirement R3 : "Consistent Data Type" [ // Builtin Analysis
+		description this " shall use a consistent SpO2 Data Type"
+		see goal POFGoals.g1
+	]
+	
+	requirement R4 : "Timely SpO2" [ // Custom Analysis
 		description this " shall have a sensor to actuator response time within " MaximumLatency
 		see goal POFGoals.g1
 	]
 	
-	requirement R7 : "Interesting Requirement " [ // Manual verification
+	requirement R7 : "Interesting Requirement" [ // Manual verification
 		description this " is an interesting requirement that can only be verified by a human"
 		see goal POFGoals.g1
 	]

@@ -1,5 +1,11 @@
 verification methods POFVerificationMethods [
 
+	method EnforceSpO2DataType: "Verify all connections use SpO2-Typed Data" [
+//		category Quality // Need like a "Quality.consistency" here or something.
+		description "Check port data consistency"
+		plugin PortDataConsistency
+	]
+	
 	// Copied from Plugins methodregistry so everything is centrally located~
 	method ComponentFlowLatencyAnalysis: "Verify all flow latencies in system instance" [
 		category Quality.Latency
