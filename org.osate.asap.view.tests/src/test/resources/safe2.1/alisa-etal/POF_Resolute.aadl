@@ -10,25 +10,32 @@ public
 	
 	-- end-to-end latency is w/in specified bound
 	
-		
---	-- Add notes (somewhere) describing why this approach wasn't taken / ALISA was
---	-- e2e flow spec that goes from the sensor to the actuator via the logic exists 
---	has_E2E_Flow(sys: system, sensor : device, logic : process, actuator : device) <=
---	** sys " must have an end-to-end flow from the sensor to the actuator via the logic specified" **
---		size(end_to_end_flows(sys)) > 0 and 
---		-- sys has e2e flow spec
---		-- get sys's e2e flow spec's elements. elements contain: 
---			-- sensor as flow source
---			-- conn from sensor to logic
---			-- logic has a flow spec (?)
---			-- conn from logic to actuator
---			-- actuator as flow dest
---		-- this e2e flow has latency < MaximumLatency
-
-		
-		
 	
-	-- calculated latency less than max
+	
+	has_connection_end_types(c: component) <=
+	** "All connection ends in " c " must have a type declared" **
+		-- This may have to be custom-written: there's some good
+		-- connection utility stuff in Resolute_Util.aadl, though
+		-- but the basic idea is to iterate over the connections from
+		-- all_reachable_connections and then check each end to verify typing.
+		
+		
+	-- Copied from Connectivity_Reachability.aadl  
+	--### all_reachable_connections(c : component) : {connection}
+	--. Return all port, data, bus access connections that are traversed when identifying reachable components
+	--. we consider direct and indirect reachability
+	all_reachable_connections(c : component) : {connection} =
+		recursive_visited_connections({c})
+	
+	-- support method to expand on a set of visited connections in recrusive traversal
+	recursive_visited_connections(curr: {component}) : {connection} =
+		let outconns : {connection} = outgoing_component_connections(comp); -- XXX wrongm cannot be comp
+		let next_ones : {component} = {otherend for (conn: outconns) (otherend: other_connection_end(conn,comp))};
+		let next_new_ones : {component} = {ele for (ele : next_ones)| not(member(ele,curr))};
+		if (next_new_ones = {}) then
+			{}
+		else
+			union(outconns, recursive_visited_connections(next_new_ones))
 	
 	**};
 end POF_Resolute;

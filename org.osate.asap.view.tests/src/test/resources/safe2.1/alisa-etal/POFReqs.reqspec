@@ -1,18 +1,73 @@
 system requirements POFReqs for PulseOx_Forwarding_System::PulseOx_Forwarding_System [
 	val MaximumLatency = 20 ms
 	
-	requirement R3 : "Consistent Data Type" [ // Builtin Analysis
-		description this " shall use a consistent SpO2 Data Type"
+//	requirement R3 : "Consistent Data Type" [ // Builtin Analysis
+//		description this " shall use a consistent SpO2 Data Type"
+//		see goal POFGoals.g1
+//	]
+//	
+//	requirement R4 : "Timely SpO2" [ // Custom Analysis
+//		description this " shall have a sensor to actuator response time within " MaximumLatency
+//		see goal POFGoals.g1
+//	]
+//	
+//	requirement R7 : "Interesting Requirement" [ // Manual verification
+//		description this " is an interesting requirement that can only be verified by a human"
+//		see goal POFGoals.g1
+//	]
+
+	requirement R1 : "Good communication" [
+		description "System components shall communicate using strongly-typed, timely messages"
 		see goal POFGoals.g1
 	]
 	
-	requirement R4 : "Timely SpO2" [ // Custom Analysis
-		description this " shall have a sensor to actuator response time within " MaximumLatency
+	requirement R1_1 : "Well-typed communication" [
+		description "System components shall communicate using strongly-typed channels"
+		refines R1
+	]
+	
+	requirement R1_2 : "Timely communication" [
+		description "System components shall communicate using timely messages"
+		refines R1
+	]
+	
+	requirement R1_2_1 : "Timely communication: Sensor to Actuator" [
+		description "The sensor to actuator response time shall be within " MaximumLatency
+		refines R1_2
+	]
+	
+	requirement R2 : "Good behavior" [
+		description "The system components shall correctly-implement well-specified behaviors"
 		see goal POFGoals.g1
 	]
 	
-	requirement R7 : "Interesting Requirement" [ // Manual verification
-		description this " is an interesting requirement that can only be verified by a human"
+	requirement R2_1 : "Well-specified behavior" [
+		description "System component behaviors shall be well-specified"
+		refines R2
+	]
+	
+	requirement R2_1_1 : "Well-specified behavior: Logic" [
+		description "The system's forwarding logic component shall be well-specified"
+		refines R2_1
+	]
+	
+	requirement R2_2 : "Correctly-implemented behavior" [
+		description "System component behaviors shall correctly implement their specification"
+		refines R2
+	]
+	
+	requirement R3 : "Safe composition" [
+		description "The components shall be composed into an acceptably safe system"
 		see goal POFGoals.g1
+	]
+	
+	requirement R3_1 : "Hazard Analysis" [
+		description "A hazard analysis of the system shows an acceptable level of safety given its clinical benefit"
+		refines R3
+	]
+	
+	requirement R3_2 : "Assurance Argument" [
+		description "The available evidence indicates that the system is acceptably safe for use"
+		refines R3
 	]
 ]

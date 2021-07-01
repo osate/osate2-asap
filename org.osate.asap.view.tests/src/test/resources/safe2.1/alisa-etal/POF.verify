@@ -1,18 +1,27 @@
 verification plan POF for POFReqs [
 	
-	claim R3 [
+//	claim R3 [
+//		activities
+//			EnforceSpO2DataType : POFVerificationMethods.EnforceSpO2DataType()
+//	]
+//	
+//	claim R4 [
+//		activities
+//			BuiltInAnalysis : POFVerificationMethods.ComponentFlowLatencyAnalysis()
+//	]
+//	
+//	claim R7 [
+//		activities
+//			ManualAnalysis : POFVerificationMethods.ManualAnalysis()
+//	]
+
+	claim R1_1 [
 		activities
-			EnforceSpO2DataType : POFVerificationMethods.EnforceSpO2DataType()
-	]
-	
-	claim R4 [
-		activities
-			BuiltInAnalysis : POFVerificationMethods.ComponentFlowLatencyAnalysis()
-	]
-	
-	claim R7 [
-		activities
-			ManualAnalysis : POFVerificationMethods.ManualAnalysis()
+			// Activity 1: Make sure our ports are typed
+			// Call to resolute to ensure that each port has a type
+			
+			// Activity 2: Make sure the ports line up
+			EnforcePortDataConsistency : POFVerificationMethods.EnforcePortDataConsistency()
 	]
 	
 ]
