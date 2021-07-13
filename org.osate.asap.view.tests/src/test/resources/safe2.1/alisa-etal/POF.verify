@@ -19,6 +19,7 @@ verification plan POF for POFReqs [
 		activities
 			// Activity 1: Make sure our ports are typed
 			// Call to resolute to ensure that each port has a type
+			EnforcePortTypes : POFVerificationMethods.EnforceTypedPorts()
 			
 			// Activity 2: Make sure the ports line up
 			EnforcePortDataConsistency : POFVerificationMethods.EnforcePortDataConsistency()

@@ -24,4 +24,9 @@ verification methods POFVerificationMethods [
 		description "Check port data consistency"
 		plugin PortDataConsistency
 	]
+	
+	method EnforceTypedPorts: "Verify ports are typed" [
+		description "Check that features have types"
+		resolute POF_Resolute.has_connection_end_types	
+	]	
 ]
