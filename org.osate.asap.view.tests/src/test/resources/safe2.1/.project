@@ -3,6 +3,7 @@
 	<name>safe2.1</name>
 	<comment></comment>
 	<projects>
+		<project>alisa_library</project>
 		<project>AlisaPredefined</project>
 	</projects>
 	<buildSpec>

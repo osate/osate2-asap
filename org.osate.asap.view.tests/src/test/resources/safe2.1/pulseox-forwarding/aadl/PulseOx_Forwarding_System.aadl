@@ -82,5 +82,10 @@ public
 					Explanations => ("First Explanation", "Second Explanation", "Third Explanation");
 				];
 		**};
+		annex Resolute {**
+        	prove (has_connection_end_types(this))
+        	prove (has_Response_Time(this))
+--        	prove (print_feat_name(this))
+        **};
 	end PulseOx_Forwarding_System.imp;
 end PulseOx_Forwarding_System;

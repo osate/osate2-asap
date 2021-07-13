@@ -12,30 +12,26 @@ public
 	
 	
 	
+	-- alternatively, consider iterating over all features in the model
+	--  and making sure they have a type
 	has_connection_end_types(c: component) <=
 	** "All connection ends in " c " must have a type declared" **
-		-- This may have to be custom-written: there's some good
-		-- connection utility stuff in Resolute_Util.aadl, though
-		-- but the basic idea is to iterate over the connections from
-		-- all_reachable_connections and then check each end to verify typing.
+--		-- This may have to be custom-written: there's some good
+--		-- connection utility stuff in Resolute_Util.aadl, though
+--		-- but the basic idea is to iterate over the connections from
+--		-- all_reachable_connections and then check each end to verify typing.
+--		let reachable_conns : {connection} = all_reachable_connections(c);
+--		forall(comp : all_reachable_components(c)).forall(feat : features(comp)).print_feat_name(feat)
+--		forall(cn: component).contained(cn, c) => has_type(c)
+		let filtered : {component} = {cn for (cn:component) | contained(cn, c)};
+		forall(fc: filtered).forall(feat : features(fc)).print_feat_name(feat)
 		
-		
-	-- Copied from Connectivity_Reachability.aadl  
-	--### all_reachable_connections(c : component) : {connection}
-	--. Return all port, data, bus access connections that are traversed when identifying reachable components
-	--. we consider direct and indirect reachability
-	all_reachable_connections(c : component) : {connection} =
-		recursive_visited_connections({c})
-	
-	-- support method to expand on a set of visited connections in recrusive traversal
-	recursive_visited_connections(curr: {component}) : {connection} =
-		let outconns : {connection} = outgoing_component_connections(comp); -- XXX wrongm cannot be comp
-		let next_ones : {component} = {otherend for (conn: outconns) (otherend: other_connection_end(conn,comp))};
-		let next_new_ones : {component} = {ele for (ele : next_ones)| not(member(ele,curr))};
-		if (next_new_ones = {}) then
-			{}
-		else
-			union(outconns, recursive_visited_connections(next_new_ones))
+	print_feat_name(f: feature) : bool =
+	if (has_type(f)) then
+		true		
+	else
+		let err : bool = debug(f, " does not have a type!");
+		false
 	
 	**};
 end POF_Resolute;
