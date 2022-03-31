@@ -11,11 +11,13 @@ Export-Package: org.osate.asap.model.safe2,
  org.osate.asap.model.safe2.impl,
  org.osate.asap.model.safe2.util
 Require-Bundle: org.eclipse.emf.ecore;visibility:=reexport,
+ org.eclipse.emf.ecore.xmi;visibility:=reexport,
  org.osate.aadl2;visibility:=reexport,
  org.osate.xtext.aadl2.errormodel;visibility:=reexport,
  org.eclipse.uml2.uml;visibility:=reexport,
  org.eclipse.uml2.types;visibility:=reexport,
  org.eclipse.core.runtime,
- org.osate.aadl2.modelsupport
+ org.osate.aadl2.modelsupport,
+ org.osate.aadl2.errormodel.instance;visibility:=reexport
 Bundle-ActivationPolicy: lazy
 Automatic-Module-Name: org.osate.asap.model

@@ -1,0 +1,39 @@
+verification methods POFVerificationMethods [
+
+//	method EnforceSpO2DataType: "Verify all connections use SpO2-Typed Data" [
+////		category Quality // Need like a "Quality.consistency" here or something.
+//		description "Check port data consistency"
+//		plugin PortDataConsistency
+//	]
+//	
+//	// Copied from Plugins methodregistry so everything is centrally located~
+//	method ComponentFlowLatencyAnalysis: "Verify all flow latencies in system instance" [
+//		category Quality.Latency
+//		description "Analysis of all end-to-end flows in a system instance or for a specific end-to-end flow."
+//		java org.osate.analysis.flows.FlowLatencyAnalysisSwitch.invoke
+//	]
+//	
+//	method ManualAnalysis: "Manually verify something interesting about the model" [
+//		category Quality.Safety
+//		description "An interesting property that computers can't verify"
+//		manual DialogID
+//	]
+
+	method EnforcePortDataConsistency: "Verify port data consistency" [
+//		category Quality // Need like a "Quality.consistency" here or something.
+		description "Check port data consistency"
+		plugin PortDataConsistency
+	]
+	
+	method EnforceTypedPorts: "Verify ports are typed" [
+		description "Check that features have types"
+		resolute POF_Resolute.has_connection_end_types	
+	]
+	
+	// Copied from Plugins methodregistry so everything is centrally located~
+	method ComponentFlowLatencyAnalysis: "Verify all flow latencies in system instance" [
+		category Quality.Latency
+		description "Analysis of all end-to-end flows in a system instance or for a specific end-to-end flow."
+		java org.osate.analysis.flows.FlowLatencyAnalysisSwitch.invoke
+	]
+]

@@ -32,6 +32,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 import org.eclipse.emf.ecore.EObject;
+import org.osate.aadl2.errormodel.instance.AnonymousTypeSet;
 import org.osate.aadl2.instance.ComponentInstance;
 import org.osate.aadl2.instance.FeatureInstance;
 import org.osate.asap.model.safe2.Accident;
@@ -39,7 +40,6 @@ import org.osate.asap.model.safe2.AccidentLevel;
 import org.osate.asap.model.safe2.Constraint;
 import org.osate.asap.model.safe2.Fundamental;
 import org.osate.asap.model.safe2.Hazard;
-import org.osate.xtext.aadl2.errormodel.errorModel.ErrorType;
 
 /**
  * Singleton that provides access to focus related functionality. We use a
@@ -138,8 +138,8 @@ public class FocusManager {
 	}
 
 	private void handleFocusedComponent(ComponentInstance newFocus) {
-		backwardFocusSet.addAll(AwasManager.getInstance().backwardReach(newFocus));
-		forwardFocusSet.addAll(AwasManager.getInstance().forwardReach(newFocus));
+		backwardFocusSet.addAll(SlicerManager.getInstance().backwardReach(newFocus));
+		forwardFocusSet.addAll(SlicerManager.getInstance().forwardReach(newFocus));
 	}
 
 	private void handleFocusedFundamental(Fundamental newFocus) {
@@ -166,10 +166,9 @@ public class FocusManager {
 		}
 	}
 
-	private void handleFocusedErrorType(ErrorType et, FeatureInstance feature) {
-		// XXX TODO FIXME These are just returning the error type instead of the actual reachable set...
-		backwardFocusSet.addAll(AwasManager.getInstance().backwardReach(et, feature));
-		forwardFocusSet.addAll(AwasManager.getInstance().forwardReach(et, feature));
+	private void handleFocusedErrorType(AnonymousTypeSet ats, FeatureInstance feature) {
+		backwardFocusSet.addAll(SlicerManager.getInstance().backwardReach(ats, feature));
+		forwardFocusSet.addAll(SlicerManager.getInstance().forwardReach(ats, feature));
 	}
 
 	public void clearFocus() {

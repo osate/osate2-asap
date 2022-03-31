@@ -54,7 +54,7 @@ public class TestBase extends AbstractSiriusSwtBotGefTestCase {
 			AIRD_FILE,
 			SAFE2_FILE1,
 			POFWRD_DIR + SAFE2_FILE2,
-			AADL_DIAGRAMS_DIR + "PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp.aadl_diagram",
+//			AADL_DIAGRAMS_DIR + "PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp.aadl_diagram",
 			AADL_DIR + "MAP_Error_Properties.aadl",
 			AADL_DIR + "MAP_Errors.aadl",
 			AADL_DIR + "MAP_Properties.aadl",
@@ -67,7 +67,7 @@ public class TestBase extends AbstractSiriusSwtBotGefTestCase {
 			AADL_DIR + "PulseOx_Forwarding_System.aadl",
 			AADL_DIR + "PulseOx_Forwarding_Types.aadl",
 			AADL_DIR + "PulseOx_Interface.aadl",
-			AADL_DIR + "ErrorLibrary.aadl",
+//			AADL_DIR + "ErrorLibrary.aadl",
 			INSTANCE_DIR + "PulseOx_Forwarding_Logic_PulseOx_Logic_Process_imp_Instance.aaxl2",
 			INSTANCE_DIR + "PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2"
 	};

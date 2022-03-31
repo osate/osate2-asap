@@ -1,31 +1,3 @@
-/*******************************************************************************
- * Architecture Supported Audit Processor
- *
- * Copyright 2020 Carnegie Mellon University.
- *
- * NO WARRANTY. THIS CARNEGIE MELLON UNIVERSITY AND SOFTWARE ENGINEERING INSTITUTE
- * MATERIAL IS FURNISHED ON AN "AS-IS" BASIS. CARNEGIE MELLON UNIVERSITY MAKES NO
- * WARRANTIES OF ANY KIND, EITHER EXPRESSED OR IMPLIED, AS TO ANY MATTER INCLUDING,
- * BUT NOT LIMITED TO, WARRANTY OF FITNESS FOR PURPOSE OR MERCHANTABILITY,
- * EXCLUSIVITY, OR RESULTS OBTAINED FROM USE OF THE MATERIAL. CARNEGIE MELLON
- * UNIVERSITY DOES NOT MAKE ANY WARRANTY OF ANY KIND WITH RESPECT TO FREEDOM FROM
- * PATENT, TRADEMARK, OR COPYRIGHT INFRINGEMENT.
- *
- * Released under an Eclipse Public License – v2.0-style license, please see
- * license.txt or contact permission@sei.cmu.edu for full terms.
- *
- * [DISTRIBUTION STATEMENT A] This material has been approved for public release
- * and unlimited distribution.  Please see Copyright notice for non-US Government
- * use and distribution.
- *
- * This Software includes and/or makes use of the following Third-Party Software
- * subject to its own license:
- *
- * 1. Open Source AADL Tool Environment (https://osate.org) Copyright 2004-2020
- * CMU-SEI.
- *
- * DM20-1063
- *******************************************************************************/
 /**
  */
 package org.osate.asap.model.safe2.impl;
@@ -48,6 +20,8 @@ import org.eclipse.emf.ecore.util.EObjectContainmentWithInverseEList;
 import org.eclipse.emf.ecore.util.EcoreUtil;
 import org.eclipse.emf.ecore.util.InternalEList;
 
+import org.osate.aadl2.errormodel.instance.AnonymousTypeSet;
+
 import org.osate.aadl2.instance.ComponentInstance;
 import org.osate.aadl2.instance.FeatureInstance;
 
@@ -55,8 +29,6 @@ import org.osate.asap.model.safe2.Accident;
 import org.osate.asap.model.safe2.Constraint;
 import org.osate.asap.model.safe2.Hazard;
 import org.osate.asap.model.safe2.Safe2Package;
-
-import org.osate.xtext.aadl2.errormodel.errorModel.ErrorType;
 
 /**
  * <!-- begin-user-doc -->
@@ -188,7 +160,7 @@ public class HazardImpl extends MinimalEObjectImpl.Container implements Hazard {
 	 * @generated
 	 * @ordered
 	 */
-	protected ErrorType errorType;
+	protected AnonymousTypeSet errorType;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -433,10 +405,10 @@ public class HazardImpl extends MinimalEObjectImpl.Container implements Hazard {
 	 * @generated
 	 */
 	@Override
-	public ErrorType getErrorType() {
+	public AnonymousTypeSet getErrorType() {
 		if (errorType != null && errorType.eIsProxy()) {
 			InternalEObject oldErrorType = (InternalEObject)errorType;
-			errorType = (ErrorType)eResolveProxy(oldErrorType);
+			errorType = (AnonymousTypeSet)eResolveProxy(oldErrorType);
 			if (errorType != oldErrorType) {
 				if (eNotificationRequired())
 					eNotify(new ENotificationImpl(this, Notification.RESOLVE, Safe2Package.HAZARD__ERROR_TYPE, oldErrorType, errorType));
@@ -450,7 +422,7 @@ public class HazardImpl extends MinimalEObjectImpl.Container implements Hazard {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ErrorType basicGetErrorType() {
+	public AnonymousTypeSet basicGetErrorType() {
 		return errorType;
 	}
 
@@ -460,8 +432,8 @@ public class HazardImpl extends MinimalEObjectImpl.Container implements Hazard {
 	 * @generated
 	 */
 	@Override
-	public void setErrorType(ErrorType newErrorType) {
-		ErrorType oldErrorType = errorType;
+	public void setErrorType(AnonymousTypeSet newErrorType) {
+		AnonymousTypeSet oldErrorType = errorType;
 		errorType = newErrorType;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, Safe2Package.HAZARD__ERROR_TYPE, oldErrorType, errorType));
@@ -585,7 +557,7 @@ public class HazardImpl extends MinimalEObjectImpl.Container implements Hazard {
 				setHazardousFactor((String)newValue);
 				return;
 			case Safe2Package.HAZARD__ERROR_TYPE:
-				setErrorType((ErrorType)newValue);
+				setErrorType((AnonymousTypeSet)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -624,7 +596,7 @@ public class HazardImpl extends MinimalEObjectImpl.Container implements Hazard {
 				setHazardousFactor(HAZARDOUS_FACTOR_EDEFAULT);
 				return;
 			case Safe2Package.HAZARD__ERROR_TYPE:
-				setErrorType((ErrorType)null);
+				setErrorType((AnonymousTypeSet)null);
 				return;
 		}
 		super.eUnset(featureID);

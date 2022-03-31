@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="ASCII"?>
+<assure:AssuranceCaseResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aadl2="http://aadl.info/AADL/2.0" xmlns:assure="http://www.osate.org/assure/Assure" xmlns:result="http://www.osate.org/result/Result" name="POFCase">
+  <metrics successCount="2" errorCount="1"/>
+  <modelResult>
+    <metrics successCount="2" errorCount="1"/>
+    <plan href="../alisa-etal/POFCase.alisa#//@assurancePlans.0"/>
+    <target xsi:type="aadl2:SystemImplementation" href="../pulseox-forwarding/aadl/PulseOx_Forwarding_System.aadl#PulseOx_Forwarding_System.PulseOx_Forwarding_System.imp"/>
+    <claimResult>
+      <metrics successCount="1" errorCount="1"/>
+      <targetReference>
+        <verificationPlan href="../alisa-etal/POF.verify#//@contents.0"/>
+        <requirement>
+          <requirement href="../alisa-etal/POFReqs.reqspec#//@parts.0/@requirements.1"/>
+        </requirement>
+      </targetReference>
+      <verificationActivityResult xsi:type="assure:VerificationActivityResult" type="ERROR">
+        <metrics errorCount="1" executionTime="489"/>
+        <issues diagnosticType="ERROR" message="Resolute not installed"/>
+        <targetReference>
+          <verificationPlan href="../alisa-etal/POF.verify#//@contents.0"/>
+          <requirement>
+            <requirement href="../alisa-etal/POFReqs.reqspec#//@parts.0/@requirements.1"/>
+          </requirement>
+          <verificationActivity href="../alisa-etal/POF.verify#//@contents.0/@claim.0/@activities.0"/>
+        </targetReference>
+      </verificationActivityResult>
+      <verificationActivityResult xsi:type="assure:VerificationActivityResult" type="SUCCESS">
+        <metrics successCount="1" executionTime="92"/>
+        <targetReference>
+          <verificationPlan href="../alisa-etal/POF.verify#//@contents.0"/>
+          <requirement>
+            <requirement href="../alisa-etal/POFReqs.reqspec#//@parts.0/@requirements.1"/>
+          </requirement>
+          <verificationActivity href="../alisa-etal/POF.verify#//@contents.0/@claim.0/@activities.1"/>
+        </targetReference>
+      </verificationActivityResult>
+    </claimResult>
+    <claimResult>
+      <metrics successCount="1"/>
+      <targetReference>
+        <verificationPlan href="../alisa-etal/POF.verify#//@contents.0"/>
+        <requirement>
+          <requirement href="../alisa-etal/POFReqs.reqspec#//@parts.0/@requirements.2"/>
+        </requirement>
+      </targetReference>
+      <verificationActivityResult xsi:type="assure:VerificationActivityResult" type="SUCCESS">
+        <metrics successCount="1" executionTime="82"/>
+        <analysisresult analysis="latency" message="AS-MF-DL-EQ-EQL">
+          <modelElement href="../pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#/"/>
+          <parameters value="ACED0005737200116A6176612E6C616E672E426F6F6C65616ECD207280D59CFAEE0200015A000576616C7565787001"/>
+          <parameters value="ACED0005737200116A6176612E6C616E672E426F6F6C65616ECD207280D59CFAEE0200015A000576616C7565787001"/>
+          <parameters value="ACED0005737200116A6176612E6C616E672E426F6F6C65616ECD207280D59CFAEE0200015A000576616C7565787001"/>
+          <parameters value="ACED0005737200116A6176612E6C616E672E426F6F6C65616ECD207280D59CFAEE0200015A000576616C7565787001"/>
+          <parameters value="ACED0005737200116A6176612E6C616E672E426F6F6C65616ECD207280D59CFAEE0200015A000576616C7565787000"/>
+          <results message="Latency results for spo2_to_alarm" resultType="SUCCESS">
+            <values xsi:type="result:StringValue" value=""/>
+            <values xsi:type="result:RealValue" value="6.0"/>
+            <values xsi:type="result:RealValue" value="80.0"/>
+            <values xsi:type="result:RealValue" value="6.0"/>
+            <values xsi:type="result:RealValue" value="10.0"/>
+            <values xsi:type="result:RealValue"/>
+            <values xsi:type="result:RealValue"/>
+            <diagnostics diagnosticType="WARNING" message="Expected end to end latency is not specified">
+              <modelElement href="../pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@endToEndFlow.0"/>
+            </diagnostics>
+            <subResults>
+              <values xsi:type="result:RealValue" value="3.0"/>
+              <values xsi:type="result:RealValue" value="5.0"/>
+              <values xsi:type="result:RealValue" value="3.0"/>
+              <values xsi:type="result:RealValue" value="5.0"/>
+              <values xsi:type="result:StringValue" value="specified"/>
+              <values xsi:type="result:StringValue" value="specified"/>
+              <values xsi:type="result:StringValue" value="source flowSrc"/>
+              <modelElement href="../pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@componentInstance.3"/>
+            </subResults>
+            <subResults>
+              <values xsi:type="result:RealValue"/>
+              <values xsi:type="result:RealValue"/>
+              <values xsi:type="result:RealValue"/>
+              <values xsi:type="result:RealValue"/>
+              <values xsi:type="result:StringValue" value="no sampling/queuing latency"/>
+              <values xsi:type="result:StringValue" value="no sampling/queuing latency"/>
+              <values xsi:type="result:StringValue" value=""/>
+              <modelElement href="../pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@connectionInstance.3"/>
+            </subResults>
+            <subResults>
+              <values xsi:type="result:RealValue"/>
+              <values xsi:type="result:RealValue"/>
+              <values xsi:type="result:RealValue"/>
+              <values xsi:type="result:RealValue"/>
+              <values xsi:type="result:StringValue" value="no sampling/queuing latency"/>
+              <values xsi:type="result:StringValue" value="no sampling/queuing latency"/>
+              <values xsi:type="result:StringValue" value="path thdFlow"/>
+              <modelElement href="../pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@componentInstance.5/@componentInstance.2"/>
+            </subResults>
+            <subResults>
+              <values xsi:type="result:RealValue"/>
+              <values xsi:type="result:RealValue"/>
+              <values xsi:type="result:RealValue"/>
+              <values xsi:type="result:RealValue"/>
+              <values xsi:type="result:StringValue" value="no sampling/queuing latency"/>
+              <values xsi:type="result:StringValue" value="no sampling/queuing latency"/>
+              <values xsi:type="result:StringValue" value=""/>
+              <modelElement href="../pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@componentInstance.5/@connectionInstance.0"/>
+            </subResults>
+            <subResults>
+              <values xsi:type="result:RealValue"/>
+              <values xsi:type="result:RealValue"/>
+              <values xsi:type="result:RealValue"/>
+              <values xsi:type="result:RealValue"/>
+              <values xsi:type="result:StringValue" value="no sampling/queuing latency"/>
+              <values xsi:type="result:StringValue" value="no sampling/queuing latency"/>
+              <values xsi:type="result:StringValue" value="path thdFlow"/>
+              <modelElement href="../pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@componentInstance.5/@componentInstance.1"/>
+            </subResults>
+            <subResults>
+              <values xsi:type="result:RealValue"/>
+              <values xsi:type="result:RealValue"/>
+              <values xsi:type="result:RealValue"/>
+              <values xsi:type="result:RealValue"/>
+              <values xsi:type="result:StringValue" value="no sampling/queuing latency"/>
+              <values xsi:type="result:StringValue" value="no sampling/queuing latency"/>
+              <values xsi:type="result:StringValue" value=""/>
+              <modelElement href="../pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@connectionInstance.6"/>
+            </subResults>
+            <subResults>
+              <values xsi:type="result:RealValue" value="3.0"/>
+              <values xsi:type="result:RealValue" value="75.0"/>
+              <values xsi:type="result:RealValue" value="3.0"/>
+              <values xsi:type="result:RealValue" value="5.0"/>
+              <values xsi:type="result:StringValue" value="specified"/>
+              <values xsi:type="result:StringValue" value="deadline"/>
+              <values xsi:type="result:StringValue" value="sink thdFlow"/>
+              <diagnostics diagnosticType="WARNING" message="Max: actual latency exceeds max flow latency">
+                <modelElement href="../pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@componentInstance.6/@componentInstance.1"/>
+              </diagnostics>
+              <modelElement href="../pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@componentInstance.6/@componentInstance.1"/>
+            </subResults>
+            <modelElement href="../pulseox-forwarding/aadl/instances/PulseOx_Forwarding_System_PulseOx_Forwarding_System_imp_Instance.aaxl2#//@endToEndFlow.0"/>
+          </results>
+        </analysisresult>
+        <targetReference>
+          <verificationPlan href="../alisa-etal/POF.verify#//@contents.0"/>
+          <requirement>
+            <requirement href="../alisa-etal/POFReqs.reqspec#//@parts.0/@requirements.2"/>
+          </requirement>
+          <verificationActivity href="../alisa-etal/POF.verify#//@contents.0/@claim.1/@activities.0"/>
+        </targetReference>
+      </verificationActivityResult>
+    </claimResult>
+    <subsystemResult>
+      <metrics/>
+      <targetSystem xsi:type="aadl2:AbstractSubcomponent" href="../pulseox-forwarding/aadl/PulseOx_Forwarding_System.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedAbstractSubcomponent.0"/>
+    </subsystemResult>
+    <subsystemResult>
+      <metrics/>
+      <targetSystem xsi:type="aadl2:AbstractSubcomponent" href="../pulseox-forwarding/aadl/PulseOx_Forwarding_System.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedAbstractSubcomponent.1"/>
+    </subsystemResult>
+    <subsystemResult>
+      <metrics/>
+      <targetSystem xsi:type="aadl2:AbstractSubcomponent" href="../pulseox-forwarding/aadl/PulseOx_Forwarding_System.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedAbstractSubcomponent.2"/>
+    </subsystemResult>
+    <subsystemResult>
+      <metrics/>
+      <targetSystem xsi:type="aadl2:DeviceSubcomponent" href="../pulseox-forwarding/aadl/PulseOx_Forwarding_System.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedDeviceSubcomponent.0"/>
+    </subsystemResult>
+    <subsystemResult>
+      <metrics/>
+      <targetSystem xsi:type="aadl2:DeviceSubcomponent" href="../pulseox-forwarding/aadl/PulseOx_Forwarding_System.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedDeviceSubcomponent.1"/>
+    </subsystemResult>
+    <subsystemResult>
+      <metrics/>
+      <targetSystem xsi:type="aadl2:ProcessSubcomponent" href="../pulseox-forwarding/aadl/PulseOx_Forwarding_System.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedProcessSubcomponent.0"/>
+      <subsystemResult>
+        <metrics/>
+        <targetSystem xsi:type="aadl2:DataSubcomponent" href="../pulseox-forwarding/aadl/PulseOx_Forwarding_Logic.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedDataSubcomponent.0"/>
+      </subsystemResult>
+      <subsystemResult>
+        <metrics/>
+        <targetSystem xsi:type="aadl2:ThreadSubcomponent" href="../pulseox-forwarding/aadl/PulseOx_Forwarding_Logic.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedThreadSubcomponent.0"/>
+      </subsystemResult>
+      <subsystemResult>
+        <metrics/>
+        <targetSystem xsi:type="aadl2:ThreadSubcomponent" href="../pulseox-forwarding/aadl/PulseOx_Forwarding_Logic.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedThreadSubcomponent.1"/>
+      </subsystemResult>
+    </subsystemResult>
+    <subsystemResult>
+      <metrics/>
+      <targetSystem xsi:type="aadl2:ProcessSubcomponent" href="../pulseox-forwarding/aadl/PulseOx_Forwarding_System.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedProcessSubcomponent.1"/>
+      <subsystemResult>
+        <metrics/>
+        <targetSystem xsi:type="aadl2:ThreadSubcomponent" href="../pulseox-forwarding/aadl/PulseOx_Forwarding_Display.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedThreadSubcomponent.0"/>
+      </subsystemResult>
+      <subsystemResult>
+        <metrics/>
+        <targetSystem xsi:type="aadl2:ThreadSubcomponent" href="../pulseox-forwarding/aadl/PulseOx_Forwarding_Display.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedThreadSubcomponent.1"/>
+      </subsystemResult>
+    </subsystemResult>
+  </modelResult>
+</assure:AssuranceCaseResult>

@@ -5,7 +5,7 @@ public
 
 	device ICEpoInterface
 		features
-			POInSpO2: in event data port PulseOx_Forwarding_Types::SpO2;
+--			POInSpO2: in event data port PulseOx_Forwarding_Types::SpO2;
 			SensorInput: in feature;
 			POOutSpO2: out event data port PulseOx_Forwarding_Types::SpO2 {
 				MAP_Properties::Exchange_Name => "spo2_per";};

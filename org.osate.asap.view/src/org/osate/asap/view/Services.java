@@ -45,8 +45,8 @@ import org.eclipse.emf.ecore.resource.ResourceSet;
 import org.eclipse.emf.ecore.util.EcoreUtil.UsageCrossReferencer;
 import org.eclipse.sirius.diagram.DEdge;
 import org.eclipse.sirius.diagram.EdgeTarget;
-import org.eclipse.sirius.table.business.internal.metamodel.spec.DCellSpec;
 import org.eclipse.sirius.table.metamodel.table.DLine;
+import org.eclipse.sirius.table.model.business.internal.spec.DCellSpec;
 import org.eclipse.sirius.viewpoint.DSemanticDecorator;
 import org.osate.aadl2.DirectionType;
 import org.osate.aadl2.Element;
@@ -119,7 +119,7 @@ public class Services {
 	 * @return The set of successors to the given component.
 	 */
 	public static Collection<EObject> getSuccessorNeighbors(EObject self) {
-		return AwasManager.getInstance().getSuccessorNeighbors((ComponentInstance) self);
+		return SlicerManager.getInstance().getSuccessorNeighbors((ComponentInstance) self);
 	}
 
 	/**
@@ -132,7 +132,7 @@ public class Services {
 	 * @return The set of predecessors to the given component.
 	 */
 	private static Collection<EObject> getPredecessorNeighbors(EObject self) {
-		return AwasManager.getInstance().getPredecessorNeighbors((ComponentInstance) self);
+		return SlicerManager.getInstance().getPredecessorNeighbors((ComponentInstance) self);
 	}
 
 	public static EList<ComponentInstance> getAllComponents(EObject self) {
@@ -140,7 +140,7 @@ public class Services {
 	}
 
 	public static Collection<EObject> getAllConnectionInstances(EObject self, EObject root) {
-		return AwasManager.getInstance().getAllConnections((ComponentInstance) self);
+		return SlicerManager.getInstance().getAllConnections((ComponentInstance) self);
 	}
 
 	public static boolean isLeafComponent(EObject self) {
@@ -224,7 +224,7 @@ public class Services {
 	 */
 	public static Collection<EObject> getRootErrorTypesByConnection(EObject self) {
 		//@formatter:off
-		return AwasManager.getInstance().getRootErrorTypesByConnection((ConnectionInstance) self).stream()
+		return SlicerManager.getInstance().getRootErrorTypesByConnection((ConnectionInstance) self).stream()
 	    	.filter(c -> c instanceof ErrorType)
 	    	.map(c -> (ErrorType) c)
 	    	.map(AsapUtil::getRootType)
@@ -242,7 +242,7 @@ public class Services {
 	 */
 	public static Collection<EObject> getErrorTypesByConnection(EObject self) {
 		//@formatter:off
-		return AwasManager.getInstance().getRootErrorTypesByConnection((ConnectionInstance) self).stream()
+		return SlicerManager.getInstance().getRootErrorTypesByConnection((ConnectionInstance) self).stream()
 	    	.filter(c -> c instanceof ErrorType)
 	    	.collect(Collectors.toSet());
 		//@formatter:on

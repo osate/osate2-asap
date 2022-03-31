@@ -188,7 +188,6 @@ import org.osate.asap.model.safe2.provider.Safe2ItemProviderAdapterFactory;
 import org.eclipse.emf.ecore.provider.EcoreItemProviderAdapterFactory;
 
 import org.eclipse.ui.actions.WorkspaceModifyOperation;
-
 import org.osate.aadl2.instance.provider.InstanceItemProviderAdapterFactory;
 
 import org.osate.aadl2.provider.Aadl2ItemProviderAdapterFactory;

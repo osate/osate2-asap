@@ -1,31 +1,3 @@
-/*******************************************************************************
- * Architecture Supported Audit Processor
- *
- * Copyright 2020 Carnegie Mellon University.
- *
- * NO WARRANTY. THIS CARNEGIE MELLON UNIVERSITY AND SOFTWARE ENGINEERING INSTITUTE
- * MATERIAL IS FURNISHED ON AN "AS-IS" BASIS. CARNEGIE MELLON UNIVERSITY MAKES NO
- * WARRANTIES OF ANY KIND, EITHER EXPRESSED OR IMPLIED, AS TO ANY MATTER INCLUDING,
- * BUT NOT LIMITED TO, WARRANTY OF FITNESS FOR PURPOSE OR MERCHANTABILITY,
- * EXCLUSIVITY, OR RESULTS OBTAINED FROM USE OF THE MATERIAL. CARNEGIE MELLON
- * UNIVERSITY DOES NOT MAKE ANY WARRANTY OF ANY KIND WITH RESPECT TO FREEDOM FROM
- * PATENT, TRADEMARK, OR COPYRIGHT INFRINGEMENT.
- *
- * Released under an Eclipse Public License – v2.0-style license, please see
- * license.txt or contact permission@sei.cmu.edu for full terms.
- *
- * [DISTRIBUTION STATEMENT A] This material has been approved for public release
- * and unlimited distribution.  Please see Copyright notice for non-US Government
- * use and distribution.
- *
- * This Software includes and/or makes use of the following Third-Party Software
- * subject to its own license:
- *
- * 1. Open Source AADL Tool Environment (https://osate.org) Copyright 2004-2020
- * CMU-SEI.
- *
- * DM20-1063
- *******************************************************************************/
 /**
  */
 package org.osate.asap.model.safe2.impl;
@@ -39,6 +11,8 @@ import org.eclipse.emf.ecore.EcorePackage;
 import org.eclipse.emf.ecore.impl.EPackageImpl;
 
 import org.osate.aadl2.Aadl2Package;
+
+import org.osate.aadl2.errormodel.instance.EMV2InstancePackage;
 
 import org.osate.aadl2.instance.InstancePackage;
 
@@ -170,6 +144,7 @@ public class Safe2PackageImpl extends EPackageImpl implements Safe2Package {
 		EcorePackage.eINSTANCE.eClass();
 		ErrorModelPackage.eINSTANCE.eClass();
 		InstancePackage.eINSTANCE.eClass();
+		EMV2InstancePackage.eINSTANCE.eClass();
 
 		// Create package meta-data objects
 		theSafe2Package.createPackageContents();
@@ -535,7 +510,7 @@ public class Safe2PackageImpl extends EPackageImpl implements Safe2Package {
 		// Obtain other dependent packages
 		EcorePackage theEcorePackage = (EcorePackage)EPackage.Registry.INSTANCE.getEPackage(EcorePackage.eNS_URI);
 		InstancePackage theInstancePackage = (InstancePackage)EPackage.Registry.INSTANCE.getEPackage(InstancePackage.eNS_URI);
-		ErrorModelPackage theErrorModelPackage = (ErrorModelPackage)EPackage.Registry.INSTANCE.getEPackage(ErrorModelPackage.eNS_URI);
+		EMV2InstancePackage theEMV2InstancePackage = (EMV2InstancePackage)EPackage.Registry.INSTANCE.getEPackage(EMV2InstancePackage.eNS_URI);
 		Aadl2Package theAadl2Package = (Aadl2Package)EPackage.Registry.INSTANCE.getEPackage(Aadl2Package.eNS_URI);
 
 		// Create type parameters
@@ -566,7 +541,7 @@ public class Safe2PackageImpl extends EPackageImpl implements Safe2Package {
 		initEReference(getHazard_EnvironmentElement(), theInstancePackage.getComponentInstance(), null, "environmentElement", null, 0, 1, Hazard.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getHazard_SystemElement(), theInstancePackage.getFeatureInstance(), null, "systemElement", null, 0, 1, Hazard.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getHazard_HazardousFactor(), theEcorePackage.getEString(), "hazardousFactor", null, 0, 1, Hazard.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getHazard_ErrorType(), theErrorModelPackage.getErrorType(), null, "errorType", null, 0, 1, Hazard.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getHazard_ErrorType(), theEMV2InstancePackage.getAnonymousTypeSet(), null, "errorType", null, 0, 1, Hazard.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(accidentLevelEClass, AccidentLevel.class, "AccidentLevel", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getAccidentLevel_Accident(), this.getAccident(), this.getAccident_Accidentlevel(), "accident", null, 1, -1, AccidentLevel.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
