@@ -60,8 +60,6 @@ public class SlicerManager {
 	 */
 	private SlicerManager() {
 		this.slicer = new SlicerRepresentation();
-		currentSystem = null;
-		slicer.buildGraph(null);
 	}
 
 	/**
@@ -84,8 +82,8 @@ public class SlicerManager {
 	 * @return The set of successors to the given component.
 	 */
 	public Collection<EObject> getSuccessorNeighbors(ComponentInstance component) {
-		// TODO: Unimplemented
-		return null;
+		initGraph(component);
+		return slicer.getNeighbors(component, true);
 	}
 
 	/**
@@ -96,8 +94,8 @@ public class SlicerManager {
 	 * @return The set of predecessors to the given component.
 	 */
 	public Collection<EObject> getPredecessorNeighbors(ComponentInstance component) {
-		// TODO: Unimplemented
-		return null;
+		initGraph(component);
+		return slicer.getNeighbors(component, false);
 	}
 
 	/**
@@ -167,8 +165,8 @@ public class SlicerManager {
 	private void initGraph(InstanceObject dobj) {
 		var iobj = dobj;
 		do {
-			iobj = iobj.getSystemInstance();
-		} while (iobj.getSystemInstance() != null);
+			iobj = iobj.getContainingComponentInstance();
+		} while (iobj.getContainingComponentInstance() != null);
 		if (!iobj.equals(currentSystem)) {
 			slicer.buildGraph((SystemInstance) iobj);
 			currentSystem = (SystemInstance) iobj;
