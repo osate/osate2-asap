@@ -37,6 +37,7 @@ import org.eclipse.emf.ecore.resource.impl.ResourceSetImpl;
 import org.eclipse.jface.viewers.ISelection;
 import org.eclipse.jface.viewers.IStructuredSelection;
 import org.osate.aadl2.instance.InstanceObject;
+import org.osate.aadl2.instance.SystemInstance;
 import org.osate.aadl2.modelsupport.EObjectURIWrapper;
 import org.osate.aadl2.modelsupport.resources.OsateResourceUtil;
 import org.osate.xtext.aadl2.errormodel.errorModel.ErrorType;
@@ -62,6 +63,23 @@ public class AsapUtil {
 			ret = ret.getSuperType();
 		}
 		return ret;
+	}
+
+	/**
+	 * Get the system instance at the top of the containment hierarchy.
+	 * @param dobj
+	 * @return
+	 */
+	public static SystemInstance getTopLevelContainingSystem(InstanceObject dobj) {
+		var iobj = dobj;
+		while (iobj.getContainingComponentInstance() != null) {
+			iobj = iobj.getContainingComponentInstance();
+		}
+		if (!(iobj instanceof SystemInstance)) {
+			// This shouldn't be possible...?
+			return null;
+		}
+		return (SystemInstance) iobj;
 	}
 
 	/**

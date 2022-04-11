@@ -49,17 +49,16 @@ import org.eclipse.sirius.table.metamodel.table.DLine;
 import org.eclipse.sirius.table.model.business.internal.spec.DCellSpec;
 import org.eclipse.sirius.viewpoint.DSemanticDecorator;
 import org.osate.aadl2.DirectionType;
-import org.osate.aadl2.Element;
+import org.osate.aadl2.errormodel.instance.ConnectionPath;
+import org.osate.aadl2.errormodel.instance.EMV2AnnexInstance;
+import org.osate.aadl2.errormodel.instance.TypeInstance;
 import org.osate.aadl2.instance.ComponentInstance;
 import org.osate.aadl2.instance.ConnectionInstance;
 import org.osate.aadl2.instance.ConnectionReference;
 import org.osate.aadl2.instance.FeatureInstance;
 import org.osate.aadl2.parsesupport.AObject;
 import org.osate.asap.model.safe2.Constraint;
-import org.osate.xtext.aadl2.errormodel.errorModel.ErrorModelLibrary;
-import org.osate.xtext.aadl2.errormodel.errorModel.ErrorModelSubclause;
 import org.osate.xtext.aadl2.errormodel.errorModel.ErrorType;
-import org.osate.xtext.aadl2.errormodel.util.EMV2Util;
 
 /**
  * Services / supporting utility methods used by the SAFE2.0 view. Note this
@@ -140,7 +139,7 @@ public class Services {
 	}
 
 	public static Collection<EObject> getAllConnectionInstances(EObject self, EObject root) {
-		return SlicerManager.getInstance().getAllConnections((ComponentInstance) self);
+		return ((ComponentInstance) root).getConnectionInstances().stream().collect(Collectors.toSet());
 	}
 
 	public static boolean isLeafComponent(EObject self) {
@@ -196,22 +195,11 @@ public class Services {
 	 * @param self The component to get the error types from
 	 * @return A set of root error types
 	 */
-	public static Collection<EObject> getRootErrorTypes(EObject self) {
-		Set<EObject> ret = new HashSet<>();
-
-		// Adapted from org.osate.xtext.aadl2.errormodel.util.EMV2Util.findErrorTypeSet(Element, String)
-		for (ErrorModelSubclause currSubclause : EMV2Util.getAllContainingClassifierEMV2Subclauses((Element) self)) {
-			for (ErrorModelLibrary currLibrary : currSubclause.getUseTypes()) {
-				for (ErrorType currType : currLibrary.getTypes()) {
-					ret.add(AsapUtil.getRootType(currType));
-				}
-			}
-		}
+	public static Collection<ErrorType> getRootErrorTypes(EObject self) {
+		var ret = getErrorTypes((ComponentInstance) self, null).stream()
+				.map(et -> AsapUtil.getRootType(et))
+				.collect(Collectors.toSet());
 		return ret;
-	}
-
-	public static EObject getRootErrorType(EObject errorType) {
-		return AsapUtil.getRootType((ErrorType) errorType);
 	}
 
 	/**
@@ -222,14 +210,51 @@ public class Services {
 	 * @param self
 	 * @return
 	 */
-	public static Collection<EObject> getRootErrorTypesByConnection(EObject self) {
-		//@formatter:off
-		return SlicerManager.getInstance().getRootErrorTypesByConnection((ConnectionInstance) self).stream()
-	    	.filter(c -> c instanceof ErrorType)
-	    	.map(c -> (ErrorType) c)
-	    	.map(AsapUtil::getRootType)
-	    	.collect(Collectors.toSet());
-		//@formatter:on
+	public static Collection<ErrorType> getRootErrorTypesByConnection(EObject self) {
+		var ret = getErrorTypesByConnection(self).stream()
+				.map(et -> AsapUtil.getRootType(et))
+				.collect(Collectors.toSet());
+		return ret;
+	}
+
+	/**
+	 * Actually calculates the error types associated with either a component or connection instance.
+	 * Exactly one of the two parameters should be null
+	 *
+	 * @param compInst A component instance, or null if a connection instance is provided
+	 * @param connInst A connection instance, or null if a component instance is provided
+	 * @return Error types sent on this connection or all connections in this component
+	 */
+	private static Collection<ErrorType> getErrorTypes(ComponentInstance compInst, ConnectionInstance connInst) {
+		if (compInst != null && connInst != null) {
+			// TODO: Use an exception?
+			System.err.println("org.osate.asap.view.Services#getErrorTypes called incorrectly!");
+			return null;
+		}
+		var containingSystem = connInst == null ? AsapUtil.getTopLevelContainingSystem(compInst)
+				: AsapUtil.getTopLevelContainingSystem(connInst);
+		var optionalAnnex = containingSystem.getAnnexInstances()
+				.stream()
+				.filter(a -> a instanceof EMV2AnnexInstance)
+				.findFirst();
+		if (optionalAnnex.isEmpty()) {
+			return null; // No emv2 information, so no error types on this (or any) connection
+		}
+		var emv2Annex = (EMV2AnnexInstance) optionalAnnex.get();
+		var errorTypes = emv2Annex.getPropagationPaths()
+				.stream()
+				.filter(p -> p instanceof ConnectionPath
+						&& (connInst == null || ((ConnectionPath) p).getConnection().equals(connInst)))
+				.flatMap(p -> Stream.concat(((ConnectionPath) p).getSourcePropagations().stream(),
+						((ConnectionPath) p).getDestinationPropagations().stream()))
+				.flatMap(p -> Stream.of(p.getInTypeSet(), p.getOutTypeSet()))
+				.filter(ats -> ats != null)
+				.flatMap(ats -> Stream.of(ats.getElements()))
+				.flatMap(Collection::stream)
+				.filter(tse -> tse instanceof TypeInstance)
+				.map(ti -> ((TypeInstance) ti).getType())
+				.collect(Collectors.toSet());
+		return errorTypes;
 	}
 
 	/**
@@ -238,14 +263,10 @@ public class Services {
 	 * Used by: FamilyErrors.HasError.General-Column Finder Expression
 	 *
 	 * @param self The connection
-	 * @return A set of error types sent on the connection
+	 * @return A set of ErrorTypes sent on the connection
 	 */
-	public static Collection<EObject> getErrorTypesByConnection(EObject self) {
-		//@formatter:off
-		return SlicerManager.getInstance().getRootErrorTypesByConnection((ConnectionInstance) self).stream()
-	    	.filter(c -> c instanceof ErrorType)
-	    	.collect(Collectors.toSet());
-		//@formatter:on
+	public static Collection<ErrorType> getErrorTypesByConnection(EObject self) {
+		return getErrorTypes(null, (ConnectionInstance) self);
 	}
 
 	/**
@@ -290,11 +311,9 @@ public class Services {
 		while (!toProcess.isEmpty()) {
 			ettb = new ErrorTypeTreeBuilder(rs); // Have to re-init for each call of findUsage to avoid NPE
 			curType = toProcess.poll();
-			//@formatter:off
 			Collection<ErrorType> newTypes = ettb.findUsage(curType).stream()
 					.map(e -> (ErrorType) e.getEObject())
 					.collect(Collectors.toSet());
-			//@formatter:on
 			toProcess.addAll(newTypes);
 			subtypes.addAll(newTypes);
 		}

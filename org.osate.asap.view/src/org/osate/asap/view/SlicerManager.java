@@ -34,7 +34,6 @@ import java.util.stream.Collectors;
 import org.eclipse.emf.ecore.EObject;
 import org.osate.aadl2.errormodel.instance.AnonymousTypeSet;
 import org.osate.aadl2.instance.ComponentInstance;
-import org.osate.aadl2.instance.ConnectionInstance;
 import org.osate.aadl2.instance.FeatureInstance;
 import org.osate.aadl2.instance.InstanceObject;
 import org.osate.aadl2.instance.SystemInstance;
@@ -152,24 +151,11 @@ public class SlicerManager {
 		return slicer.forwardReach(component);
 	}
 
-	public Collection<EObject> getRootErrorTypesByConnection(ConnectionInstance self) {
-		// TODO: Unimplemented
-		return null;
-	}
-
-	public Collection<EObject> getAllConnections(ComponentInstance self) {
-		// TODO: Unimplemented
-		return null;
-	}
-
 	private void initGraph(InstanceObject dobj) {
-		var iobj = dobj;
-		do {
-			iobj = iobj.getContainingComponentInstance();
-		} while (iobj.getContainingComponentInstance() != null);
-		if (!iobj.equals(currentSystem)) {
-			slicer.buildGraph((SystemInstance) iobj);
-			currentSystem = (SystemInstance) iobj;
+		var containingSystem = AsapUtil.getTopLevelContainingSystem(dobj);
+		if (!containingSystem.equals(currentSystem)) {
+			slicer.buildGraph(containingSystem);
+			currentSystem = containingSystem;
 		}
 	}
 }
