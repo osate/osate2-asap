@@ -32,7 +32,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 import org.eclipse.emf.ecore.EObject;
-import org.osate.aadl2.errormodel.instance.AnonymousTypeSet;
+import org.osate.aadl2.errormodel.instance.TypeTokenInstance;
 import org.osate.aadl2.instance.ComponentInstance;
 import org.osate.aadl2.instance.FeatureInstance;
 import org.osate.asap.model.safe2.Accident;
@@ -166,9 +166,9 @@ public class FocusManager {
 		}
 	}
 
-	private void handleFocusedErrorType(AnonymousTypeSet ats, FeatureInstance feature) {
-		backwardFocusSet.addAll(SlicerManager.getInstance().backwardReach(ats, feature));
-		forwardFocusSet.addAll(SlicerManager.getInstance().forwardReach(ats, feature));
+	private void handleFocusedErrorType(TypeTokenInstance token, FeatureInstance feature) {
+		backwardFocusSet.addAll(SlicerManager.getInstance().backwardReach(token, feature));
+		forwardFocusSet.addAll(SlicerManager.getInstance().forwardReach(token, feature));
 	}
 
 	public void clearFocus() {

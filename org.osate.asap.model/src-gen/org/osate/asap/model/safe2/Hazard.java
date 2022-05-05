@@ -3,9 +3,7 @@
 package org.osate.asap.model.safe2;
 
 import org.eclipse.emf.common.util.EList;
-
-import org.osate.aadl2.errormodel.instance.AnonymousTypeSet;
-
+import org.osate.aadl2.errormodel.instance.TypeTokenInstance;
 import org.osate.aadl2.instance.ComponentInstance;
 import org.osate.aadl2.instance.FeatureInstance;
 
@@ -140,12 +138,12 @@ public interface Hazard extends Fundamental {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Error Type</em>' reference.
-	 * @see #setErrorType(AnonymousTypeSet)
+	 * @see #setErrorType(TypeTokenInstance)
 	 * @see org.osate.asap.model.safe2.Safe2Package#getHazard_ErrorType()
 	 * @model
 	 * @generated
 	 */
-	AnonymousTypeSet getErrorType();
+	TypeTokenInstance getErrorType();
 
 	/**
 	 * Sets the value of the '{@link org.osate.asap.model.safe2.Hazard#getErrorType <em>Error Type</em>}' reference.
@@ -155,6 +153,6 @@ public interface Hazard extends Fundamental {
 	 * @see #getErrorType()
 	 * @generated
 	 */
-	void setErrorType(AnonymousTypeSet value);
+	void setErrorType(TypeTokenInstance value);
 
 } // Hazard

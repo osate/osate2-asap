@@ -19,9 +19,7 @@ import org.eclipse.emf.ecore.util.EDataTypeUniqueEList;
 import org.eclipse.emf.ecore.util.EObjectContainmentWithInverseEList;
 import org.eclipse.emf.ecore.util.EcoreUtil;
 import org.eclipse.emf.ecore.util.InternalEList;
-
-import org.osate.aadl2.errormodel.instance.AnonymousTypeSet;
-
+import org.osate.aadl2.errormodel.instance.TypeTokenInstance;
 import org.osate.aadl2.instance.ComponentInstance;
 import org.osate.aadl2.instance.FeatureInstance;
 
@@ -160,7 +158,7 @@ public class HazardImpl extends MinimalEObjectImpl.Container implements Hazard {
 	 * @generated
 	 * @ordered
 	 */
-	protected AnonymousTypeSet errorType;
+	protected TypeTokenInstance errorType;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -405,10 +403,10 @@ public class HazardImpl extends MinimalEObjectImpl.Container implements Hazard {
 	 * @generated
 	 */
 	@Override
-	public AnonymousTypeSet getErrorType() {
+	public TypeTokenInstance getErrorType() {
 		if (errorType != null && errorType.eIsProxy()) {
 			InternalEObject oldErrorType = (InternalEObject)errorType;
-			errorType = (AnonymousTypeSet)eResolveProxy(oldErrorType);
+			errorType = (TypeTokenInstance)eResolveProxy(oldErrorType);
 			if (errorType != oldErrorType) {
 				if (eNotificationRequired())
 					eNotify(new ENotificationImpl(this, Notification.RESOLVE, Safe2Package.HAZARD__ERROR_TYPE, oldErrorType, errorType));
@@ -422,7 +420,7 @@ public class HazardImpl extends MinimalEObjectImpl.Container implements Hazard {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AnonymousTypeSet basicGetErrorType() {
+	public TypeTokenInstance basicGetErrorType() {
 		return errorType;
 	}
 
@@ -432,8 +430,8 @@ public class HazardImpl extends MinimalEObjectImpl.Container implements Hazard {
 	 * @generated
 	 */
 	@Override
-	public void setErrorType(AnonymousTypeSet newErrorType) {
-		AnonymousTypeSet oldErrorType = errorType;
+	public void setErrorType(TypeTokenInstance newErrorType) {
+		TypeTokenInstance oldErrorType = errorType;
 		errorType = newErrorType;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, Safe2Package.HAZARD__ERROR_TYPE, oldErrorType, errorType));
@@ -557,7 +555,7 @@ public class HazardImpl extends MinimalEObjectImpl.Container implements Hazard {
 				setHazardousFactor((String)newValue);
 				return;
 			case Safe2Package.HAZARD__ERROR_TYPE:
-				setErrorType((AnonymousTypeSet)newValue);
+				setErrorType((TypeTokenInstance)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -596,7 +594,7 @@ public class HazardImpl extends MinimalEObjectImpl.Container implements Hazard {
 				setHazardousFactor(HAZARDOUS_FACTOR_EDEFAULT);
 				return;
 			case Safe2Package.HAZARD__ERROR_TYPE:
-				setErrorType((AnonymousTypeSet)null);
+				setErrorType((TypeTokenInstance)null);
 				return;
 		}
 		super.eUnset(featureID);

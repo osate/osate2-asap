@@ -32,7 +32,7 @@ import java.util.Collection;
 import java.util.stream.Collectors;
 
 import org.eclipse.emf.ecore.EObject;
-import org.osate.aadl2.errormodel.instance.AnonymousTypeSet;
+import org.osate.aadl2.errormodel.instance.TypeTokenInstance;
 import org.osate.aadl2.instance.ComponentInstance;
 import org.osate.aadl2.instance.FeatureInstance;
 import org.osate.aadl2.instance.InstanceObject;
@@ -104,9 +104,9 @@ public class SlicerManager {
 	 * @param feature The feature to propagate from
 	 * @return Reachable components from the given parameters
 	 */
-	public Collection<EObject> forwardReach(AnonymousTypeSet ats, FeatureInstance feature) {
+	public Collection<EObject> forwardReach(TypeTokenInstance token, FeatureInstance feature) {
 		initGraph(feature);
-		return slicer.forwardReach(feature, ats)
+		return slicer.forwardReach(feature, token)
 				.stream()
 				.filter(p -> p.getComponent() instanceof FeatureInstance)
 				.map(p -> p.getComponent())
@@ -120,9 +120,9 @@ public class SlicerManager {
 	 * @param feature The feature to propagate from
 	 * @return Reachable components from the given parameters
 	 */
-	public Collection<EObject> backwardReach(AnonymousTypeSet ats, FeatureInstance feature) {
+	public Collection<EObject> backwardReach(TypeTokenInstance token, FeatureInstance feature) {
 		initGraph(feature);
-		return slicer.backwardReach(feature, ats)
+		return slicer.backwardReach(feature, token)
 				.stream()
 				.filter(p -> p.getComponent() instanceof FeatureInstance)
 				.map(p -> p.getComponent())

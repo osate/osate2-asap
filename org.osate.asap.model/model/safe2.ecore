@@ -21,7 +21,7 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="environmentElement" eType="ecore:EClass ../../org.osate.aadl2/model/instance.ecore#//ComponentInstance"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="systemElement" eType="ecore:EClass ../../org.osate.aadl2/model/instance.ecore#//FeatureInstance"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="hazardousFactor" eType="ecore:EDataType platform:/plugin/org.eclipse.emf.ecore/model/Ecore.ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="errorType" eType="ecore:EClass ../../org.osate.aadl2.errormodel.instance/model/EMV2Instance.ecore#//AnonymousTypeSet"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="errorType" eType="ecore:EClass ../../org.osate.aadl2.errormodel.instance/model/EMV2Instance.ecore#//TypeTokenInstance"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="AccidentLevel" eSuperTypes="#//Fundamental">
     <eStructuralFeatures xsi:type="ecore:EReference" name="accident" lowerBound="1"
