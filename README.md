@@ -2,7 +2,7 @@
 
 [![Build Status](https://osate-build.sei.cmu.edu/jenkins/buildStatus/icon?job=OSATE2-ASAP)](https://osate-build.sei.cmu.edu/jenkins/job/OSATE2-ASAP/)
 
-The Architecture-Supported Audit Processor (ASAP) is a plugin to [OSATE](https://osate.org) that presents safety-specific representations of a system. Background and explanation can be found in the publication "Architecture-Supported Audit Processor: Interactive, Query-Driven Assurance" (currently unpublished, contact the repository maintainer for a preprint). 
+The Architecture-Supported Audit Processor (ASAP) is a plugin to [OSATE](https://osate.org) that presents safety-specific representations of a system. Background and explanation can be found in the publication "Architecture-Supported Audit Processor: Interactive, Query-Driven Assurance" from [Embedded Real Time Systems 2022 (ERTS22)](https://hal.archives-ouvertes.fr/hal-03701277/) ([preprint](https://samprocter.com/wp-content/uploads/2022/05/erts22-asap.pdf)).
 
 ## Installing ASAP
 
