@@ -25,7 +25,6 @@ Require-Bundle: org.eclipse.ui,
  org.osate.aadl2.errormodel.instance,
  org.osate.ui
 Bundle-ActivationPolicy: lazy
-Bundle-RequiredExecutionEnvironment: JavaSE-17
 Bundle-Vendor: %providerName
 Automatic-Module-Name: org.osate.asap.view
 Bundle-ClassPath: .

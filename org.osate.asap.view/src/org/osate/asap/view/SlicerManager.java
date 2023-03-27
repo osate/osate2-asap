@@ -108,8 +108,8 @@ public class SlicerManager {
 		initGraph(feature);
 		return slicer.forwardReach(feature, token)
 				.stream()
-				.filter(p -> p.getComponent() instanceof FeatureInstance)
-				.map(p -> p.getComponent())
+				.filter(p -> p.iobj() instanceof FeatureInstance)
+				.map(p -> p.iobj())
 				.collect(Collectors.toSet());
 	}
 
@@ -124,8 +124,8 @@ public class SlicerManager {
 		initGraph(feature);
 		return slicer.backwardReach(feature, token)
 				.stream()
-				.filter(p -> p.getComponent() instanceof FeatureInstance)
-				.map(p -> p.getComponent())
+				.filter(p -> p.iobj() instanceof FeatureInstance)
+				.map(p -> p.iobj())
 				.collect(Collectors.toSet());
 	}
 

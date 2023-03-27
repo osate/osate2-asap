@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:description_2="http://www.eclipse.org/sirius/tree/description/1.0.0" xmlns:description_3="http://www.eclipse.org/sirius/table/description/1.1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:tool="http://www.eclipse.org/sirius/description/tool/1.1.0" xmlns:tool_1="http://www.eclipse.org/sirius/diagram/description/tool/1.1.0" name="SystemOverview" version="12.0.0.2017041100">
+<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:description_2="http://www.eclipse.org/sirius/tree/description/1.0.0" xmlns:description_3="http://www.eclipse.org/sirius/table/description/1.1.0" xmlns:properties="http://www.eclipse.org/sirius/properties/1.0.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:tool="http://www.eclipse.org/sirius/description/tool/1.1.0" xmlns:tool_1="http://www.eclipse.org/sirius/diagram/description/tool/1.1.0" name="SystemOverview" version="12.0.0.2017041100">
   <ownedViewpoints name="Hazard Analyst" modelFileExtension="safe2">
     <ownedRepresentations xsi:type="description_1:DiagramDescription" endUserDocumentation="Graph view of the specified component as well as its &quot;neighbors&quot; (ie, produce its input and consume its output), their neighbors, and connections between all displayed elements." name="ConnectedNeighbors" titleExpression="aql:'Neighbors of '+self.name" domainClass="instance.ComponentInstance" enablePopupBars="true">
       <metamodel href="../../org.osate.aadl2/model/instance.ecore#/"/>
@@ -332,16 +332,16 @@
             </popupMenus>
           </subItemMappings>
           <popupMenus name="Focus Operations">
-            <menuItemDescriptions xsi:type="tool:OperationAction" name="Set Focus">
-              <view name="views"/>
-              <initialOperation>
-                <firstModelOperations xsi:type="tool:ExternalJavaActionCall" action="//@ownedViewpoints[name='Hazard%20Analyst']/@ownedRepresentations[name='ConnectedNeighbors']/@defaultLayer/@toolSections.0/@ownedTools[name='Set%20Focus']/@initialOperation/@firstModelOperations"/>
-              </initialOperation>
-            </menuItemDescriptions>
             <menuItemDescriptions xsi:type="tool:OperationAction" name="Clear Focus">
               <view name="views"/>
               <initialOperation>
                 <firstModelOperations xsi:type="tool:ExternalJavaAction" name="DoClearAction" id="org.osate.asap.view.ClearFocusActionID"/>
+              </initialOperation>
+            </menuItemDescriptions>
+            <menuItemDescriptions xsi:type="tool:OperationAction" name="Set Focus">
+              <view name="views"/>
+              <initialOperation>
+                <firstModelOperations xsi:type="tool:ExternalJavaAction" name="DoFocusAction" id="org.osate.asap.view.DoFocusActionID"/>
               </initialOperation>
             </menuItemDescriptions>
           </popupMenus>
@@ -440,4 +440,21 @@
     </ownedRepresentations>
     <ownedJavaExtensions qualifiedClassName="org.osate.asap.view.Services"/>
   </ownedViewpoints>
+  <extensions xsi:type="properties:ViewExtensionDescription" name="FamilyPropertiesView">
+    <categories name="Default Category">
+      <pages name="PersonPage" labelExpression="General" groups="//@extensions.0/@categories.0/@groups.0"/>
+      <groups name="Group Person" labelExpression="Person" domainClass="safe2.Fundamental">
+        <controls xsi:type="properties:TextDescription" name="name" labelExpression="Name" helpExpression="Name of selected person" valueExpression="feature:name">
+          <initialOperation>
+            <firstModelOperations xsi:type="tool:SetValue" featureName="name" valueExpression="var:newValue"/>
+          </initialOperation>
+          <conditionalStyles preconditionExpression="aql:true">
+            <style>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='red']"/>
+            </style>
+          </conditionalStyles>
+        </controls>
+      </groups>
+    </categories>
+  </extensions>
 </description:Group>
