@@ -25,12 +25,7 @@
     <repositories>
         <repository>
             <id>osate</id>
-            <url>http://osate-build.sei.cmu.edu/download/osate/testing/updates/</url>
-            <layout>p2</layout>
-        </repository>
-        <repository>
-            <id>Sireum OSATE Plugin</id>
-            <url>https://raw.githubusercontent.com/sireum/osate-plugin-update-site/master/</url>
+            <url>https://osate-build.sei.cmu.edu/download/osate/staging/updates/</url>
             <layout>p2</layout>
         </repository>
     </repositories>
