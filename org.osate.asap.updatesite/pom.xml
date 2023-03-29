@@ -35,28 +35,6 @@
 					<finalName>osate2-asap-${unqualifiedVersion}.${buildQualifier}</finalName>
 				</configuration>
 			</plugin>
-
-			<plugin>
-				<groupId>org.jboss.tools.tycho-plugins</groupId>
-				<artifactId>repository-utils</artifactId>
-				<version>${tycho.version}</version>
-				<executions>
-					<!-- creates index.html and other artifacts -->
-					<execution>
-						<id>generate-facade</id>
-						<phase>package</phase>
-						<goals>
-							<goal>generate-repository-facade</goal>
-						</goals>
-						<configuration>
-							<!-- this adds repository references to the update site's content.xml -->
-							<associateSites>
-								<site>https://raw.githubusercontent.com/sireum/osate-plugin-update-site/master</site>
-							</associateSites>
-						</configuration>
-					</execution>
-				</executions>
-			</plugin>
 		</plugins>
 	</build>
 </project>
