@@ -87,7 +87,7 @@ censes only apply to the Third Party Software and not any other portion of this 
     <mirror>
       <id>eclipse-mirror</id>
       <mirrorOf>http://download.eclipse.org</mirrorOf>
-      <url>https://ftp.osuosl.org/pub/eclipse</url>
+      <url>file:/var/cache/p2mirror/current</url>
       <layout>p2</layout>
       <mirrorOfLayouts>p2</mirrorOfLayouts>
     </mirror>
@@ -95,7 +95,7 @@ censes only apply to the Third Party Software and not any other portion of this 
     <mirror>
       <id>eclipse-mirror1</id>
       <mirrorOf>https://download.eclipse.org</mirrorOf>
-      <url>https://ftp.osuosl.org/pub/eclipse</url>
+      <url>file:/var/cache/p2mirror/current</url>
       <layout>p2</layout>
       <mirrorOfLayouts>p2</mirrorOfLayouts>
     </mirror>
