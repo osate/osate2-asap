@@ -36,8 +36,8 @@
       The Architecture-Supported Audit Processor (ASAP) is a plugin
 to OSATE that presents safety-specific representations of a system.
 Background and explanation can be found in the publication &quot;Architecture-Supported
-Audit Processor: Interactive, Query-Driven Assurance&quot; (currently
-unpublished, contact the maintainer for a preprint).
+Audit Processor: Interactive, Query-Driven Assurance&quot; from ERTS22 
+https://hal.archives-ouvertes.fr/hal-03701277/.
    </description>
 
    <copyright>
