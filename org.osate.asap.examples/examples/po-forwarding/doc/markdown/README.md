@@ -2,7 +2,7 @@
 
 This is a model of a very simple medical application, designed to illustrate the Architecture-Supported Audit Processor (ASAP).
 
-Full details can be found in the paper this example was designed for, "Architecture-Supported Audit Processor: Interactive, Query-Driven Assurance" (currently unpublished, contact the repository maintainer for a preprint). User-oriented documentation of the ASAP tool can be found in its [readme](https://github.com/osate/osate2-asap/blob/main/README.md)
+Full details can be found in the paper this example was designed for, ["Architecture-Supported Audit Processor: Interactive, Query-Driven Assurance"](https://hal.archives-ouvertes.fr/hal-03701277/). User-oriented documentation of the ASAP tool can be found in its [readme](https://github.com/osate/osate2-asap/blob/main/README.md).
 
 An overview of the ASAP tool and its source code can be found in the project's [github repository](https://github.com/osate/osate2-asap).
 
